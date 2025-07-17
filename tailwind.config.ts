@@ -13,7 +13,16 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        kenyan: ["Kenyan Coffee", "system-ui", "sans-serif"],
+        archivo: ["Archivo", "system-ui", "sans-serif"],
+      },
       colors: {
+        cloudworkz: {
+          primary: "#126AF9",
+          black: "rgb(50, 50, 50)",
+          white: "#FFFFFF",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
