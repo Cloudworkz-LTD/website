@@ -26,7 +26,7 @@ export default function Index() {
 
       {/* Hero Content */}
       <div className="relative z-10 flex justify-between items-start pt-[150px] px-10">
-        <div className='flex flex-col'>
+        <div className="flex flex-col">
           {/* Hero Title - Left Side */}
           <CursorEffect>
             <h1 className="font-kenyan text-[180px] leading-[180px] uppercase flex flex-col justify-start items-start max-w-[1015px]">
@@ -89,6 +89,19 @@ export default function Index() {
           </div>
         </div>
       </div>
+
+      {/* CloudWorkz Description Section */}
+      <section className="relative z-10 pt-[150px] px-10">
+        <div className="max-w-[1017px]">
+          <p className="text-justify font-archivo text-[55px] leading-[95%] tracking-[-1.65px] uppercase">
+            <span className="text-cloudworkz-primary">Cloudworkz</span>{" "}
+            <span className="text-[#323232]">
+              helps ambitious teams scale faster and build more intelligent
+              systems with modular execution tools.
+            </span>
+          </p>
+        </div>
+      </section>
 
       {/* Hero Section */}
       <section className="relative z-10 flex items-center justify-center min-h-[828px] px-8 lg:px-12">
