@@ -5,27 +5,27 @@ export default function Header() {
         {/* Logo */}
         <div className="flex-shrink-0">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/dd9a482b213c606eedb5a52774ad84dbc586a1de?width=2714"
+            src="https://api.builder.io/api/v1/image/assets/TEMP/7017ab23eb3bbe11cd6b41c3281f2d73a486ba72?width=754"
             alt="CloudWorkz Logo"
-            className="h-8 lg:h-10 w-auto"
+            className="h-8 lg:h-12 w-auto"
           />
         </div>
 
         {/* Navigation Menu - Block Buttons */}
         <nav className="hidden md:flex items-end space-x-8 lg:space-x-12">
-          <button className="text-cloudworkz-black font-archivo text-sm lg:text-base uppercase tracking-wider font-medium transition-all duration-300 hover:text-cloudworkz-primary hover:italic hover:scale-105 hover:font-semibold cursor-pointer">
+          <button className="text-cloudworkz-black font-kenyan text-2xl lg:text-[35px] uppercase tracking-[1.05px] leading-[87%] transition-all duration-300 hover:text-cloudworkz-primary hover:italic hover:scale-105 cursor-pointer">
             OUR STORY
           </button>
-          <button className="text-cloudworkz-black font-archivo text-sm lg:text-base uppercase tracking-wider font-medium transition-all duration-300 hover:text-cloudworkz-primary hover:italic hover:scale-105 hover:font-semibold cursor-pointer">
+          <button className="text-cloudworkz-black font-kenyan text-2xl lg:text-[35px] uppercase tracking-[1.05px] leading-[87%] transition-all duration-300 hover:text-cloudworkz-primary hover:italic hover:scale-105 cursor-pointer">
             WHAT WE DO
           </button>
-          <button className="text-cloudworkz-black font-archivo text-sm lg:text-base uppercase tracking-wider font-medium transition-all duration-300 hover:text-cloudworkz-primary hover:italic hover:scale-105 hover:font-semibold cursor-pointer">
+          <button className="text-cloudworkz-black font-kenyan text-2xl lg:text-[35px] uppercase tracking-[1.05px] leading-[87%] transition-all duration-300 hover:text-cloudworkz-primary hover:italic hover:scale-105 cursor-pointer">
             INSIGHTS
           </button>
-          <button className="text-cloudworkz-black font-archivo text-sm lg:text-base uppercase tracking-wider font-medium transition-all duration-300 hover:text-cloudworkz-primary hover:italic hover:scale-105 hover:font-semibold cursor-pointer">
+          <button className="text-cloudworkz-black font-kenyan text-2xl lg:text-[35px] uppercase tracking-[1.05px] leading-[87%] transition-all duration-300 hover:text-cloudworkz-primary hover:italic hover:scale-105 cursor-pointer">
             HOW IT WORKS
           </button>
-          <button className="text-cloudworkz-black font-archivo text-sm lg:text-base uppercase tracking-wider font-medium transition-all duration-300 hover:text-cloudworkz-primary hover:italic hover:scale-105 hover:font-semibold cursor-pointer">
+          <button className="text-cloudworkz-black font-kenyan text-2xl lg:text-[35px] uppercase tracking-[1.05px] leading-[87%] transition-all duration-300 hover:text-cloudworkz-primary hover:italic hover:scale-105 cursor-pointer">
             GET IN TOUCH
           </button>
         </nav>
