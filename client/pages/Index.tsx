@@ -118,16 +118,7 @@ export default function Index() {
               backgroundImage:
                 "url('https://api.builder.io/api/v1/image/assets/TEMP/2ebcfd4c91e939b67637722120478b384f33fa9a?width=904')",
             }}
-          >
-            <h3 className="font-kenyan text-[90px] leading-[100%] tracking-[-1.8px] uppercase text-white">
-              Growth, Engineered
-            </h3>
-            <p className="font-archivo text-[20px] leading-[100%] text-white">
-              Cloudworkz combines a system and a service. Our platform automates
-              execution. Its structure, not just software, that makes sales
-              scale
-            </p>
-          </div>
+          />
 
           {/* Block 2 - Fundamental Tools, Real Outcomes */}
           <div
