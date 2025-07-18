@@ -15,13 +15,14 @@ export default function Index() {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       // Set different initial positions for each block to create staggered effect
-      gsap.set(block1Ref.current, { y: 100 }); // Closest to final position
-      gsap.set(block2Ref.current, { y: 400 }); // Much further down
-      gsap.set(block3Ref.current, { y: 700 }); // Much furthest down
+      // Set different initial positions for each block to create staggered effect
+      gsap.set(block1Ref.current, { transform: "translateY(100px)" }); // Closest to final position
+      gsap.set(block2Ref.current, { transform: "translateY(400px)" }); // Much further down
+      gsap.set(block3Ref.current, { transform: "translateY(700px)" }); // Much furthest down
 
       // Animate each block individually with widely spaced triggers
       gsap.to(block1Ref.current, {
-        y: 0,
+        transform: "translateY(0px)",
         duration: 0.6,
         ease: "power2.out",
         scrollTrigger: {
@@ -32,7 +33,7 @@ export default function Index() {
       });
 
       gsap.to(block2Ref.current, {
-        y: 0,
+        transform: "translateY(0px)",
         duration: 0.6,
         ease: "power2.out",
         scrollTrigger: {
@@ -43,7 +44,7 @@ export default function Index() {
       });
 
       gsap.to(block3Ref.current, {
-        y: 0,
+        transform: "translateY(0px)",
         duration: 0.6,
         ease: "power2.out",
         scrollTrigger: {
