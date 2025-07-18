@@ -1,48 +1,33 @@
 export default function Header() {
   return (
     <header className="relative z-10 w-full">
-      <div className="flex justify-between items-end px-8 lg:px-12 py-6 lg:py-8">
+      <div className="flex justify-between items-end px-8 lg:px-12 py-6 lg:py-8 h-[98px]">
         {/* Logo */}
         <div className="flex-shrink-0">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/975cad6ee425fbccdfcaa5350fa4648247130820?width=2880"
+            src="https://api.builder.io/api/v1/image/assets/TEMP/dd9a482b213c606eedb5a52774ad84dbc586a1de?width=2714"
             alt="CloudWorkz Logo"
-            className="h-8 lg:h-12 w-auto"
+            className="h-8 lg:h-10 w-auto"
           />
         </div>
 
-        {/* Navigation Menu */}
-        <nav className="hidden md:flex items-center space-x-6 lg:space-x-10">
-          <a
-            href="#our-story"
-            className="text-cloudworkz-black font-archivo text-sm lg:text-base uppercase tracking-wider font-medium transition-all duration-300 hover:text-cloudworkz-primary hover:italic hover:scale-105 hover:font-semibold"
-          >
+        {/* Navigation Menu - Block Buttons */}
+        <nav className="hidden md:flex items-end space-x-8 lg:space-x-12">
+          <button className="text-cloudworkz-black font-archivo text-sm lg:text-base uppercase tracking-wider font-medium transition-all duration-300 hover:text-cloudworkz-primary hover:italic hover:scale-105 hover:font-semibold cursor-pointer">
             OUR STORY
-          </a>
-          <a
-            href="#what-we-do"
-            className="text-cloudworkz-black font-archivo text-sm lg:text-base uppercase tracking-wider font-medium transition-all duration-300 hover:text-cloudworkz-primary hover:italic hover:scale-105 hover:font-semibold"
-          >
+          </button>
+          <button className="text-cloudworkz-black font-archivo text-sm lg:text-base uppercase tracking-wider font-medium transition-all duration-300 hover:text-cloudworkz-primary hover:italic hover:scale-105 hover:font-semibold cursor-pointer">
             WHAT WE DO
-          </a>
-          <a
-            href="#insights"
-            className="text-cloudworkz-black font-archivo text-sm lg:text-base uppercase tracking-wider font-medium transition-all duration-300 hover:text-cloudworkz-primary hover:italic hover:scale-105 hover:font-semibold"
-          >
+          </button>
+          <button className="text-cloudworkz-black font-archivo text-sm lg:text-base uppercase tracking-wider font-medium transition-all duration-300 hover:text-cloudworkz-primary hover:italic hover:scale-105 hover:font-semibold cursor-pointer">
             INSIGHTS
-          </a>
-          <a
-            href="#how-it-works"
-            className="text-cloudworkz-black font-archivo text-sm lg:text-base uppercase tracking-wider font-medium transition-all duration-300 hover:text-cloudworkz-primary hover:italic hover:scale-105 hover:font-semibold"
-          >
+          </button>
+          <button className="text-cloudworkz-black font-archivo text-sm lg:text-base uppercase tracking-wider font-medium transition-all duration-300 hover:text-cloudworkz-primary hover:italic hover:scale-105 hover:font-semibold cursor-pointer">
             HOW IT WORKS
-          </a>
-          <a
-            href="#get-in-touch"
-            className="text-cloudworkz-black font-archivo text-sm lg:text-base uppercase tracking-wider font-medium transition-all duration-300 hover:text-cloudworkz-primary hover:italic hover:scale-105 hover:font-semibold"
-          >
+          </button>
+          <button className="text-cloudworkz-black font-archivo text-sm lg:text-base uppercase tracking-wider font-medium transition-all duration-300 hover:text-cloudworkz-primary hover:italic hover:scale-105 hover:font-semibold cursor-pointer">
             GET IN TOUCH
-          </a>
+          </button>
         </nav>
 
         {/* Mobile Menu Button */}
