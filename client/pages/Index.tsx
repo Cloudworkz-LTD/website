@@ -36,7 +36,8 @@ export default function Index() {
             
               <span className="text-cloudworkz-black mr-4">To</span>
               <span className="text-cloudworkz-primary">Practical</span>
-          </div>
+            </div>
+          </CursorEffect>
             <CursorEffect>
             <span className="text-cloudworkz-primary">Growth</span>
             </CursorEffect>
