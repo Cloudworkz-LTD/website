@@ -27,8 +27,11 @@ export default function Index() {
       <div className="relative z-10 flex justify-between items-start pt-[150px] px-10">
         {/* Hero Title - Left Side */}
         <h1 className="font-kenyan text-[120px] leading-[120px] uppercase flex flex-col justify-start items-start">
+          <div>
+        
           <span className="text-cloudworkz-black">Your Portal to </span>
-          <span className="text-cloudworkz-primary">Practical</span>
+            <span className="text-cloudworkz-primary">Practical</span>
+          </div>
         </h1>
 
         {/* CTA Section - Right Side */}
