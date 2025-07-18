@@ -38,6 +38,11 @@ export default function Index() {
           </h1>
         </CursorEffect>
 
+        {/* Description below hero title */}
+        <div className="font-kenyan text-[64px] leading-[95%] tracking-[-1.92px] uppercase text-cloudworkz-black max-w-[1015px] mt-6">
+          Powered by Smart Systems
+        </div>
+
         {/* CTA Section - Right Side */}
         <div className="flex flex-col justify-end items-start gap-[14px] w-full max-w-[322px] mt-auto">
           {/* Description Text */}
