@@ -173,36 +173,71 @@ export default function Index() {
         className="relative z-10 flex items-center justify-center py-[150px] px-10"
         ref={featureBlocksRef}
       >
-        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-6 max-w-7xl w-full">
+        <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-2 max-w-6xl w-full">
           {/* Block 1 - Growth, Engineered */}
           <div
             ref={block1Ref}
-            className="flex flex-col justify-center items-start gap-10 w-full lg:w-[452px] h-[755px] p-[58px_40px] rounded-[250px] bg-cover bg-center bg-no-repeat"
+            className="flex flex-col justify-start items-start gap-6 w-full lg:w-[380px] h-[755px] p-[40px_30px] rounded-[250px] bg-cover bg-center bg-no-repeat relative"
             style={{
               backgroundImage:
                 "url('https://api.builder.io/api/v1/image/assets/TEMP/2ebcfd4c91e939b67637722120478b384f33fa9a?width=904')",
             }}
-          />
+          >
+            <h3 className="font-kenyan text-white text-[48px] leading-[95%] uppercase tracking-[-1px]">
+              Growth,
+              <br />
+              Engineered
+            </h3>
+            <p className="font-archivo text-white/90 text-[14px] leading-[140%] max-w-[280px]">
+              Cloudworkz combines a system and a service. Our platform automates
+              execution. Its infrastructure fuels Software that thinks, sales
+              scalability.
+            </p>
+          </div>
 
           {/* Block 2 - Fundamental Tools, Real Outcomes */}
           <div
             ref={block2Ref}
-            className="flex flex-col justify-center items-start gap-10 w-full lg:w-[452px] h-[755px] p-[58px_40px] rounded-[250px] bg-cover bg-center bg-no-repeat"
+            className="flex flex-col justify-start items-start gap-6 w-full lg:w-[380px] h-[755px] p-[40px_30px] rounded-[250px] bg-cover bg-center bg-no-repeat relative"
             style={{
               backgroundImage:
                 "url('https://api.builder.io/api/v1/image/assets/TEMP/38c2d669cbfb8d2ba2b993bb9e2d6467ee0e84b2?width=904')",
             }}
-          />
+          >
+            <h3 className="font-kenyan text-white text-[48px] leading-[95%] uppercase tracking-[-1px]">
+              Fundamental
+              <br />
+              Tools, Real
+              <br />
+              Outcomes
+            </h3>
+            <p className="font-archivo text-white/90 text-[14px] leading-[140%] max-w-[280px]">
+              Behind every high-performing team is a system that handles the
+              work. Cloudworkz builds and runs the workflows that drive results.
+            </p>
+          </div>
 
           {/* Block 3 - Cloudworkz started as a sales engine */}
           <div
             ref={block3Ref}
-            className="flex flex-col justify-center items-start gap-10 w-full lg:w-[452px] h-[755px] p-[58px_40px] rounded-[250px] bg-cover bg-center bg-no-repeat"
+            className="flex flex-col justify-start items-start gap-6 w-full lg:w-[380px] h-[755px] p-[40px_30px] rounded-[250px] bg-cover bg-center bg-no-repeat relative"
             style={{
               backgroundImage:
                 "url('https://api.builder.io/api/v1/image/assets/TEMP/4c8c6df29b065c1ac32ad3c770857b5a9e784de9?width=904')",
             }}
-          />
+          >
+            <h3 className="font-kenyan text-white text-[48px] leading-[95%] uppercase tracking-[-1px]">
+              Cloudworkz
+              <br />
+              Started As A<br />
+              Sales Engine
+            </h3>
+            <p className="font-archivo text-white/90 text-[14px] leading-[140%] max-w-[280px]">
+              Now it powers modular systems and embedded sales teams for
+              founders, scale-ups, and operators who want execution, not more
+              software.
+            </p>
+          </div>
         </div>
       </section>
 
