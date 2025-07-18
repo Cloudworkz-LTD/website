@@ -9,10 +9,10 @@ export default function Index() {
             alt=""
             className="absolute object-cover mix-blend-multiply"
             style={{
-              width: "150%",
+              width: "100%",
               height: "120%",
-              left: "-20%",
-              top: "-25%",
+              left: "0px",
+              top: "0px",
             }}
           />
         </div>
