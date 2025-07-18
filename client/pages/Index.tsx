@@ -28,7 +28,7 @@ export default function Index() {
         {/* Hero Title - Left Side */}
         <h1 className="font-kenyan text-[120px] leading-[120px] uppercase flex flex-col justify-start items-start">
           <span className="text-cloudworkz-black">Your Portal to </span>
-          <span className="text-cloudworkz-primary">Practical Growth</span>
+          <span className="text-cloudworkz-primary">Practical</span>
         </h1>
 
         {/* CTA Section - Right Side */}
