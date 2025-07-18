@@ -15,10 +15,10 @@ export default function Index() {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       // Set different initial positions for each block to create staggered effect
-      // Set different initial positions for each block to create staggered effect
-      gsap.set(block1Ref.current, { transform: "translateY(100px)" }); // Closest to final position
-      gsap.set(block2Ref.current, { transform: "translateY(400px)" }); // Much further down
-      gsap.set(block3Ref.current, { transform: "translateY(700px)" }); // Much furthest down
+      // Set different initial positions for each block completely out of viewport
+      gsap.set(block1Ref.current, { transform: "translateY(200px)" }); // Completely hidden initially
+      gsap.set(block2Ref.current, { transform: "translateY(1000px)" }); // Completely out of view
+      gsap.set(block3Ref.current, { transform: "translateY(1800px)" }); // Completely out of view
 
       // Animate each block individually with widely spaced triggers
       gsap.to(block1Ref.current, {
