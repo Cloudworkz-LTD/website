@@ -177,7 +177,7 @@ export default function Index() {
           {/* Block 1 - Growth, Engineered */}
           <div
             ref={block1Ref}
-            className="flex flex-col justify-center items-start gap-10 w-full lg:w-[380px] h-[755px] p-[58px_40px] rounded-[250px] bg-cover bg-center bg-no-repeat"
+            className="flex flex-col justify-center items-start gap-10 w-full lg:w-[452px] h-[755px] p-[58px_40px] rounded-[250px] bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage:
                 "url('https://api.builder.io/api/v1/image/assets/TEMP/2ebcfd4c91e939b67637722120478b384f33fa9a?width=904')",
@@ -197,7 +197,7 @@ export default function Index() {
           {/* Block 3 - Cloudworkz started as a sales engine */}
           <div
             ref={block3Ref}
-            className="flex flex-col justify-center items-start gap-10 w-full lg:w-[380px] h-[755px] p-[58px_40px] rounded-[250px] bg-cover bg-center bg-no-repeat"
+            className="flex flex-col justify-center items-start gap-10 w-full lg:w-[452px] h-[755px] p-[58px_40px] rounded-[250px] bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage:
                 "url('https://api.builder.io/api/v1/image/assets/TEMP/4c8c6df29b065c1ac32ad3c770857b5a9e784de9?width=904')",
