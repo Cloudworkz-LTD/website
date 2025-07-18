@@ -26,7 +26,7 @@ export default function Index() {
 
       {/* Hero Content */}
       <div className="relative z-10 flex justify-between items-start pt-[150px] px-10">
-        <div>
+        <div className='flex flex-col'>
           {/* Hero Title - Left Side */}
           <CursorEffect>
             <h1 className="font-kenyan text-[180px] leading-[180px] uppercase flex flex-col justify-start items-start max-w-[1015px]">
@@ -44,7 +44,7 @@ export default function Index() {
             Powered by Smart Systems
           </div>
         </div>
-        
+
         {/* CTA Section - Right Side */}
         <div className="flex flex-col justify-end items-start gap-[14px] w-full max-w-[322px] mt-auto">
           {/* Description Text */}
