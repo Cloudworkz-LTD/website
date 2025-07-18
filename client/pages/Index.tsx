@@ -13,7 +13,7 @@ export default function Index() {
             className="absolute object-cover mix-blend-multiply"
             style={{
               width: "2434px",
-              height: "1498px",
+              height: "1198px",
               left: "0px",
               top: "0px",
             }}
