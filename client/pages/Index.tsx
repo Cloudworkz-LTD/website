@@ -26,22 +26,25 @@ export default function Index() {
 
       {/* Hero Content */}
       <div className="relative z-10 flex justify-between items-start pt-[150px] px-10">
-        {/* Hero Title - Left Side */}
-        <CursorEffect>
-          <h1 className="font-kenyan text-[180px] leading-[180px] uppercase flex flex-col justify-start items-start max-w-[1015px]">
-            <span className="text-cloudworkz-black">Your Portal</span>
-            <div className="flex flex-row">
-              <span className="text-cloudworkz-black mr-4">To</span>
-              <span className="text-cloudworkz-primary">Practical</span>
-            </div>
-            <span className="text-cloudworkz-primary">Growth</span>
-          </h1>
+        <div>
+          {/* Hero Title - Left Side */}
+          <CursorEffect>
+            <h1 className="font-kenyan text-[180px] leading-[180px] uppercase flex flex-col justify-start items-start max-w-[1015px]">
+              <span className="text-cloudworkz-black">Your Portal</span>
+              <div className="flex flex-row">
+                <span className="text-cloudworkz-black mr-4">To</span>
+                <span className="text-cloudworkz-primary">Practical</span>
+              </div>
+              <span className="text-cloudworkz-primary">Growth</span>
+            </h1>
+          </CursorEffect>
+
           {/* Description below hero title */}
           <div className="font-kenyan text-[64px] leading-[95%] tracking-[-1.92px] uppercase text-cloudworkz-black max-w-[1015px] mt-6">
             Powered by Smart Systems
           </div>
-        </CursorEffect>
-
+        </div>
+        
         {/* CTA Section - Right Side */}
         <div className="flex flex-col justify-end items-start gap-[14px] w-full max-w-[322px] mt-auto">
           {/* Description Text */}
