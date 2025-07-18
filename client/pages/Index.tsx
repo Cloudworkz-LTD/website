@@ -177,7 +177,10 @@ export default function Index() {
       </section>
 
       {/* Feature Blocks Section */}
-      <section className="relative z-10 flex items-center justify-center py-[150px] px-10">
+      <section
+        className="relative z-10 flex items-center justify-center py-[150px] px-10"
+        ref={featureBlocksRef}
+      >
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-6 max-w-7xl w-full">
           {/* Block 1 - Growth, Engineered */}
           <div
