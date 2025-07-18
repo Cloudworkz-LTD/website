@@ -28,7 +28,7 @@ export default function Index() {
             {/* Left Column - Main Headlines */}
             <div className="space-y-8">
               <h1 className="font-kenyan text-6xl sm:text-8xl lg:text-[200px] leading-[0.87] uppercase text-cloudworkz-black tracking-tight">
-                Your Portal to Tomorrow's
+                Your Portal to
               </h1>
               <h2 className="font-kenyan text-6xl sm:text-8xl lg:text-[200px] leading-[0.87] uppercase text-cloudworkz-primary tracking-tight">
                 Opportunities
