@@ -17,45 +17,46 @@ export default function Index() {
       // Set initial state for all blocks
       gsap.set([block1Ref.current, block2Ref.current, block3Ref.current], {
         opacity: 0,
-        y: 120,
+        y: 100,
       });
 
-      // Animate each block individually with natural slide up
-      gsap.to(block1Ref.current, {
-        opacity: 1,
-        y: 0,
-        duration: 0.8,
-        ease: "power2.out",
+      // Create a timeline for sequential animations controlled by scroll
+      const tl = gsap.timeline({
         scrollTrigger: {
-          trigger: block1Ref.current,
-          start: "top 85%",
-          toggleActions: "play none none reverse",
+          trigger: featureBlocksRef.current,
+          start: "top 60%",
+          end: "bottom 40%",
+          scrub: 2,
         },
       });
 
-      gsap.to(block2Ref.current, {
+      // Add animations to timeline with stagger
+      tl.to(block1Ref.current, {
         opacity: 1,
         y: 0,
-        duration: 0.8,
+        duration: 1,
         ease: "power2.out",
-        scrollTrigger: {
-          trigger: block2Ref.current,
-          start: "top 85%",
-          toggleActions: "play none none reverse",
-        },
-      });
-
-      gsap.to(block3Ref.current, {
-        opacity: 1,
-        y: 0,
-        duration: 0.8,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: block3Ref.current,
-          start: "top 85%",
-          toggleActions: "play none none reverse",
-        },
-      });
+      })
+        .to(
+          block2Ref.current,
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "power2.out",
+          },
+          "-=0.3",
+        ) // Start slightly before previous animation ends
+        .to(
+          block3Ref.current,
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "power2.out",
+          },
+          "-=0.3",
+        ); // Start slightly before previous animation ends
     }, featureBlocksRef);
 
     return () => ctx.revert();
