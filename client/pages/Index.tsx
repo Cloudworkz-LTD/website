@@ -31,8 +31,8 @@ export default function Index() {
           <div className='flex flex-row'>
             <span className="text-cloudworkz-black">To</span>
             <span className="text-cloudworkz-primary">{' '} Practical</span>
-            <span className="text-cloudworkz-primary">Growth</span>
           </div>
+          <span className="text-cloudworkz-primary">Growth</span>
         </h1>
 
         {/* CTA Section - Right Side */}
