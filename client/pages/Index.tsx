@@ -30,6 +30,7 @@ export default function Index() {
           <span className="text-cloudworkz-black">Your Portal</span>
           <div className='flex flex-row'>
             <span className="text-cloudworkz-black">To</span>
+            <span className="text-cloudworkz-black"></span>
             <span className="text-cloudworkz-primary">Practical</span>
           </div>
         </h1>
