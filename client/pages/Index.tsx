@@ -194,6 +194,7 @@ export default function Index() {
 
           {/* Block 2 - Fundamental Tools, Real Outcomes */}
           <div
+            ref={block2Ref}
             className="flex flex-col justify-center items-start gap-10 w-full lg:w-[452px] h-[755px] p-[58px_40px] rounded-[250px] bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage:
