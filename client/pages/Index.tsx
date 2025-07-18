@@ -173,7 +173,7 @@ export default function Index() {
         className="relative z-10 flex items-center justify-center py-[150px]"
         ref={featureBlocksRef}
       >
-        <div className="flex flex-col lg:flex-row items-center gap-8 max-w-7xl w-full">
+        <div className="flex flex-col lg:flex-row items-center max-w-7xl w-full">
           {/* Block 1 - Growth, Engineered */}
           <div
             ref={block1Ref}
