@@ -97,7 +97,7 @@ export default function Index() {
             <span className="font-archivo text-cloudworkz-primary">
               Cloudworkz{" "}
             </span>
-            <span className="font-kenyan text-cloudworkz-primary text-[100px]">
+            <span className="font-kenyan text-cloudworkz-primary text-[100px] pt-10">
               *
             </span>{" "}
             <span className="font-archivo text-[#323232]">
