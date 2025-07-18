@@ -129,7 +129,7 @@ export default function CursorEffect({
 
       {/* Content with blend mode */}
       <div
-        className="relative z-10 bg-white"
+        className="relative z-10"
         style={{
           mixBlendMode: "screen",
           isolation: "isolate",
