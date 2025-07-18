@@ -19,14 +19,14 @@ export default function Index() {
         y: 120,
       });
 
-      // Animate each block individually with spaced triggers
+      // Animate each block individually with widely spaced triggers
       gsap.to(block1Ref.current, {
         y: 0,
         duration: 0.6,
         ease: "power2.out",
         scrollTrigger: {
           trigger: featureBlocksRef.current,
-          start: "top 70%",
+          start: "top 80%",
           toggleActions: "play none none reverse",
         },
       });
@@ -37,7 +37,7 @@ export default function Index() {
         ease: "power2.out",
         scrollTrigger: {
           trigger: featureBlocksRef.current,
-          start: "top 40%",
+          start: "center center",
           toggleActions: "play none none reverse",
         },
       });
@@ -48,7 +48,7 @@ export default function Index() {
         ease: "power2.out",
         scrollTrigger: {
           trigger: featureBlocksRef.current,
-          start: "top 10%",
+          start: "bottom 80%",
           toggleActions: "play none none reverse",
         },
       });
