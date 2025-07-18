@@ -95,7 +95,7 @@ export default function Index() {
         <div className="max-w-[1017px]">
           <p className="text-justify text-[55px] leading-[95%] tracking-[-1.65px] uppercase">
             <span className="font-archivo text-cloudworkz-primary">Cloudworkz </span>
-            <span className="text-cloudworkz-primary">*</span>{" "}
+            <span className="font-kenyan text-cloudworkz-primary">*</span>{" "}
             <span className="font-archivo text-[#323232]">
               helps ambitious teams scale faster and build more intelligent
               systems with modular execution tools.
