@@ -17,6 +17,15 @@ export default function Index() {
           />
         </div>
       </section>
+
+      {/* Header over background */}
+      <header className="relative z-10 p-8 lg:p-12">
+        <img
+          src="https://api.builder.io/api/v1/image/assets/TEMP/dd9a482b213c606eedb5a52774ad84dbc586a1de?width=2714"
+          alt="CloudWorkz Logo"
+          className="h-8 lg:h-12 w-auto"
+        />
+      </header>
     </div>
   );
 }
