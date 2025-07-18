@@ -15,9 +15,9 @@ export default function Index() {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       // Set different initial positions for each block to create staggered effect
-      gsap.set(block1Ref.current, { y: 80 }); // Closest to final position
-      gsap.set(block2Ref.current, { y: 200 }); // Further down
-      gsap.set(block3Ref.current, { y: 320 }); // Furthest down
+      gsap.set(block1Ref.current, { y: 100 }); // Closest to final position
+      gsap.set(block2Ref.current, { y: 400 }); // Much further down
+      gsap.set(block3Ref.current, { y: 700 }); // Much furthest down
 
       // Animate each block individually with widely spaced triggers
       gsap.to(block1Ref.current, {
