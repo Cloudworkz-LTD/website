@@ -39,7 +39,7 @@ export default function Index() {
         </CursorEffect>
 
         {/* CTA Section - Right Side */}
-        <div className="flex flex-col justify-end items-start gap-[14px] w-[322px] mt-auto">
+        <div className="flex flex-col justify-end items-start gap-[14px] w-full max-w-[322px] mt-auto">
           {/* Description Text */}
           <p className="text-cloudworkz-black font-archivo text-2xl leading-[100%] w-full">
             Step into a workspace where structure accelerates momentum.
