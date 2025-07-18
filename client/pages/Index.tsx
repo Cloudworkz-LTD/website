@@ -17,74 +17,43 @@ export default function Index() {
       // Set initial state for all blocks
       gsap.set([block1Ref.current, block2Ref.current, block3Ref.current], {
         opacity: 0,
-        y: 150,
-        scale: 0.9,
+        y: 120,
       });
 
-      // Create timeline for sequential animations
-      const tl = gsap.timeline({
+      // Animate each block individually with natural slide up
+      gsap.to(block1Ref.current, {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "power2.out",
         scrollTrigger: {
-          trigger: featureBlocksRef.current,
-          start: "top 70%",
-          end: "bottom 30%",
-          scrub: 1.5,
-          onUpdate: (self) => {
-            const progress = self.progress;
+          trigger: block1Ref.current,
+          start: "top 85%",
+          toggleActions: "play none none reverse",
+        },
+      });
 
-            // Block 1 animates from 0% to 33% of scroll progress
-            if (progress <= 0.33) {
-              const blockProgress = progress / 0.33;
-              gsap.set(block1Ref.current, {
-                opacity: blockProgress,
-                y: 150 * (1 - blockProgress),
-                scale: 0.9 + 0.1 * blockProgress,
-              });
-            } else {
-              gsap.set(block1Ref.current, {
-                opacity: 1,
-                y: 0,
-                scale: 1,
-              });
-            }
+      gsap.to(block2Ref.current, {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: block2Ref.current,
+          start: "top 85%",
+          toggleActions: "play none none reverse",
+        },
+      });
 
-            // Block 2 animates from 33% to 66% of scroll progress
-            if (progress <= 0.33) {
-              gsap.set(block2Ref.current, {
-                opacity: 0,
-                y: 150,
-                scale: 0.9,
-              });
-            } else if (progress <= 0.66) {
-              const blockProgress = (progress - 0.33) / 0.33;
-              gsap.set(block2Ref.current, {
-                opacity: blockProgress,
-                y: 150 * (1 - blockProgress),
-                scale: 0.9 + 0.1 * blockProgress,
-              });
-            } else {
-              gsap.set(block2Ref.current, {
-                opacity: 1,
-                y: 0,
-                scale: 1,
-              });
-            }
-
-            // Block 3 animates from 66% to 100% of scroll progress
-            if (progress <= 0.66) {
-              gsap.set(block3Ref.current, {
-                opacity: 0,
-                y: 150,
-                scale: 0.9,
-              });
-            } else {
-              const blockProgress = (progress - 0.66) / 0.34;
-              gsap.set(block3Ref.current, {
-                opacity: blockProgress,
-                y: 150 * (1 - blockProgress),
-                scale: 0.9 + 0.1 * blockProgress,
-              });
-            }
-          },
+      gsap.to(block3Ref.current, {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: block3Ref.current,
+          start: "top 85%",
+          toggleActions: "play none none reverse",
         },
       });
     }, featureBlocksRef);
