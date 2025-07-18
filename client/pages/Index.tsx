@@ -136,7 +136,15 @@ export default function Index() {
               backgroundImage:
                 "url('https://api.builder.io/api/v1/image/assets/TEMP/38c2d669cbfb8d2ba2b993bb9e2d6467ee0e84b2?width=904')",
             }}
-          />
+          >
+            <h3 className="font-kenyan text-[90px] leading-[100%] tracking-[-1.8px] uppercase text-white">
+              Fundamental Tools, Real Outcomes
+            </h3>
+            <p className="font-archivo text-[20px] leading-[100%] text-white">
+              Behind every high-performing team is a system that handles the
+              work. Cloudworkz builds and runs the workflows that drive results
+            </p>
+          </div>
 
           {/* Block 3 - Cloudworkz started as a sales engine */}
           <div
