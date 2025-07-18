@@ -45,8 +45,8 @@ export default function Index() {
             duration: 1,
             ease: "power2.out",
           },
-          "-=0.3",
-        ) // Start slightly before previous animation ends
+          "-=0.5",
+        ) // Start earlier before previous animation ends
         .to(
           block3Ref.current,
           {
