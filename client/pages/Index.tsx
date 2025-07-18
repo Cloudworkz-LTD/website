@@ -7,6 +7,69 @@ import CursorEffect from "../components/CursorEffect";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Index() {
+  const featureBlocksRef = useRef<HTMLDivElement>(null);
+  const block1Ref = useRef<HTMLDivElement>(null);
+  const block2Ref = useRef<HTMLDivElement>(null);
+  const block3Ref = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      // Set initial state for all blocks
+      gsap.set([block1Ref.current, block2Ref.current, block3Ref.current], {
+        opacity: 0,
+        y: 100,
+        scale: 0.8,
+      });
+
+      // Animate block 1
+      gsap.to(block1Ref.current, {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: block1Ref.current,
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse",
+        },
+      });
+
+      // Animate block 2 with slight delay
+      gsap.to(block2Ref.current, {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: block2Ref.current,
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse",
+        },
+      });
+
+      // Animate block 3 with slight delay
+      gsap.to(block3Ref.current, {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: block3Ref.current,
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse",
+        },
+      });
+    }, featureBlocksRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
     <div className="min-h-screen bg-white overflow-x-hidden relative">
       {/* Background Image Section */}
