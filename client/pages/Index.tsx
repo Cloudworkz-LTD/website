@@ -14,49 +14,44 @@ export default function Index() {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      // Set initial state for all blocks
+      // Set initial state for all blocks - only y position, no opacity
       gsap.set([block1Ref.current, block2Ref.current, block3Ref.current], {
-        opacity: 0,
-        y: 100,
+        y: 120,
       });
 
-      // Create a timeline for sequential animations controlled by scroll
-      const tl = gsap.timeline({
+      // Animate each block individually with instant triggers
+      gsap.to(block1Ref.current, {
+        y: 0,
+        duration: 0.6,
+        ease: "power2.out",
         scrollTrigger: {
-          trigger: featureBlocksRef.current,
-          start: "top 60%",
-          end: "bottom 40%",
-          scrub: 2,
+          trigger: block1Ref.current,
+          start: "top 80%",
+          toggleActions: "play none none reverse",
         },
       });
 
-      // Add animations to timeline with stagger
-      tl.to(block1Ref.current, {
-        opacity: 1,
+      gsap.to(block2Ref.current, {
         y: 0,
-        duration: 1,
+        duration: 0.6,
         ease: "power2.out",
-      })
-        .to(
-          block2Ref.current,
-          {
-            opacity: 1,
-            y: 0,
-            duration: 1,
-            ease: "power2.out",
-          },
-          "-=0.5",
-        ) // Start earlier before previous animation ends
-        .to(
-          block3Ref.current,
-          {
-            opacity: 1,
-            y: 0,
-            duration: 1,
-            ease: "power2.out",
-          },
-          "-=0.6",
-        ); // Start earlier before previous animation ends
+        scrollTrigger: {
+          trigger: block2Ref.current,
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+      });
+
+      gsap.to(block3Ref.current, {
+        y: 0,
+        duration: 0.6,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: block3Ref.current,
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+      });
     }, featureBlocksRef);
 
     return () => ctx.revert();
