@@ -31,11 +31,17 @@ export default function Index() {
           <CursorEffect>
             <span className="text-cloudworkz-black">Your Portal</span>
           </CursorEffect>
-            <div className="flex flex-row">
+          <div className="flex flex-row">
+            <CursorEffect>
               <span className="text-cloudworkz-black mr-4">To</span>
+            </CursorEffect>
+              <CursorEffect>
               <span className="text-cloudworkz-primary">Practical</span>
-            </div>
+              </CursorEffect>
+          </div>
+            <CursorEffect>
             <span className="text-cloudworkz-primary">Growth</span>
+            </CursorEffect>
           </h1>
 
         {/* CTA Section - Right Side */}
