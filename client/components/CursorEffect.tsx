@@ -84,12 +84,12 @@ export default function CursorEffect({
 
       {/* Shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Shape 1 - Large vibrant purple */}
+        {/* Shape 1 - Large CloudWorkz blue */}
         <div
           ref={shape1Ref}
           className="absolute rounded-full opacity-0"
           style={{
-            background: "linear-gradient(135deg, #8B5CF6, #A855F7)",
+            background: "linear-gradient(135deg, #126AF9, #3B82F6)",
             width: "650px",
             height: "650px",
             marginLeft: "-325px",
@@ -98,12 +98,12 @@ export default function CursorEffect({
           }}
         />
 
-        {/* Shape 2 - Medium bright orange */}
+        {/* Shape 2 - Medium cyan-teal */}
         <div
           ref={shape2Ref}
           className="absolute rounded-full opacity-0"
           style={{
-            background: "linear-gradient(135deg, #F97316, #FB923C)",
+            background: "linear-gradient(135deg, #06B6D4, #14B8A6)",
             width: "440px",
             height: "440px",
             marginLeft: "-220px",
@@ -112,12 +112,12 @@ export default function CursorEffect({
           }}
         />
 
-        {/* Shape 3 - Small vibrant pink */}
+        {/* Shape 3 - Small light blue */}
         <div
           ref={shape3Ref}
           className="absolute rounded-full opacity-0"
           style={{
-            background: "linear-gradient(135deg, #EC4899, #F472B6)",
+            background: "linear-gradient(135deg, #0EA5E9, #38BDF8)",
             width: "270px",
             height: "270px",
             marginLeft: "-135px",
