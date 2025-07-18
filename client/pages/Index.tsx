@@ -184,6 +184,7 @@ export default function Index() {
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-6 max-w-7xl w-full">
           {/* Block 1 - Growth, Engineered */}
           <div
+            ref={block1Ref}
             className="flex flex-col justify-center items-start gap-10 w-full lg:w-[452px] h-[755px] p-[58px_40px] rounded-[250px] bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage:
