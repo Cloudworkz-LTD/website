@@ -23,14 +23,15 @@ export default function Index() {
       {/* Header over background */}
       <Header />
 
+      {/* Hero Title */}
+      <h1 className="font-kenyan text-[120px] leading-[120px] uppercase flex flex-col justify-start items-start pt-[150px] pl-10">
+        <span className="text-cloudworkz-black">Your Portal to </span>
+        <span className="text-cloudworkz-primary">Practical Growth</span>
+      </h1>
+
       {/* Hero Section */}
-      <section className="relative z-10 flex items-center justify-center min-h-[80vh] px-8 lg:px-12">
-        <div className="max-w-7xl mx-auto">
-          <h1 className="font-kenyan text-6xl sm:text-8xl lg:text-[120px] leading-[87%] uppercase text-center">
-            <span className="text-cloudworkz-black">Your Portal to </span>
-            <span className="text-cloudworkz-primary">Practical Growth</span>
-          </h1>
-        </div>
+      <section className="relative z-10 flex items-center justify-center min-h-[828px] px-8 lg:px-12">
+        <div className="max-w-7xl mx-auto"></div>
       </section>
     </div>
   );
