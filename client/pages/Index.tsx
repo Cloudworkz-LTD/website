@@ -12,6 +12,22 @@ export default function Index() {
         />
       </header>
 
+      {/* Background Image Section */}
+      <section className="relative -mt-20 pt-20">
+        <div className="absolute inset-0 w-full h-full overflow-hidden">
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/611f64b69da9b253bec2c300d12a63b02d3f4972?width=4868"
+            alt=""
+            className="w-full h-full object-cover mix-blend-multiply opacity-90"
+            style={{
+              minWidth: "120%",
+              minHeight: "120%",
+              transform: "translate(-10%, -15%)",
+            }}
+          />
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="relative px-8 lg:px-12 pb-16 lg:pb-24">
         {/* Background gradient images */}
