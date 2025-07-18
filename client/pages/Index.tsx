@@ -29,7 +29,7 @@ export default function Index() {
         <h1 className="font-kenyan text-[120px] leading-[120px] uppercase flex flex-col justify-start items-start">
           <span className="text-cloudworkz-black">Your Portal</span>
           <div className='flex flex-row'>
-            <span className="text-cloudworkz-black mr-3">To</span>
+            <span className="text-cloudworkz-black mr-4">To</span>
             <span className="text-cloudworkz-primary">Practical</span>
           </div>
           <span className="text-cloudworkz-primary">Growth</span>
