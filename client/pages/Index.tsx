@@ -153,7 +153,16 @@ export default function Index() {
               backgroundImage:
                 "url('https://api.builder.io/api/v1/image/assets/TEMP/4c8c6df29b065c1ac32ad3c770857b5a9e784de9?width=904')",
             }}
-          />
+          >
+            <h3 className="font-kenyan text-[90px] leading-[100%] tracking-[-1.8px] uppercase text-white">
+              Cloudworkz started as a sales engine
+            </h3>
+            <p className="font-archivo text-[20px] leading-[100%] text-white">
+              Now it powers modular systems and embedded sales teams for
+              founders, scale-ups, and operators who want execution, not more
+              software
+            </p>
+          </div>
         </div>
       </section>
 
