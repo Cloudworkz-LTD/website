@@ -28,7 +28,7 @@ export default function Index() {
       <div className="relative z-10 flex justify-between items-start pt-[150px] px-10">
         {/* Hero Title - Left Side */}
         <CursorEffect>
-          <h1 className="font-kenyan text-[120px] leading-[120px] uppercase flex flex-col justify-start items-start">
+          <h1 className="font-kenyan text-[120px] leading-[120px] uppercase flex flex-col justify-start items-start max-w-[1015px]">
             <span className="text-cloudworkz-black">Your Portal</span>
             <div className="flex flex-row">
               <span className="text-cloudworkz-black mr-4">To</span>
