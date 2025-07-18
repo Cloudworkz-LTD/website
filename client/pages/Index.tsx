@@ -55,8 +55,8 @@ export default function Index() {
             duration: 1,
             ease: "power2.out",
           },
-          "-=0.3",
-        ); // Start slightly before previous animation ends
+          "-=0.6",
+        ); // Start earlier before previous animation ends
     }, featureBlocksRef);
 
     return () => ctx.revert();
