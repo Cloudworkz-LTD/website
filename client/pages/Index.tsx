@@ -170,7 +170,7 @@ export default function Index() {
 
       {/* Feature Blocks Section */}
       <section
-        className="relative z-10 flex items-center justify-center py-[150px]"
+        className="relative z-10 flex items-center justify-center py-[150px] px-10"
         ref={featureBlocksRef}
       >
         <div className="flex flex-col lg:flex-row items-center max-w-7xl w-full">
