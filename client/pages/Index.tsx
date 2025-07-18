@@ -94,7 +94,7 @@ export default function Index() {
       <section className="relative z-10 pt-[150px] px-10">
         <div className="max-w-[1017px]">
           <p className="text-justify font-archivo text-[55px] leading-[95%] tracking-[-1.65px] uppercase">
-            <span className="text-cloudworkz-primary">Cloudworkz</span>
+            <span className="text-cloudworkz-primary">Cloudworkz </span>
             <span className="text-cloudworkz-primary">*</span>{" "}
             <span className="text-[#323232]">
               helps ambitious teams scale faster and build more intelligent
