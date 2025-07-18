@@ -14,8 +14,8 @@ export default function Index() {
             style={{
               width: "2434px",
               height: "1598px",
-              left: "-518px",
-              top: "-413px",
+              left: "0px",
+              top: "0px",
             }}
           />
         </div>
