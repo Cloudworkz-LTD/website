@@ -108,6 +108,64 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Feature Blocks Section */}
+      <section className="relative z-10 flex items-center justify-center py-[150px] px-10">
+        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-6 max-w-7xl w-full">
+          {/* Block 1 - Growth, Engineered */}
+          <div
+            className="flex flex-col justify-center items-start gap-10 w-full lg:w-[452px] h-[755px] p-[58px_40px] rounded-[250px] bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage:
+                "url('https://api.builder.io/api/v1/image/assets/TEMP/2ebcfd4c91e939b67637722120478b384f33fa9a?width=904')",
+            }}
+          >
+            <h3 className="font-kenyan text-[90px] leading-[100%] tracking-[-1.8px] uppercase text-white">
+              Growth, Engineered
+            </h3>
+            <p className="font-archivo text-[20px] leading-[100%] text-white">
+              Cloudworkz combines a system and a service. Our platform automates
+              execution. Its structure, not just software, that makes sales
+              scale
+            </p>
+          </div>
+
+          {/* Block 2 - Fundamental Tools, Real Outcomes */}
+          <div
+            className="flex flex-col justify-center items-start gap-10 w-full lg:w-[452px] h-[755px] p-[58px_40px] rounded-[250px] bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage:
+                "url('https://api.builder.io/api/v1/image/assets/TEMP/38c2d669cbfb8d2ba2b993bb9e2d6467ee0e84b2?width=904')",
+            }}
+          >
+            <h3 className="font-kenyan text-[90px] leading-[100%] tracking-[-1.8px] uppercase text-white">
+              Fundamental Tools, Real Outcomes
+            </h3>
+            <p className="font-archivo text-[20px] leading-[100%] text-white">
+              Behind every high-performing team is a system that handles the
+              work. Cloudworkz builds and runs the workflows that drive results
+            </p>
+          </div>
+
+          {/* Block 3 - Cloudworkz started as a sales engine */}
+          <div
+            className="flex flex-col justify-center items-start gap-10 w-full lg:w-[452px] h-[755px] p-[58px_40px] rounded-[250px] bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage:
+                "url('https://api.builder.io/api/v1/image/assets/TEMP/4c8c6df29b065c1ac32ad3c770857b5a9e784de9?width=904')",
+            }}
+          >
+            <h3 className="font-kenyan text-[90px] leading-[100%] tracking-[-1.8px] uppercase text-white">
+              Cloudworkz started as a sales engine
+            </h3>
+            <p className="font-archivo text-[20px] leading-[100%] text-white">
+              Now it powers modular systems and embedded sales teams for
+              founders, scale-ups, and operators who want execution, not more
+              software
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="relative z-10 flex items-center justify-center min-h-[828px] px-8 lg:px-12">
         <div className="max-w-7xl mx-auto"></div>
