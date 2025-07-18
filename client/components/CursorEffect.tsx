@@ -46,7 +46,7 @@ export default function CursorEffect({
 
     const handleMouseEnter = () => {
       gsap.to(cursor, { opacity: 1, duration: 0.3 });
-      gsap.to(shapes, { opacity: 0.8, duration: 0.3 });
+      gsap.to(shapes, { opacity: 0.9, duration: 0.3 });
     };
 
     const handleMouseLeave = () => {
