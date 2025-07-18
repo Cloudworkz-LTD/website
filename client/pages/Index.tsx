@@ -27,20 +27,16 @@ export default function Index() {
       {/* Hero Content */}
       <div className="relative z-10 flex justify-between items-start pt-[150px] px-10">
         {/* Hero Title - Left Side */}
-        <h1 className="font-kenyan text-[180px] leading-[180px] uppercase flex flex-col justify-start items-start max-w-[1015px]">
-          <CursorEffect>
+        <CursorEffect>
+          <h1 className="font-kenyan text-[180px] leading-[180px] uppercase flex flex-col justify-start items-start max-w-[1015px]">
             <span className="text-cloudworkz-black">Your Portal</span>
-          </CursorEffect>
-          <CursorEffect>
             <div className="flex flex-row">
               <span className="text-cloudworkz-black mr-4">To</span>
               <span className="text-cloudworkz-primary">Practical</span>
             </div>
-          </CursorEffect>
-          <CursorEffect>
             <span className="text-cloudworkz-primary">Growth</span>
-          </CursorEffect>
-        </h1>
+          </h1>
+        </CursorEffect>
 
         {/* CTA Section - Right Side */}
         <div className="flex flex-col justify-end items-start gap-[14px] w-full max-w-[322px] mt-auto">
