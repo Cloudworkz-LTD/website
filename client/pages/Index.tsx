@@ -31,13 +31,11 @@ export default function Index() {
           <CursorEffect>
             <span className="text-cloudworkz-black">Your Portal</span>
           </CursorEffect>
+          <CursorEffect>
           <div className="flex flex-row">
-            <CursorEffect>
+            
               <span className="text-cloudworkz-black mr-4">To</span>
-            </CursorEffect>
-              <CursorEffect>
               <span className="text-cloudworkz-primary">Practical</span>
-              </CursorEffect>
           </div>
             <CursorEffect>
             <span className="text-cloudworkz-primary">Growth</span>
