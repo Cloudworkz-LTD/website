@@ -478,16 +478,17 @@ export default function Index() {
       {/* Combined Text Block and Background Section */}
       <section className="relative w-full overflow-hidden min-h-[800px] lg:min-h-[1000px]">
         {/* Background Gradient Layer */}
-        <div className="absolute inset-0 w-full h-full">
+        <div className="absolute inset-0 w-full h-full overflow-hidden">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/28e0c53a96b37b828d9d25744a5c80a52c904956?width=4902"
+            src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F6f825f380d394c128843a145a57928cf?format=webp&width=800"
             alt=""
-            className="absolute mix-blend-multiply"
+            className="mix-blend-multiply"
             style={{
+              position: "absolute",
               width: "2451px",
               height: "1614px",
-              left: "932px",
-              top: "910px",
+              right: "-932px",
+              bottom: "-910px",
             }}
           />
         </div>
