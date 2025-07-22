@@ -487,8 +487,8 @@ export default function Index() {
               position: "absolute",
               width: "2451px",
               height: "1614px",
-              right: "-932px",
-              bottom: "-910px",
+              right: "-600px",
+              bottom: "-400px",
             }}
           />
         </div>
