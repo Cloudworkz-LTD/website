@@ -493,7 +493,7 @@ export default function Index() {
         {/* Content Layer */}
         <div className="relative z-10 px-8 lg:px-12 py-12 lg:py-20">
           <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col lg:flex-row items-center lg:items-end justify-between gap-8 lg:gap-12 pt-8 lg:pt-16">
+            <div className="flex flex-col lg:flex-row items-center lg:items-end justify-between gap-8 pt-8 lg:pt-16" style={{ gap: "31px" }}>
               {/* Text Content */}
               <div className="flex flex-col items-end gap-5 max-w-4xl lg:flex-1">
                 {/* Title */}
