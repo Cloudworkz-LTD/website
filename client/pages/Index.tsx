@@ -478,7 +478,7 @@ export default function Index() {
       {/* Text Block Section */}
       <section className="relative w-full overflow-hidden">
         {/* Content Layer */}
-        <div className="relative z-10 px-8 lg:px-12 py-12 lg:py-20">
+        <div className="relative z-10" style={{ padding: "200px 180px 250px" }}>
           <div className="max-w-7xl mx-auto">
             <div
               className="flex flex-col lg:flex-row items-center lg:items-end justify-between gap-8 pt-8 lg:pt-16"
@@ -574,13 +574,12 @@ export default function Index() {
             </div>
           </div>
         </div>
+
+
       </section>
 
       {/* Footer */}
-      <footer
-        className="relative z-10 flex flex-col items-start gap-[61px] w-full"
-        style={{ padding: "250px 40px 30px" }}
-      >
+      <footer className="relative z-10 flex flex-col items-start gap-[61px] w-full" style={{ padding: "250px 40px 30px" }}>
         <div className="flex items-start gap-5 w-full flex-wrap lg:flex-nowrap">
           {/* Contact Us Section */}
           <div className="flex flex-col items-start gap-[109px] w-full lg:w-[321px]">
