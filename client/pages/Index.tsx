@@ -593,6 +593,62 @@ export default function Index() {
       <section className="relative z-10 flex items-center justify-center min-h-[828px] px-8 lg:px-12">
         <div className="max-w-7xl mx-auto"></div>
       </section>
+
+      {/* Footer */}
+      <footer className="relative z-10 flex flex-col items-start gap-[61px] px-10 py-[250px_10px_30px_10px] w-full">
+        <div className="flex items-start gap-5 w-full flex-wrap lg:flex-nowrap">
+          {/* Contact Us Section */}
+          <div className="flex flex-col items-start gap-[109px] w-full lg:w-[321px]">
+            <h3 className="text-cloudworkz-black font-kenyan text-3xl md:text-[40px] font-normal leading-[100%] tracking-[-0.8px] uppercase">
+              Contact Us
+            </h3>
+            <div className="flex flex-col items-start gap-5 w-[207px]">
+              <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+                info@cloudworkz.com
+              </div>
+              <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+                555 123 4567
+              </div>
+            </div>
+          </div>
+
+          {/* Follow Us Section */}
+          <div className="flex flex-col items-start gap-[77px] w-full lg:w-[321px]">
+            <h3 className="text-cloudworkz-black font-kenyan text-3xl md:text-[40px] font-normal leading-[100%] tracking-[-0.8px] uppercase">
+              Follow Us
+            </h3>
+            <div className="flex flex-col items-start gap-[18px] w-[87px]">
+              <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+                LinkedIn
+              </div>
+              <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+                Twitter
+              </div>
+              <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+                Facebook
+              </div>
+            </div>
+          </div>
+
+          {/* Legal Links Section */}
+          <div className="flex flex-col items-start gap-[18px] w-full lg:w-[321px]">
+            <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+              Privacy Policy
+            </div>
+            <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+              Terms of Service
+            </div>
+          </div>
+        </div>
+
+        {/* Logo */}
+        <img
+          src="https://api.builder.io/api/v1/image/assets/TEMP/2ca41c4ebe4ba18e91febe21b8f069e137f71166?width=2720"
+          alt="CloudWorkz Logo"
+          className="w-full max-w-[1360px] h-auto"
+          style={{ height: "178.678px" }}
+        />
+      </footer>
     </div>
   );
 }
