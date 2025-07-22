@@ -532,27 +532,32 @@ export default function Index() {
                   viewBox="0 0 183 304"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
                   className="w-full h-full"
                 >
+                  <path
+                    d="M91.5 0C142.037 0 183 40.9371 183 91.4422V212.558C183 263.063 142.037 304 91.5 304C40.9629 304 0 263.063 0 212.558V91.4422C0 40.9371 40.9629 0 91.5 0Z"
+                    fill="url(#pattern0_297_72)"
+                  />
                   <defs>
                     <pattern
-                      id="pattern0_gradient"
+                      id="pattern0_297_72"
                       patternContentUnits="objectBoundingBox"
                       width="1"
                       height="1"
                     >
-                      <image
-                        href="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2Ff582a2b111224a21b01bc2f2d2b0a7c9?format=webp&width=800"
-                        width="1"
-                        height="1"
-                        preserveAspectRatio="xMidYMid slice"
+                      <use
+                        xlinkHref="#image0_297_72"
+                        transform="matrix(0.000811134 0 0 0.000488281 -0.330601 0)"
                       />
                     </pattern>
+                    <image
+                      id="image0_297_72"
+                      width="2048"
+                      height="2048"
+                      href="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F7ddc6c1864874fca9d33f9ddb8f72b61?format=webp&width=800"
+                    />
                   </defs>
-                  <path
-                    d="M91.5 0C142.037 0 183 40.9371 183 91.4422V212.558C183 263.063 142.037 304 91.5 304C40.9629 304 0 263.063 0 212.558V91.4422C0 40.9371 40.9629 0 91.5 0Z"
-                    fill="url(#pattern0_gradient)"
-                  />
                 </svg>
               </div>
             </div>
