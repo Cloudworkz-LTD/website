@@ -475,27 +475,8 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Combined Text Block and Background Section */}
+      {/* Text Block Section */}
       <section className="relative w-full overflow-hidden">
-        {/* Background Gradient Layer - Extended to cover footer */}
-        <div
-          className="absolute inset-0 w-full overflow-hidden"
-          style={{ height: "2000px" }}
-        >
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F6f825f380d394c128843a145a57928cf?format=webp&width=800"
-            alt=""
-            className="mix-blend-multiply"
-            style={{
-              position: "absolute",
-              width: "2451px",
-              height: "1614px",
-              right: "-600px",
-              bottom: "-800px",
-            }}
-          />
-        </div>
-
         {/* Content Layer */}
         <div className="relative z-10 px-8 lg:px-12 py-12 lg:py-20">
           <div className="max-w-7xl mx-auto">
@@ -594,19 +575,7 @@ export default function Index() {
           </div>
         </div>
 
-        {/* Background Gradient - Exact Figma Implementation */}
-        <img
-          src="https://api.builder.io/api/v1/image/assets/TEMP/28e0c53a96b37b828d9d25744a5c80a52c904956?width=4902"
-          alt=""
-          className="mix-blend-multiply"
-          style={{
-            width: "2451px",
-            height: "1614px",
-            position: "relative",
-            right: "-932px",
-            bottom: "-910px",
-          }}
-        />
+
       </section>
 
       {/* Footer */}
