@@ -475,8 +475,9 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Text Block Section */}
-      <section className="relative w-full overflow-hidden">
+      <div className="flex flex-col">
+        {/* Text Block Section */}
+        <section className="relative w-full overflow-hidden">
         {/* Content Layer */}
         <div className="relative z-10" style={{ padding: "200px 180px 250px" }}>
           <div className="max-w-7xl mx-auto">
@@ -634,6 +635,7 @@ export default function Index() {
           style={{ height: "178.678px" }}
         />
       </footer>
+      </div>
     </div>
   );
 }
