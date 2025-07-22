@@ -344,11 +344,11 @@ export default function Index() {
             alt=""
             className="absolute z-50 w-auto h-auto max-w-none"
             style={{
-              width: '1826px',
-              height: '1215px',
-              left: '-100px',
-              top: '-246px',
-              filter: 'blur(0.5px)',
+              width: "1826px",
+              height: "1215px",
+              left: "-100px",
+              top: "-246px",
+              filter: "blur(0.5px)",
             }}
           />
         </div>
