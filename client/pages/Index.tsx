@@ -475,6 +475,20 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Background Gradient Section */}
+      <section className="relative w-full overflow-hidden">
+        <div className="relative w-full h-[600px] md:h-[800px] lg:h-[1000px] xl:h-[1200px]">
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/28e0c53a96b37b828d9d25744a5c80a52c904956?width=4902"
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover object-center mix-blend-multiply scale-110 sm:scale-105 md:scale-100"
+            style={{
+              transform: "translateX(-10%) translateY(-20%)",
+            }}
+          />
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="relative z-10 flex items-center justify-center min-h-[828px] px-8 lg:px-12">
         <div className="max-w-7xl mx-auto"></div>
