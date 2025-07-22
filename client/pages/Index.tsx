@@ -214,6 +214,38 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Marquee Section */}
+      <section className="relative z-10 w-full overflow-hidden py-8">
+        <div className="flex whitespace-nowrap animate-marquee">
+          <div className="flex items-center gap-[21px] text-[clamp(80px,12vw,180px)] font-kenyan font-normal leading-[100%] tracking-[-0.02em] uppercase">
+            <div>
+              <span className="text-cloudworkz-black">Beyond</span>
+              <span className="text-cloudworkz-primary"> Now</span>
+            </div>
+            <div>
+              <span className="text-cloudworkz-black">Beyond</span>
+              <span className="text-cloudworkz-primary"> Now</span>
+            </div>
+            <div>
+              <span className="text-cloudworkz-black">Beyond</span>
+              <span className="text-cloudworkz-primary"> Now</span>
+            </div>
+            <div>
+              <span className="text-cloudworkz-black">Beyond</span>
+              <span className="text-cloudworkz-primary"> Now</span>
+            </div>
+            <div>
+              <span className="text-cloudworkz-black">Beyond</span>
+              <span className="text-cloudworkz-primary"> Now</span>
+            </div>
+            <div>
+              <span className="text-cloudworkz-black">Beyond</span>
+              <span className="text-cloudworkz-primary"> Now</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="relative z-10 flex items-center justify-center min-h-[828px] px-8 lg:px-12">
         <div className="max-w-7xl mx-auto"></div>
