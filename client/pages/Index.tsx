@@ -362,9 +362,12 @@ export default function Index() {
               </h2>
 
               <div className="w-full text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-3xl xl:text-[32px] font-normal leading-[100%] tracking-[-0.64px]">
-                Cloudworkz tools start as internal solutions to real problems - battle-tested by our team, refined by client needs.
-                <br /><br />
-                From investor matching to sales operations, our ecosystem reflects what startups use
+                Cloudworkz tools start as internal solutions to real problems -
+                battle-tested by our team, refined by client needs.
+                <br />
+                <br />
+                From investor matching to sales operations, our ecosystem
+                reflects what startups use
               </div>
             </div>
 
@@ -380,7 +383,12 @@ export default function Index() {
                   className="w-full h-full"
                 >
                   <defs>
-                    <pattern id="pattern0_ecosystem" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <pattern
+                      id="pattern0_ecosystem"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
                       <image
                         href="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2Ff117951bbb8f4ce78be6ea39654a2df5?format=webp&width=800"
                         width="1"
