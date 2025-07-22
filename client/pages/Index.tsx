@@ -337,14 +337,17 @@ export default function Index() {
       </section>
 
       {/* Background Image Section */}
-      <section className="relative w-full overflow-hidden">
+      <section className="relative w-full overflow-visible">
         <div className="relative w-full min-h-[600px] lg:min-h-[800px]">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/c7fb5a2d2c5f9899915d6e7d3b3c6161eb270691?width=3652"
             alt=""
-            className="absolute inset-0 w-full h-full object-cover object-center"
+            className="absolute z-50 w-auto h-auto max-w-none"
             style={{
-              transform: 'scale(1.2) translateX(-10%)',
+              width: '1826px',
+              height: '1215px',
+              left: '-575px',
+              top: '-246px',
               filter: 'blur(0.5px)',
             }}
           />
