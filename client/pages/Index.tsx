@@ -476,7 +476,7 @@ export default function Index() {
       </section>
 
       {/* Text Block Section */}
-      <section className="relative z-10 px-8 lg:px-12 py-12 lg:py-20">
+      <section className="relative z-[60] px-8 lg:px-12 py-12 lg:py-20">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col items-end gap-5 max-w-4xl ml-auto">
             {/* Title */}
