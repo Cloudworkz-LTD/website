@@ -579,7 +579,7 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="relative z-10 flex flex-col items-start gap-[61px] w-full" style={{ padding: "0 40px 30px" }}>
+      <footer className="relative z-10 flex flex-col items-start gap-[61px] w-full" style={{ padding: "250px 40px 30px" }}>
         <div className="flex items-start gap-5 w-full flex-wrap lg:flex-nowrap">
           {/* Contact Us Section */}
           <div className="flex flex-col items-start gap-[109px] w-full lg:w-[321px]">
