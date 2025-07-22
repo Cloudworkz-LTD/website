@@ -475,112 +475,113 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Text Block Section */}
-      <section className="relative z-[60] px-8 lg:px-12 py-12 lg:py-20">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col lg:flex-row items-center lg:items-end justify-between gap-8 lg:gap-12">
-            {/* Text Content */}
-            <div className="flex flex-col items-end gap-5 max-w-4xl lg:flex-1">
-              {/* Title */}
-              <h2 className="text-right font-kenyan text-3xl md:text-4xl lg:text-5xl xl:text-[60px] font-normal leading-[110%] uppercase">
-                <span className="text-cloudworkz-black">
-                  You don't need more dashboards.{" "}
-                </span>
-                <span className="text-cloudworkz-primary">
-                  You need a system that gets the work done
-                </span>
-              </h2>
-
-              {/* Description */}
-              <p className="text-right text-cloudworkz-black font-archivo text-lg md:text-xl lg:text-2xl xl:text-[24px] font-normal leading-[110%] max-w-3xl">
-                Cloudworkz gives you the tools — and the team — to move faster,
-                close smarter, and scale without chaos.
-              </p>
-
-              {/* CTA Block */}
-              <div className="flex items-center gap-3 mt-4">
-                <div className="text-cloudworkz-primary font-archivo text-base font-semibold leading-[110%] uppercase text-right">
-                  Let's Build Together
-                </div>
-                <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="transform rotate-0"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071Z"
-                      fill="#126AF9"
-                    />
-                    <path
-                      fillRule="evenodd"
-                      clipRule="evenodd"
-                      d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
-                      fill="#126AF9"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-
-            {/* Rounded Gradient Element */}
-            <div className="flex-shrink-0">
-              <div className="w-32 h-52 md:w-40 md:h-64 lg:w-44 lg:h-72 xl:w-[183px] xl:h-[304px]">
-                <svg
-                  width="100%"
-                  height="100%"
-                  viewBox="0 0 183 304"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                  className="w-full h-full"
-                >
-                  <path
-                    d="M91.5 0C142.037 0 183 40.9371 183 91.4422V212.558C183 263.063 142.037 304 91.5 304C40.9629 304 0 263.063 0 212.558V91.4422C0 40.9371 40.9629 0 91.5 0Z"
-                    fill="url(#pattern0_297_72)"
-                  />
-                  <defs>
-                    <pattern
-                      id="pattern0_297_72"
-                      patternContentUnits="objectBoundingBox"
-                      width="1"
-                      height="1"
-                    >
-                      <use
-                        xlinkHref="#image0_297_72"
-                        transform="matrix(0.000811134 0 0 0.000488281 -0.330601 0)"
-                      />
-                    </pattern>
-                    <image
-                      id="image0_297_72"
-                      width="2048"
-                      height="2048"
-                      href="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F7ddc6c1864874fca9d33f9ddb8f72b61?format=webp&width=800"
-                    />
-                  </defs>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Background Gradient Section */}
-      <section className="relative w-full overflow-hidden">
-        <div className="relative w-full h-[600px] md:h-[800px] lg:h-[1000px] xl:h-[1200px]">
+      {/* Combined Text Block and Background Section */}
+      <section className="relative w-full overflow-hidden min-h-[800px] lg:min-h-[1000px]">
+        {/* Background Gradient Layer */}
+        <div className="absolute inset-0 w-full h-full">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/28e0c53a96b37b828d9d25744a5c80a52c904956?width=4902"
             alt=""
-            className="absolute inset-0 w-full h-full object-cover object-center mix-blend-multiply scale-110 sm:scale-105 md:scale-100"
+            className="absolute inset-0 w-full h-full object-cover object-center mix-blend-multiply"
             style={{
-              transform: "translateX(-10%) translateY(-20%)",
+              transform: "translateX(-5%) translateY(-10%)",
             }}
           />
+        </div>
+
+        {/* Content Layer */}
+        <div className="relative z-10 px-8 lg:px-12 py-12 lg:py-20">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col lg:flex-row items-center lg:items-end justify-between gap-8 lg:gap-12 pt-8 lg:pt-16">
+              {/* Text Content */}
+              <div className="flex flex-col items-end gap-5 max-w-4xl lg:flex-1">
+                {/* Title */}
+                <h2 className="text-right font-kenyan text-3xl md:text-4xl lg:text-5xl xl:text-[60px] font-normal leading-[110%] uppercase">
+                  <span className="text-cloudworkz-black">
+                    You don't need more dashboards.{" "}
+                  </span>
+                  <span className="text-cloudworkz-primary">
+                    You need a system that gets the work done
+                  </span>
+                </h2>
+
+                {/* Description */}
+                <p className="text-right text-cloudworkz-black font-archivo text-lg md:text-xl lg:text-2xl xl:text-[24px] font-normal leading-[110%] max-w-3xl">
+                  Cloudworkz gives you the tools — and the team — to move faster,
+                  close smarter, and scale without chaos.
+                </p>
+
+                {/* CTA Block */}
+                <div className="flex items-center gap-3 mt-4">
+                  <div className="text-cloudworkz-primary font-archivo text-base font-semibold leading-[110%] uppercase text-right">
+                    Let's Build Together
+                  </div>
+                  <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="transform rotate-0"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071Z"
+                        fill="#126AF9"
+                      />
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
+                        fill="#126AF9"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              {/* Rounded Gradient Element */}
+              <div className="flex-shrink-0">
+                <div className="w-32 h-52 md:w-40 md:h-64 lg:w-44 lg:h-72 xl:w-[183px] xl:h-[304px]">
+                  <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 183 304"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                    className="w-full h-full"
+                  >
+                    <path
+                      d="M91.5 0C142.037 0 183 40.9371 183 91.4422V212.558C183 263.063 142.037 304 91.5 304C40.9629 304 0 263.063 0 212.558V91.4422C0 40.9371 40.9629 0 91.5 0Z"
+                      fill="url(#pattern0_297_72)"
+                    />
+                    <defs>
+                      <pattern
+                        id="pattern0_297_72"
+                        patternContentUnits="objectBoundingBox"
+                        width="1"
+                        height="1"
+                      >
+                        <use
+                          xlinkHref="#image0_297_72"
+                          transform="matrix(0.000811134 0 0 0.000488281 -0.330601 0)"
+                        />
+                      </pattern>
+                      <image
+                        id="image0_297_72"
+                        width="2048"
+                        height="2048"
+                        href="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F7ddc6c1864874fca9d33f9ddb8f72b61?format=webp&width=800"
+                      />
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
