@@ -75,9 +75,8 @@ export default function Index() {
       {/* Background Image Section */}
       <section className="absolute inset-0 w-full h-full">
         <div className="relative w-full h-full overflow-hidden">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/611f64b69da9b253bec2c300d12a63b02d3f4972?width=4868"
-            alt=""
+          <video
+            src="https://cdn.builder.io/o/assets%2F1eaa4255fd854d84bde8758c04e23344%2F3bcd5136504848eb8a5488f72f006867?alt=media&token=1b26be58-ca3b-4c63-89f1-f7452153ea8f&apiKey=1eaa4255fd854d84bde8758c04e23344"
             className="absolute object-cover mix-blend-multiply"
             style={{
               width: "2434px",
@@ -85,6 +84,10 @@ export default function Index() {
               left: "0px",
               top: "0px",
             }}
+            autoPlay
+            muted
+            loop
+            playsInline
           />
         </div>
       </section>
