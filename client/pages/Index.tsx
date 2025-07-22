@@ -353,16 +353,58 @@ export default function Index() {
           />
 
           {/* Content above image */}
-          <div className="relative z-[60] flex flex-col items-start gap-6 max-w-none w-full">
-            <h2 className="w-full text-cloudworkz-black font-kenyan text-6xl md:text-8xl lg:text-9xl xl:text-[180px] font-normal leading-[100%] tracking-[-3.6px] uppercase">
-              <span className="text-cloudworkz-primary">An Ecosystem</span>
-              <span className="text-cloudworkz-black"> Built by Doing</span>
-            </h2>
+          <div className="relative z-[60] flex flex-col lg:flex-row items-start gap-12 lg:gap-16 max-w-none w-full">
+            {/* Left content */}
+            <div className="flex flex-col items-start gap-6 flex-1">
+              <h2 className="w-full text-cloudworkz-black font-kenyan text-6xl md:text-8xl lg:text-9xl xl:text-[180px] font-normal leading-[100%] tracking-[-3.6px] uppercase">
+                <span className="text-cloudworkz-primary">An Ecosystem</span>
+                <span className="text-cloudworkz-black"> Built by Doing</span>
+              </h2>
 
-            <div className="w-full text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-3xl xl:text-[32px] font-normal leading-[100%] tracking-[-0.64px]">
-              Cloudworkz tools start as internal solutions to real problems - battle-tested by our team, refined by client needs.
-              <br /><br />
-              From investor matching to sales operations, our ecosystem reflects what startups use
+              <div className="w-full text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-3xl xl:text-[32px] font-normal leading-[100%] tracking-[-0.64px]">
+                Cloudworkz tools start as internal solutions to real problems - battle-tested by our team, refined by client needs.
+                <br /><br />
+                From investor matching to sales operations, our ecosystem reflects what startups use
+              </div>
+            </div>
+
+            {/* Right visual element */}
+            <div className="flex-shrink-0 w-full lg:w-auto">
+              <div className="relative w-[348px] h-[580px] rotate-90 mx-auto lg:mx-0">
+                <svg
+                  width="580"
+                  height="348"
+                  viewBox="0 0 580 348"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-full h-full"
+                >
+                  <defs>
+                    <pattern id="pattern0_ecosystem" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <image
+                        href="https://api.builder.io/api/v1/image/assets/TEMP/image_pattern_fill"
+                        width="1"
+                        height="1"
+                        preserveAspectRatio="xMidYMid slice"
+                      />
+                    </pattern>
+                    <linearGradient id="gradient_overlay" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="rgba(174, 255, 174, 0.3)" />
+                      <stop offset="50%" stopColor="rgba(255, 174, 174, 0.3)" />
+                      <stop offset="100%" stopColor="rgba(174, 174, 255, 0.3)" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    d="M580 174C580 270.103 501.896 348 405.538 348L174.462 348C78.1036 348 -1.18066e-05 270.103 -7.60578e-06 174C-3.40497e-06 77.8967 78.1036 -2.19386e-05 174.462 -1.77266e-05L405.538 -7.62598e-06C501.896 -3.41402e-06 580 77.8967 580 174Z"
+                    fill="url(#gradient_overlay)"
+                  />
+                  <path
+                    d="M580 174C580 270.103 501.896 348 405.538 348L174.462 348C78.1036 348 -1.18066e-05 270.103 -7.60578e-06 174C-3.40497e-06 77.8967 78.1036 -2.19386e-05 174.462 -1.77266e-05L405.538 -7.62598e-06C501.896 -3.41402e-06 580 77.8967 580 174Z"
+                    fill="black"
+                    fillOpacity="0.1"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
