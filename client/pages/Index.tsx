@@ -259,7 +259,8 @@ export default function Index() {
           {/* Description Block */}
           <div className="flex flex-col items-end gap-12 lg:gap-16 w-full lg:w-[348px] lg:self-stretch">
             <div className="text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-3xl xl:text-[32px] font-semibold leading-[100%] uppercase max-w-[340px]">
-              Plug in a trained sales pod to handle outreach, follow-ups, and booking - no hiring required.
+              Plug in a trained sales pod to handle outreach, follow-ups, and
+              booking - no hiring required.
             </div>
 
             {/* CTA Button */}
@@ -303,7 +304,8 @@ export default function Index() {
           {/* Description Block */}
           <div className="flex flex-col items-end gap-12 lg:gap-16 w-full lg:w-[348px] lg:self-stretch">
             <div className="text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-3xl xl:text-[32px] font-semibold leading-[100%] uppercase max-w-[340px]">
-              Our modular platform automates internal execution: lead intake, CRM sync, follow-ups, onboarding, and more.
+              Our modular platform automates internal execution: lead intake,
+              CRM sync, follow-ups, onboarding, and more.
             </div>
 
             {/* CTA Button */}
