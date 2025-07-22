@@ -507,8 +507,8 @@ export default function Index() {
 
                 {/* Description */}
                 <p className="text-right text-cloudworkz-black font-archivo text-lg md:text-xl lg:text-2xl xl:text-[24px] font-normal leading-[110%] max-w-3xl">
-                  Cloudworkz gives you the tools — and the team — to move faster,
-                  close smarter, and scale without chaos.
+                  Cloudworkz gives you the tools — and the team — to move
+                  faster, close smarter, and scale without chaos.
                 </p>
 
                 {/* CTA Block */}
