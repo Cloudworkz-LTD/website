@@ -413,6 +413,19 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="relative z-10 flex h-[800px] px-10 py-[50px] flex-col justify-end items-end gap-[39px] w-full">
+        <video
+          className="w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="https://cdn.builder.io/o/assets%2F1eaa4255fd854d84bde8758c04e23344%2F109962f0b73f4609a50dd03378d18a93?alt=media&token=9be012dd-5b2c-4baf-a887-64b81d1a0082&apiKey=1eaa4255fd854d84bde8758c04e23344" type="video/mp4" />
+        </video>
+      </section>
+
       {/* Hero Section */}
       <section className="relative z-10 flex items-center justify-center min-h-[828px] px-8 lg:px-12">
         <div className="max-w-7xl mx-auto"></div>
