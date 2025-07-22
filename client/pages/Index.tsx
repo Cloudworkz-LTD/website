@@ -370,7 +370,7 @@ export default function Index() {
 
             {/* Right visual element */}
             <div className="flex-shrink-0 w-full lg:w-auto">
-              <div className="relative w-[348px] h-[580px] rotate-90 mx-auto lg:mx-0">
+              <div className="relative w-[580px] h-[348px] mx-auto lg:mx-0">
                 <svg
                   width="580"
                   height="348"
@@ -382,21 +382,16 @@ export default function Index() {
                   <defs>
                     <pattern id="pattern0_ecosystem" patternContentUnits="objectBoundingBox" width="1" height="1">
                       <image
-                        href="https://api.builder.io/api/v1/image/assets/TEMP/image_pattern_fill"
+                        href="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2Ff117951bbb8f4ce78be6ea39654a2df5?format=webp&width=800"
                         width="1"
                         height="1"
                         preserveAspectRatio="xMidYMid slice"
                       />
                     </pattern>
-                    <linearGradient id="gradient_overlay" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="rgba(174, 255, 174, 0.3)" />
-                      <stop offset="50%" stopColor="rgba(255, 174, 174, 0.3)" />
-                      <stop offset="100%" stopColor="rgba(174, 174, 255, 0.3)" />
-                    </linearGradient>
                   </defs>
                   <path
                     d="M580 174C580 270.103 501.896 348 405.538 348L174.462 348C78.1036 348 -1.18066e-05 270.103 -7.60578e-06 174C-3.40497e-06 77.8967 78.1036 -2.19386e-05 174.462 -1.77266e-05L405.538 -7.62598e-06C501.896 -3.41402e-06 580 77.8967 580 174Z"
-                    fill="url(#gradient_overlay)"
+                    fill="url(#pattern0_ecosystem)"
                   />
                   <path
                     d="M580 174C580 270.103 501.896 348 405.538 348L174.462 348C78.1036 348 -1.18066e-05 270.103 -7.60578e-06 174C-3.40497e-06 77.8967 78.1036 -2.19386e-05 174.462 -1.77266e-05L405.538 -7.62598e-06C501.896 -3.41402e-06 580 77.8967 580 174Z"
