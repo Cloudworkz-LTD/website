@@ -426,44 +426,42 @@ export default function Index() {
         </video>
 
         {/* Overlay Content */}
-        <div className="relative z-20 flex flex-col items-end gap-[39px] max-w-md">
-          <div className="text-right">
-            <p className="text-white font-archivo text-lg md:text-xl leading-tight mb-4">
-              A unified platform for managing outreach, data, content, and client coordination - supported by an embedded sales service
-            </p>
-            <p className="text-white font-archivo text-lg md:text-xl leading-tight">
-              Each part is shaped by what we've seen teams struggle with - and what we've had to solve ourselves.
-            </p>
+        <div className="relative z-20 flex flex-col items-start gap-[39px] w-full pl-[691px]">
+          <div className="text-cloudworkz-black text-justify font-archivo text-2xl font-normal leading-[100%] tracking-[-0.48px] w-full">
+            A modular platform for managing outreach, data, content, and team coordination - supported by an embedded sales service when needed.
+            <br /><br />
+            Each part is shaped by what we've seen teams struggle with - and what we've had to solve ourselves.
           </div>
 
-          {/* CTA Button */}
-          <div className="flex flex-col items-center gap-2">
-            <div className="text-white font-archivo text-sm font-semibold uppercase text-center leading-tight">
+          {/* CTA Block */}
+          <div className="flex items-center gap-3">
+            <div className="text-cloudworkz-primary font-archivo text-base font-semibold leading-[110%] uppercase">
               Explore
               <br />
               Success
               <br />
               Stories
             </div>
-            <button className="w-16 h-16 rounded-full border border-white flex items-center justify-center hover:bg-white/10 transition-colors">
+            <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
               <svg
-                width="20"
-                height="20"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="transform -rotate-90"
               >
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
                   d="M6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071Z"
-                  fill="white"
+                  fill="#126AF9"
                 />
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
                   d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
-                  fill="white"
+                  fill="#126AF9"
                 />
               </svg>
             </button>
