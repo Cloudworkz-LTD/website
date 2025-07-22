@@ -246,6 +246,50 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Sales-as-a-Service Section */}
+      <section className="relative z-10 px-8 lg:px-12">
+        <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-16 py-12 lg:py-20 border-b-2 border-cloudworkz-primary">
+          {/* Service Title */}
+          <div className="flex flex-col items-start gap-5 flex-1 w-full">
+            <h2 className="text-cloudworkz-primary font-archivo text-4xl md:text-5xl lg:text-6xl xl:text-[80px] font-semibold leading-[80%] tracking-[-1.6px] uppercase max-w-[535px]">
+              Sales-as-a-Service
+            </h2>
+          </div>
+
+          {/* Description Block */}
+          <div className="flex flex-col items-end gap-12 lg:gap-16 w-full lg:w-[348px] lg:self-stretch">
+            <div className="text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-3xl xl:text-[32px] font-semibold leading-[100%] uppercase max-w-[340px]">
+              Plug in a trained sales pod to handle outreach, follow-ups, and booking - no hiring required.
+            </div>
+
+            {/* CTA Button */}
+            <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="transform -rotate-90"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071Z"
+                  fill="#126AF9"
+                />
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
+                  fill="#126AF9"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="relative z-10 flex items-center justify-center min-h-[828px] px-8 lg:px-12">
         <div className="max-w-7xl mx-auto"></div>
