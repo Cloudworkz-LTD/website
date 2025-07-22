@@ -485,6 +485,7 @@ export default function Index() {
             className="absolute inset-0 w-full h-full object-cover object-center mix-blend-multiply"
             style={{
               transform: "translateX(-5%) translateY(-10%)",
+              marginLeft: "100px",
             }}
           />
         </div>
