@@ -478,7 +478,10 @@ export default function Index() {
       {/* Combined Text Block and Background Section */}
       <section className="relative w-full overflow-hidden">
         {/* Background Gradient Layer - Extended to cover footer */}
-        <div className="absolute inset-0 w-full overflow-hidden" style={{ height: "2000px" }}>
+        <div
+          className="absolute inset-0 w-full overflow-hidden"
+          style={{ height: "2000px" }}
+        >
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F6f825f380d394c128843a145a57928cf?format=webp&width=800"
             alt=""
@@ -496,7 +499,10 @@ export default function Index() {
         {/* Content Layer */}
         <div className="relative z-10 px-8 lg:px-12 py-12 lg:py-20">
           <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col lg:flex-row items-center lg:items-end justify-between gap-8 pt-8 lg:pt-16" style={{ gap: "31px" }}>
+            <div
+              className="flex flex-col lg:flex-row items-center lg:items-end justify-between gap-8 pt-8 lg:pt-16"
+              style={{ gap: "31px" }}
+            >
               {/* Text Content */}
               <div className="flex flex-col items-end gap-5 max-w-4xl lg:flex-1">
                 {/* Title */}
