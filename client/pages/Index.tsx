@@ -593,6 +593,20 @@ export default function Index() {
             </div>
           </div>
         </div>
+
+        {/* Background Gradient - Exact Figma Implementation */}
+        <img
+          src="https://api.builder.io/api/v1/image/assets/TEMP/28e0c53a96b37b828d9d25744a5c80a52c904956?width=4902"
+          alt=""
+          className="mix-blend-multiply"
+          style={{
+            width: "2451px",
+            height: "1614px",
+            position: "relative",
+            right: "-932px",
+            bottom: "-910px",
+          }}
+        />
       </section>
 
       {/* Footer */}
