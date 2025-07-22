@@ -478,14 +478,10 @@ export default function Index() {
       <div className="flex flex-col relative">
         {/* Background Image */}
         <img
-          src="https://api.builder.io/api/v1/image/assets/TEMP/28e0c53a96b37b828d9d25744a5c80a52c904956?width=4902"
+          src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2Fd7789645b053464baee50f04d975ac9a?format=webp&width=800"
           alt=""
-          className="absolute mix-blend-multiply"
+          className="absolute inset-0 w-full h-full object-cover mix-blend-multiply"
           style={{
-            width: "2451px",
-            height: "1614px",
-            right: "-932px",
-            bottom: "-910px",
             zIndex: -1,
           }}
         />
