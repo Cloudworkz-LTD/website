@@ -481,7 +481,7 @@ export default function Index() {
           backgroundImage:
             "url('https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2Fd7789645b053464baee50f04d975ac9a?format=webp&width=800')",
           backgroundSize: "cover",
-          backgroundPosition: "calc(50% + 500px) calc(0% - 300px)",
+          backgroundPosition: "calc(50% + 500px) calc(0% - 400px)",
           backgroundRepeat: "no-repeat",
           mixBlendMode: "multiply",
         }}
