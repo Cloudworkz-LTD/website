@@ -589,11 +589,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Hero Section */}
-      <section className="relative z-10 flex items-center justify-center min-h-[828px] px-8 lg:px-12">
-        <div className="max-w-7xl mx-auto"></div>
-      </section>
-
       {/* Footer */}
       <footer className="relative z-10 flex flex-col items-start gap-[61px] px-10 py-[250px_10px_30px_10px] w-full">
         <div className="flex items-start gap-5 w-full flex-wrap lg:flex-nowrap">
