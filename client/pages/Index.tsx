@@ -351,6 +351,20 @@ export default function Index() {
               filter: "blur(0.5px)",
             }}
           />
+
+          {/* Content above image */}
+          <div className="relative z-[60] flex flex-col items-start gap-6 max-w-none w-full">
+            <h2 className="w-full text-cloudworkz-black font-kenyan text-6xl md:text-8xl lg:text-9xl xl:text-[180px] font-normal leading-[100%] tracking-[-3.6px] uppercase">
+              <span className="text-cloudworkz-primary">An Ecosystem</span>
+              <span className="text-cloudworkz-black"> Built by Doing</span>
+            </h2>
+
+            <div className="w-full text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-3xl xl:text-[32px] font-normal leading-[100%] tracking-[-0.64px]">
+              Cloudworkz tools start as internal solutions to real problems - battle-tested by our team, refined by client needs.
+              <br /><br />
+              From investor matching to sales operations, our ecosystem reflects what startups use
+            </div>
+          </div>
         </div>
       </section>
 
