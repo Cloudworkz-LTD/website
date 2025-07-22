@@ -422,15 +422,21 @@ export default function Index() {
           loop
           playsInline
         >
-          <source src="https://cdn.builder.io/o/assets%2F1eaa4255fd854d84bde8758c04e23344%2F109962f0b73f4609a50dd03378d18a93?alt=media&token=9be012dd-5b2c-4baf-a887-64b81d1a0082&apiKey=1eaa4255fd854d84bde8758c04e23344" type="video/mp4" />
+          <source
+            src="https://cdn.builder.io/o/assets%2F1eaa4255fd854d84bde8758c04e23344%2F109962f0b73f4609a50dd03378d18a93?alt=media&token=9be012dd-5b2c-4baf-a887-64b81d1a0082&apiKey=1eaa4255fd854d84bde8758c04e23344"
+            type="video/mp4"
+          />
         </video>
 
         {/* Overlay Content */}
         <div className="relative z-20 flex flex-col items-start gap-[39px] w-full pl-[691px]">
           <div className="text-cloudworkz-black text-justify font-archivo text-2xl font-normal leading-[100%] tracking-[-0.48px] w-full">
-            A modular platform for managing outreach, data, content, and team coordination - supported by an embedded sales service when needed.
-            <br /><br />
-            Each part is shaped by what we've seen teams struggle with - and what we've had to solve ourselves.
+            A modular platform for managing outreach, data, content, and team
+            coordination - supported by an embedded sales service when needed.
+            <br />
+            <br />
+            Each part is shaped by what we've seen teams struggle with - and
+            what we've had to solve ourselves.
           </div>
 
           {/* CTA Block */}
