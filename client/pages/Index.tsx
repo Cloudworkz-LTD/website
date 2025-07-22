@@ -476,9 +476,9 @@ export default function Index() {
       </section>
 
       {/* Combined Text Block and Background Section */}
-      <section className="relative w-full overflow-hidden min-h-[800px] lg:min-h-[1000px]">
-        {/* Background Gradient Layer */}
-        <div className="absolute inset-0 w-full h-full overflow-hidden">
+      <section className="relative w-full overflow-hidden">
+        {/* Background Gradient Layer - Extended to cover footer */}
+        <div className="absolute inset-0 w-full overflow-hidden" style={{ height: "2000px" }}>
           <img
             src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F6f825f380d394c128843a145a57928cf?format=webp&width=800"
             alt=""
@@ -488,7 +488,7 @@ export default function Index() {
               width: "2451px",
               height: "1614px",
               right: "-600px",
-              bottom: "-400px",
+              bottom: "-800px",
             }}
           />
         </div>
