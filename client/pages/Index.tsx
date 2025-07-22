@@ -416,7 +416,7 @@ export default function Index() {
       {/* Video Section */}
       <section className="relative z-10 flex h-[800px] px-10 py-[50px] flex-col justify-end items-end gap-[39px] w-full">
         <video
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover pt-[50px]"
           autoPlay
           muted
           loop
