@@ -160,7 +160,7 @@ export default function OurStory() {
       </section>
 
       {/* Team Section */}
-      <section className="py-16 lg:py-24 px-8 lg:px-16 xl:px-20">
+      <section className="py-16 lg:py-24 px-8 lg:px-16 xl:px-20" ref={teamSectionRef}>
         <div className="max-w-7xl mx-auto">
           {/* Section Title */}
           <h2 className="font-kenyan text-7xl sm:text-8xl md:text-9xl lg:text-[140px] xl:text-[180px] leading-[100%] tracking-[-0.02em] uppercase mb-16">
@@ -171,10 +171,10 @@ export default function OurStory() {
           {/* Team Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-16">
             {/* Tom King */}
-            <div className="flex flex-col items-start gap-6">
+            <div className="flex flex-col items-start gap-6" ref={member1Ref}>
               <div className="w-full max-w-[284px] h-[471px] rounded-[142px] overflow-hidden bg-gray-100">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F1174aaa237764d20bb9328e9797c18ad?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F753d3c374d9147d0953d516d520684fd?format=webp&width=800"
                   alt="Tom King"
                   className="w-full h-full object-cover"
                 />
