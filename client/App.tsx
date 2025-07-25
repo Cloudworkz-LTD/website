@@ -36,10 +36,13 @@ const App = () => (
 );
 
 const rootElement = document.getElementById("root")!;
-let root: ReturnType<typeof createRoot> | null = null;
 
-if (!root) {
-  root = createRoot(rootElement);
+// Check if root is already attached to the element to prevent multiple root creation
+if (!(rootElement as any)._reactRootContainer) {
+  const root = createRoot(rootElement);
+  root.render(<App />);
+} else {
+  // If root already exists, just re-render
+  const root = createRoot(rootElement);
+  root.render(<App />);
 }
-
-root.render(<App />);
