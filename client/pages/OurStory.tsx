@@ -96,13 +96,6 @@ export default function OurStory() {
               The biggest growth bottleneck isn't ideas — it's follow-through.
             </p>
           </div>
-
-          {/* Right Text */}
-          <div className="w-80 flex-shrink-0 flex flex-col justify-end">
-            <p className="text-cloudworkz-black font-archivo text-2xl lg:text-[32px] font-semibold leading-[100%] uppercase text-justify">
-              That's why Cloudworkz blends human execution with a system that doesn't forget, wait, or drop the ball.
-            </p>
-          </div>
         </div>
       </section>
     </div>
