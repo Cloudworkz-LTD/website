@@ -195,10 +195,10 @@ export default function OurStory() {
             </div>
 
             {/* William Corke */}
-            <div className="flex flex-col items-start gap-6">
+            <div className="flex flex-col items-start gap-6" ref={member2Ref}>
               <div className="w-full max-w-[284px] h-[471px] rounded-[142px] overflow-hidden bg-gray-100">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F1174aaa237764d20bb9328e9797c18ad?format=webp&width=800"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F753d3c374d9147d0953d516d520684fd?format=webp&width=800"
                   alt="William Corke"
                   className="w-full h-full object-cover"
                 />
