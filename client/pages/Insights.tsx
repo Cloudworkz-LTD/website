@@ -4,7 +4,7 @@ export default function Insights() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative flex flex-col items-end px-4 md:px-10 py-12 md:py-24 lg:py-32">
         {/* Background Image */}
@@ -15,7 +15,7 @@ export default function Insights() {
             className="w-full h-full object-cover mix-blend-multiply opacity-80"
           />
         </div>
-        
+
         {/* Hero Content */}
         <div className="relative z-10 w-full max-w-7xl mx-auto">
           {/* Main Heading */}
@@ -25,14 +25,16 @@ export default function Insights() {
             </span>
             <span className="text-cloudworkz-primary">Growth</span>
           </h1>
-          
+
           {/* Text Block */}
           <div className="flex flex-col items-start gap-6 md:gap-8 max-w-lg ml-auto lg:mr-0">
             <h2 className="text-xl md:text-2xl lg:text-[32px] font-archivo font-bold leading-[100%] tracking-[-0.64px] uppercase text-cloudworkz-black">
               Cloudworkz isn't built on theory, it's built on execution
             </h2>
             <p className="text-base md:text-lg lg:text-xl font-archivo text-cloudworkz-black leading-[100%]">
-              In this section, we share what we've learned building systems, running sales, and designing smart workflows across industries and stages
+              In this section, we share what we've learned building systems,
+              running sales, and designing smart workflows across industries and
+              stages
             </p>
           </div>
         </div>
@@ -41,7 +43,6 @@ export default function Insights() {
       {/* Insights Content Sections */}
       <section className="px-4 md:px-10">
         <div className="max-w-7xl mx-auto">
-          
           {/* Execution Playbooks Block */}
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end py-12 md:py-16 border-b-2 border-cloudworkz-primary gap-6 lg:gap-8">
             <div className="flex flex-col items-start gap-4 md:gap-6 flex-1 max-w-2xl">
@@ -49,7 +50,8 @@ export default function Insights() {
                 Execution Playbooks
               </h3>
               <p className="text-xl md:text-2xl lg:text-[32px] font-archivo font-bold leading-[100%] tracking-[-0.64px] uppercase text-cloudworkz-black max-w-sm">
-                Real-world examples of how we structure, automate and optimise workflows using Cloudworkz.
+                Real-world examples of how we structure, automate and optimise
+                workflows using Cloudworkz.
               </p>
             </div>
             <div className="text-base md:text-lg lg:text-xl font-archivo text-cloudworkz-black leading-[100%] max-w-sm">
@@ -69,7 +71,8 @@ export default function Insights() {
                 Sales + Ops Thinking
               </h3>
               <p className="text-xl md:text-2xl lg:text-[32px] font-archivo font-bold leading-[100%] tracking-[-0.64px] uppercase text-cloudworkz-black max-w-sm">
-                Strategic breakdowns of what's working in sales, RevOps, and content execution.
+                Strategic breakdowns of what's working in sales, RevOps, and
+                content execution.
               </p>
             </div>
             <div className="text-base md:text-lg lg:text-xl font-archivo text-cloudworkz-black leading-[100%] max-w-sm">
@@ -89,7 +92,8 @@ export default function Insights() {
                 Tooling + Tactics
               </h3>
               <p className="text-xl md:text-2xl lg:text-[32px] font-archivo font-bold leading-[100%] tracking-[-0.64px] uppercase text-cloudworkz-black max-w-sm">
-                Tips on how to connect your stack to Cloudworkz, use our modules, or get more from your own tools.
+                Tips on how to connect your stack to Cloudworkz, use our
+                modules, or get more from your own tools.
               </p>
             </div>
             <div className="text-base md:text-lg lg:text-xl font-archivo text-cloudworkz-black leading-[100%] max-w-sm">
