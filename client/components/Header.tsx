@@ -18,7 +18,11 @@ export default function Header() {
         <nav className="hidden md:flex items-end space-x-8 lg:space-x-12">
           <Link
             to="/our-story"
-            className="text-cloudworkz-black font-kenyan text-2xl lg:text-[35px] uppercase tracking-[1.05px] leading-[87%] transition-all duration-75 hover:text-cloudworkz-primary hover:italic hover:scale-105 cursor-pointer"
+            className={`font-kenyan text-2xl lg:text-[35px] uppercase tracking-[1.05px] leading-[87%] transition-all duration-75 hover:text-cloudworkz-primary hover:italic hover:scale-105 cursor-pointer ${
+              location.pathname === "/our-story"
+                ? "text-cloudworkz-primary italic scale-105"
+                : "text-cloudworkz-black"
+            }`}
           >
             OUR STORY
           </Link>
