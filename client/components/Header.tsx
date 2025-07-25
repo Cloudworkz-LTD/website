@@ -36,9 +36,16 @@ export default function Header() {
           >
             WHAT WE DO
           </Link>
-          <button className="text-cloudworkz-black font-kenyan text-2xl lg:text-[35px] uppercase tracking-[1.05px] leading-[87%] transition-all duration-75 hover:text-cloudworkz-primary hover:italic hover:scale-105 cursor-pointer">
+          <Link
+            to="/insights"
+            className={`font-kenyan text-2xl lg:text-[35px] uppercase tracking-[1.05px] leading-[87%] transition-all duration-75 hover:text-cloudworkz-primary hover:italic hover:scale-105 cursor-pointer ${
+              location.pathname === "/insights"
+                ? "text-cloudworkz-primary italic scale-105"
+                : "text-cloudworkz-black"
+            }`}
+          >
             INSIGHTS
-          </button>
+          </Link>
           <button className="text-cloudworkz-black font-kenyan text-2xl lg:text-[35px] uppercase tracking-[1.05px] leading-[87%] transition-all duration-75 hover:text-cloudworkz-primary hover:italic hover:scale-105 cursor-pointer">
             HOW IT WORKS
           </button>
