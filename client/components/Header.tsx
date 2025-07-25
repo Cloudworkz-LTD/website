@@ -46,9 +46,16 @@ export default function Header() {
           >
             INSIGHTS
           </Link>
-          <button className="text-cloudworkz-black font-kenyan text-2xl lg:text-[35px] uppercase tracking-[1.05px] leading-[87%] transition-all duration-75 hover:text-cloudworkz-primary hover:italic hover:scale-105 cursor-pointer">
+          <Link
+            to="/how-it-works"
+            className={`font-kenyan text-2xl lg:text-[35px] uppercase tracking-[1.05px] leading-[87%] transition-all duration-75 hover:text-cloudworkz-primary hover:italic hover:scale-105 cursor-pointer ${
+              location.pathname === "/how-it-works"
+                ? "text-cloudworkz-primary italic scale-105"
+                : "text-cloudworkz-black"
+            }`}
+          >
             HOW IT WORKS
-          </button>
+          </Link>
           <button className="text-cloudworkz-black font-kenyan text-2xl lg:text-[35px] uppercase tracking-[1.05px] leading-[87%] transition-all duration-75 hover:text-cloudworkz-primary hover:italic hover:scale-105 cursor-pointer">
             GET IN TOUCH
           </button>
