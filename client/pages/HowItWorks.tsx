@@ -52,6 +52,16 @@ export default function HowItWorks() {
               }}
             >
               <div className="flex flex-col justify-between items-end flex-1 h-full">
+                {/* Text Block */}
+                <div className="flex flex-col items-start gap-10 w-full">
+                  <h2 className="w-full max-w-[794px] text-white font-kenyan text-6xl lg:text-[120px] font-normal leading-[100%] tracking-[-2.4px] uppercase">
+                    Consult
+                  </h2>
+                  <p className="w-full max-w-[402px] text-white text-justify font-archivo text-lg lg:text-[32px] font-semibold leading-[100%] tracking-[-0.64px] uppercase">
+                    We map your goals, find bottlenecks, and design your system.
+                  </p>
+                </div>
+
                 {/* CTA Block */}
                 <div className="flex items-center gap-5">
                   <div className="text-white font-archivo text-base font-semibold leading-[110%] uppercase">
