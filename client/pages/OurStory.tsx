@@ -41,30 +41,46 @@ export default function OurStory() {
       });
 
       // Animate all members to end at the same time
-      tl.to(member1Ref.current, {
-        opacity: 1,
-        y: 0,
-        duration: 1.0,
-        ease: "power2.out",
-      }, 0)
-      .to(member2Ref.current, {
-        opacity: 1,
-        y: 0,
-        duration: 1.0,
-        ease: "power2.out",
-      }, 0.2)
-      .to(member3Ref.current, {
-        opacity: 1,
-        y: 0, // This removes the 200px offset
-        duration: 1.0,
-        ease: "power2.out",
-      }, 0.4)
-      .to(member4Ref.current, {
-        opacity: 1,
-        y: 0, // This removes the 400px offset
-        duration: 1.0,
-        ease: "power2.out",
-      }, 0.6);
+      tl.to(
+        member1Ref.current,
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1.0,
+          ease: "power2.out",
+        },
+        0,
+      )
+        .to(
+          member2Ref.current,
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1.0,
+            ease: "power2.out",
+          },
+          0.2,
+        )
+        .to(
+          member3Ref.current,
+          {
+            opacity: 1,
+            y: 0, // This removes the 200px offset
+            duration: 1.0,
+            ease: "power2.out",
+          },
+          0.4,
+        )
+        .to(
+          member4Ref.current,
+          {
+            opacity: 1,
+            y: 0, // This removes the 400px offset
+            duration: 1.0,
+            ease: "power2.out",
+          },
+          0.6,
+        );
     }, teamSectionRef);
 
     return () => ctx.revert();
@@ -132,7 +148,10 @@ export default function OurStory() {
           <div className="flex items-center gap-5 whitespace-nowrap">
             <div className="animate-marquee flex items-center gap-5">
               {[...Array(8)].map((_, i) => (
-                <div key={i} className="font-kenyan text-7xl sm:text-8xl md:text-9xl lg:text-[140px] xl:text-[180px] leading-[100%] tracking-[-0.02em] uppercase">
+                <div
+                  key={i}
+                  className="font-kenyan text-7xl sm:text-8xl md:text-9xl lg:text-[140px] xl:text-[180px] leading-[100%] tracking-[-0.02em] uppercase"
+                >
                   <span className="text-cloudworkz-black">Our</span>
                   <span className="text-cloudworkz-primary"> Vision</span>
                 </div>
@@ -145,16 +164,20 @@ export default function OurStory() {
         <div
           className="h-[600px] px-8 lg:px-16 xl:px-20 py-16 flex justify-between items-center"
           style={{
-            backgroundImage: "url('https://api.builder.io/api/v1/image/assets/TEMP/dffafe7fbcce3e41695aae8b8e98be45a8e61ec0?width=2880')",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
+            backgroundImage:
+              "url('https://api.builder.io/api/v1/image/assets/TEMP/dffafe7fbcce3e41695aae8b8e98be45a8e61ec0?width=2880')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
           }}
         />
       </section>
 
       {/* Team Section */}
-      <section className="py-16 lg:py-24 px-8 lg:px-16 xl:px-20" ref={teamSectionRef}>
+      <section
+        className="py-16 lg:py-24 px-8 lg:px-16 xl:px-20"
+        ref={teamSectionRef}
+      >
         <div className="max-w-7xl mx-auto">
           {/* Section Title */}
           <h2 className="font-kenyan text-7xl sm:text-8xl md:text-9xl lg:text-[140px] xl:text-[180px] leading-[100%] tracking-[-0.02em] uppercase mb-16">
@@ -183,7 +206,9 @@ export default function OurStory() {
                   </p>
                 </div>
                 <p className="font-archivo text-cloudworkz-black text-base leading-[100%] text-justify">
-                  A certified Scaling Up coach and seasoned CEO with a background in tech, marketing, and finance. Helps growth-stage companies find momentum through structure
+                  A certified Scaling Up coach and seasoned CEO with a
+                  background in tech, marketing, and finance. Helps growth-stage
+                  companies find momentum through structure
                 </p>
               </div>
             </div>
@@ -207,7 +232,8 @@ export default function OurStory() {
                   </p>
                 </div>
                 <p className="font-archivo text-cloudworkz-black text-base leading-[100%] text-justify">
-                  EIS/SEIS-accredited advisor with deep experience in alternative investments and operational compliance
+                  EIS/SEIS-accredited advisor with deep experience in
+                  alternative investments and operational compliance
                 </p>
               </div>
             </div>
@@ -231,7 +257,8 @@ export default function OurStory() {
                   </p>
                 </div>
                 <p className="font-archivo text-cloudworkz-black text-base leading-[100%] text-justify">
-                  Designs and runs the internal systems behind our services. Blends product thinking with deep industry experience
+                  Designs and runs the internal systems behind our services.
+                  Blends product thinking with deep industry experience
                 </p>
               </div>
             </div>
@@ -255,7 +282,8 @@ export default function OurStory() {
                   </p>
                 </div>
                 <p className="font-archivo text-cloudworkz-black text-base leading-[100%] text-justify">
-                  Expert in commercial strategy and project delivery. Focused on keeping our client operations smooth and outcomes sharp
+                  Expert in commercial strategy and project delivery. Focused on
+                  keeping our client operations smooth and outcomes sharp
                 </p>
               </div>
             </div>
