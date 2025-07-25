@@ -89,14 +89,7 @@ export default function OurStory() {
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'
           }}
-        >
-          {/* Left Text */}
-          <div className="w-80 flex-shrink-0">
-            <p className="text-cloudworkz-black font-archivo text-base leading-[100%] text-justify">
-              The biggest growth bottleneck isn't ideas — it's follow-through.
-            </p>
-          </div>
-        </div>
+        />
       </section>
     </div>
   );
