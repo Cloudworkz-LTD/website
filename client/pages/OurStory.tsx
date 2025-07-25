@@ -4,7 +4,7 @@ export default function OurStory() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       {/* Hero Section based on reference design */}
       <section className="relative h-screen flex items-center px-8 lg:px-16 xl:px-20 overflow-hidden">
         {/* Background Image */}
@@ -19,7 +19,6 @@ export default function OurStory() {
         {/* Content Container */}
         <div className="relative z-10 w-full max-w-8xl mx-auto">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
-
             {/* Left Side - Main Heading */}
             <div className="flex-1 max-w-4xl">
               <h1 className="font-kenyan text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[180px] 2xl:text-[200px] leading-[87%] uppercase">
@@ -36,10 +35,11 @@ export default function OurStory() {
                 <div
                   className="w-full h-full rounded-full flex items-end justify-center p-8 lg:p-10"
                   style={{
-                    backgroundImage: "url('https://api.builder.io/api/v1/image/assets/TEMP/4536d6a6ca5818952a61dda081387c7f237d233b?width=1982')",
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat'
+                    backgroundImage:
+                      "url('https://api.builder.io/api/v1/image/assets/TEMP/4536d6a6ca5818952a61dda081387c7f237d233b?width=1982')",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
                   }}
                 >
                   {/* Text Content */}

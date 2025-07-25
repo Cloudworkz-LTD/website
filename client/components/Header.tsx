@@ -15,7 +15,10 @@ export default function Header() {
 
         {/* Navigation Menu - Block Buttons */}
         <nav className="hidden md:flex items-end space-x-8 lg:space-x-12">
-          <Link to="/our-story" className="text-cloudworkz-black font-kenyan text-2xl lg:text-[35px] uppercase tracking-[1.05px] leading-[87%] transition-all duration-75 hover:text-cloudworkz-primary hover:italic hover:scale-105 cursor-pointer">
+          <Link
+            to="/our-story"
+            className="text-cloudworkz-black font-kenyan text-2xl lg:text-[35px] uppercase tracking-[1.05px] leading-[87%] transition-all duration-75 hover:text-cloudworkz-primary hover:italic hover:scale-105 cursor-pointer"
+          >
             OUR STORY
           </Link>
           <button className="text-cloudworkz-black font-kenyan text-2xl lg:text-[35px] uppercase tracking-[1.05px] leading-[87%] transition-all duration-75 hover:text-cloudworkz-primary hover:italic hover:scale-105 cursor-pointer">
