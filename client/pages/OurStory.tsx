@@ -219,10 +219,10 @@ export default function OurStory() {
             </div>
 
             {/* Werner Snyman */}
-            <div className="flex flex-col items-start gap-6 lg:pt-[200px]">
+            <div className="flex flex-col items-start gap-6 lg:pt-[200px]" ref={member3Ref}>
               <div className="w-full max-w-[284px] h-[471px] rounded-[142px] overflow-hidden bg-gray-100">
                 <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F7ffa3c8aa060481ab88e616c5cb62507?alt=media&token=b46da86d-1fec-4517-8449-f5e0e5500f53&apiKey=1eaa4255fd854d84bde8758c04e23344"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F5298ccdc196642cd8aa746f54af917f9?format=webp&width=800"
                   alt="Werner Snyman"
                   className="w-full h-full object-cover"
                 />
