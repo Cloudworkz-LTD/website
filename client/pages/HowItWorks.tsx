@@ -7,28 +7,24 @@ export default function HowItWorks() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative z-10 px-8 lg:px-10 py-20 lg:py-36">
-        <div className="container mx-auto">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
-            {/* Hero Text */}
-            <div className="flex-1 w-full lg:max-w-[1240px]">
-              <h1 className="font-kenyan text-4xl sm:text-6xl md:text-8xl lg:text-9xl xl:text-[180px] font-normal leading-[87%] uppercase">
-                <span className="text-cloudworkz-primary">Smart Sales</span>
-                <span className="text-cloudworkz-black"> in Weeks, Not Months</span>
-              </h1>
-            </div>
-            
-            {/* Hero Image */}
-            <div className="flex-1 w-full lg:max-w-[1105px] relative">
-              <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[600px] xl:h-[700px] overflow-hidden">
-                <img 
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/486bb2362c2909336ef78223a641ba0a32c19985?width=2218" 
-                  alt="Smart Sales Background" 
-                  className="absolute inset-0 w-full h-full object-cover mix-blend-multiply"
-                />
-              </div>
-            </div>
+      <section className="relative z-10 flex items-center px-8 lg:px-10 py-24 lg:py-36 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute top-0 right-0 w-full max-w-[1105px] h-full pointer-events-none">
+          <div className="relative w-full h-full">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/486bb2362c2909336ef78223a641ba0a32c19985?width=2218"
+              alt="Smart Sales Background"
+              className="absolute top-[-200px] lg:top-[-370px] right-[-100px] lg:right-[-220px] w-[1109px] h-[1018px] object-cover mix-blend-multiply"
+            />
           </div>
+        </div>
+
+        {/* Hero Text */}
+        <div className="relative z-10 w-full max-w-[1240px]">
+          <h1 className="font-kenyan text-4xl sm:text-6xl md:text-8xl lg:text-9xl xl:text-[180px] font-normal leading-[87%] uppercase text-cloudworkz-black">
+            <span className="text-cloudworkz-primary">Smart Sales</span>
+            <span className="text-cloudworkz-black"> in Weeks, Not Months</span>
+          </h1>
         </div>
       </section>
 
