@@ -41,14 +41,7 @@ export default function OurStory() {
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
                   }}
-                >
-                  {/* Text Content */}
-                  <div className="text-center text-white mb-6 lg:mb-8">
-                    <p className="font-archivo text-xl lg:text-2xl font-normal leading-[100%] uppercase max-w-[280px] text-justify">
-                      Cloudworkz was born to solve startup chaos.
-                    </p>
-                  </div>
-                </div>
+                />
               </div>
             </div>
           </div>
