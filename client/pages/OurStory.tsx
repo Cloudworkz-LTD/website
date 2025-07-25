@@ -58,7 +58,7 @@ export default function OurStory() {
       {/* Statement Section */}
       <section className="py-16 lg:py-24 px-8 lg:px-16 xl:px-20">
         <div className="mx-auto">
-          <h2 className="font-archivo font-semibold text-cloudworkz-primary text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[95%] tracking-[-0.03em] uppercase text-justify">
+          <h2 className="font-archivo font-semibold text-cloudworkz-primary text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[80px] leading-[95%] tracking-[-0.03em] uppercase text-justify">
             We provide structure to businesses that want execution, not excuses.
           </h2>
         </div>
