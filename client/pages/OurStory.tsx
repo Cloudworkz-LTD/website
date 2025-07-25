@@ -237,7 +237,7 @@ export default function OurStory() {
             </div>
 
             {/* Claudia Chavez */}
-            <div className="flex flex-col items-start gap-6 lg:pt-[400px]" ref={member4Ref}>
+            <div className="flex flex-col items-start gap-6" ref={member4Ref}>
               <div className="w-full max-w-[284px] h-[471px] rounded-[142px] overflow-hidden bg-gray-100">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F592342c571824d60945bef8290e17a35?format=webp&width=800"
