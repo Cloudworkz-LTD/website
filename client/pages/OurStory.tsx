@@ -84,6 +84,116 @@ export default function OurStory() {
           }}
         />
       </section>
+
+      {/* Team Section */}
+      <section className="py-16 lg:py-24 px-8 lg:px-16 xl:px-20">
+        <div className="max-w-7xl mx-auto">
+          {/* Section Title */}
+          <h2 className="font-kenyan text-7xl sm:text-8xl md:text-9xl lg:text-[140px] xl:text-[180px] leading-[100%] tracking-[-0.02em] uppercase mb-16">
+            <span className="text-cloudworkz-black">Our </span>
+            <span className="text-cloudworkz-primary">Team</span>
+          </h2>
+
+          {/* Team Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-16">
+            {/* Tom King */}
+            <div className="flex flex-col items-start gap-6">
+              <div className="w-full max-w-[284px] h-[471px] rounded-[142px] overflow-hidden bg-gray-100">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F1174aaa237764d20bb9328e9797c18ad?format=webp&width=800"
+                  alt="Tom King"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-2">
+                  <h3 className="font-archivo font-semibold text-cloudworkz-primary text-[30px] leading-[100%] uppercase">
+                    Tom King
+                  </h3>
+                  <p className="font-archivo text-cloudworkz-black text-2xl leading-[100%]">
+                    CEO
+                  </p>
+                </div>
+                <p className="font-archivo text-cloudworkz-black text-base leading-[100%] text-justify">
+                  A certified Scaling Up coach and seasoned CEO with a background in tech, marketing, and finance. Helps growth-stage companies find momentum through structure
+                </p>
+              </div>
+            </div>
+
+            {/* William Corke */}
+            <div className="flex flex-col items-start gap-6">
+              <div className="w-full max-w-[284px] h-[471px] rounded-[142px] overflow-hidden bg-gray-100">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F1174aaa237764d20bb9328e9797c18ad?format=webp&width=800"
+                  alt="William Corke"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-2">
+                  <h3 className="font-archivo font-semibold text-cloudworkz-primary text-[30px] leading-[100%] uppercase">
+                    William Corke
+                  </h3>
+                  <p className="font-archivo text-cloudworkz-black text-2xl leading-[100%]">
+                    Head of Service
+                  </p>
+                </div>
+                <p className="font-archivo text-cloudworkz-black text-base leading-[100%] text-justify">
+                  EIS/SEIS-accredited advisor with deep experience in alternative investments and operational compliance
+                </p>
+              </div>
+            </div>
+
+            {/* Werner Snyman */}
+            <div className="flex flex-col items-start gap-6 lg:pt-[200px]">
+              <div className="w-full max-w-[284px] h-[471px] rounded-[142px] overflow-hidden bg-gray-100">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F7ffa3c8aa060481ab88e616c5cb62507?alt=media&token=b46da86d-1fec-4517-8449-f5e0e5500f53&apiKey=1eaa4255fd854d84bde8758c04e23344"
+                  alt="Werner Snyman"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-2">
+                  <h3 className="font-archivo font-semibold text-cloudworkz-primary text-[30px] leading-[100%] uppercase">
+                    Werner Snyman
+                  </h3>
+                  <p className="font-archivo text-cloudworkz-black text-2xl leading-[100%]">
+                    Head of Product
+                  </p>
+                </div>
+                <p className="font-archivo text-cloudworkz-black text-base leading-[100%] text-justify">
+                  Designs and runs the internal systems behind our services. Blends product thinking with deep industry experience
+                </p>
+              </div>
+            </div>
+
+            {/* Claudia Chavez */}
+            <div className="flex flex-col items-start gap-6 lg:pt-[400px]">
+              <div className="w-full max-w-[284px] h-[471px] rounded-[142px] overflow-hidden bg-gray-100">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F7ffa3c8aa060481ab88e616c5cb62507?alt=media&token=b46da86d-1fec-4517-8449-f5e0e5500f53&apiKey=1eaa4255fd854d84bde8758c04e23344"
+                  alt="Claudia Chavez"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-2">
+                  <h3 className="font-archivo font-semibold text-cloudworkz-primary text-[30px] leading-[100%] uppercase">
+                    Claudia Chavez
+                  </h3>
+                  <p className="font-archivo text-cloudworkz-black text-2xl leading-[100%]">
+                    Co-Founder & Commercial Director
+                  </p>
+                </div>
+                <p className="font-archivo text-cloudworkz-black text-base leading-[100%] text-justify">
+                  Expert in commercial strategy and project delivery. Focused on keeping our client operations smooth and outcomes sharp
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
