@@ -32,7 +32,7 @@ export default function HowItWorks() {
       <section className="relative z-10 w-full h-[800px] overflow-hidden bg-white">
         <div className="relative w-full h-full">
           {/* Slider Container */}
-          <div className="flex w-[3960px] h-full animate-marquee">
+          <div className="flex w-[3960px] h-full">
             {/* Slide 1 - Consult */}
             <div
               className="flex w-[1320px] h-[800px] p-10 items-start gap-10 relative"
