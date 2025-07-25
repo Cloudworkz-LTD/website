@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
+  const location = useLocation();
   return (
     <header className="relative z-10 w-full">
       <div className="flex justify-between items-end px-8 lg:px-12 py-6 lg:py-8 h-[98px]">
