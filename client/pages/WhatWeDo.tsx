@@ -39,7 +39,10 @@ export default function WhatWeDo() {
       </section>
 
       {/* Services Section */}
-      <section className="relative z-10 py-24 lg:py-32" style={{ padding: "150px 40px" }}>
+      <section
+        className="relative z-10 py-24 lg:py-32"
+        style={{ padding: "150px 40px" }}
+      >
         <div className="flex flex-col items-start w-full">
           {/* Service Block 1 - Sales-as-a-Service */}
           <div className="flex flex-col lg:flex-row items-start justify-between w-full py-12 lg:py-16 border-b-2 border-cloudworkz-primary gap-8 lg:gap-12">
@@ -62,8 +65,9 @@ export default function WhatWeDo() {
             {/* Text Block */}
             <div className="flex flex-col justify-center items-end gap-12 lg:gap-16 w-full lg:w-[348px] flex-shrink-0 self-stretch">
               <p className="text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-[32px] font-bold leading-[100%] uppercase w-full">
-                A plug-and-play growth team embedded in your business.
-                From first outreach to booked calls, our Sales Pods keep your pipeline moving.
+                A plug-and-play growth team embedded in your business. From
+                first outreach to booked calls, our Sales Pods keep your
+                pipeline moving.
               </p>
               <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
                 <svg
@@ -112,9 +116,11 @@ export default function WhatWeDo() {
             {/* Text Block */}
             <div className="flex flex-col justify-center items-end gap-12 lg:gap-16 w-full lg:w-[348px] flex-shrink-0 order-3">
               <p className="text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-[32px] font-bold leading-[100%] uppercase w-full">
-                A modular execution platform that automates the work behind growth.
-                Cloudworkz connects your tools, data, content, and logic into one intelligent system, helping teams move faster without adding headcount.
-                Modular by design. Powered by rules. Ready to scale.
+                A modular execution platform that automates the work behind
+                growth. Cloudworkz connects your tools, data, content, and logic
+                into one intelligent system, helping teams move faster without
+                adding headcount. Modular by design. Powered by rules. Ready to
+                scale.
               </p>
               <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
                 <svg
