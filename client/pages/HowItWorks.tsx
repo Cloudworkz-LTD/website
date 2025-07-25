@@ -1,6 +1,12 @@
+import { useState } from "react";
 import Header from "../components/Header";
 
 export default function HowItWorks() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % 3);
+  };
   return (
     <div className="min-h-screen bg-white overflow-x-hidden relative">
       {/* Header */}
