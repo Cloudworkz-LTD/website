@@ -28,26 +28,113 @@ export default function HowItWorks() {
         </div>
       </section>
 
-      {/* Consult Section */}
-      <section className="relative z-10 px-8 lg:px-10 py-20 lg:py-36">
-        <div className="container mx-auto">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20">
-            {/* Consult Text */}
-            <div className="flex-1 w-full lg:max-w-[1240px]">
-              <h2 className="font-kenyan text-4xl sm:text-6xl md:text-8xl lg:text-9xl xl:text-[180px] font-normal leading-[87%] uppercase">
-                <span className="text-cloudworkz-primary">Smart Sales</span>
-                <span className="text-cloudworkz-black"> in Weeks, Not Months</span>
-              </h2>
+      {/* Slider Section */}
+      <section className="relative z-10 w-full h-[800px] overflow-hidden bg-white">
+        <div className="relative w-full h-full">
+          {/* Slider Container */}
+          <div className="flex w-[3960px] h-full animate-marquee">
+            {/* Slide 1 - Consult */}
+            <div
+              className="flex w-[1320px] h-[800px] p-10 items-start gap-10 relative"
+              style={{
+                backgroundImage: "url('https://api.builder.io/api/v1/image/assets/TEMP/f73a5bfa24f134ae38a0f48b3e030022583c9023?width=2640')",
+                backgroundSize: "cover",
+                backgroundPosition: "center"
+              }}
+            >
+              <div className="flex flex-col justify-between items-end flex-1 h-full">
+                {/* Text Block */}
+                <div className="flex flex-col items-start gap-10 w-full">
+                  <h2 className="w-full max-w-[794px] text-white font-kenyan text-6xl lg:text-[120px] font-normal leading-[100%] tracking-[-2.4px] uppercase">
+                    Consult
+                  </h2>
+                  <p className="w-full max-w-[402px] text-white text-justify font-archivo text-lg lg:text-[32px] font-semibold leading-[100%] tracking-[-0.64px] uppercase">
+                    We map your goals, find bottlenecks, and design your system.
+                  </p>
+                </div>
+
+                {/* CTA Block */}
+                <div className="flex items-center gap-5">
+                  <div className="text-white font-archivo text-base font-semibold leading-[110%] uppercase">
+                    next step
+                  </div>
+                  <button className="flex w-[100px] h-[100px] justify-center items-center rounded-full border-2 border-white hover:bg-white/10 transition-colors">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fillRule="evenodd" clipRule="evenodd" d="M5.33594 16.0003C5.33594 15.2639 5.93289 14.667 6.66927 14.667H25.3359C26.0723 14.667 26.6693 15.2639 26.6693 16.0003C26.6693 16.7367 26.0723 17.3337 25.3359 17.3337H6.66927C5.93289 17.3337 5.33594 16.7367 5.33594 16.0003Z" fill="white"/>
+                      <path fillRule="evenodd" clipRule="evenodd" d="M15.0546 5.72353C15.5753 5.20283 16.4195 5.20283 16.9402 5.72353L26.2735 15.0569C26.7942 15.5776 26.7942 16.4218 26.2735 16.9425L16.9402 26.2758C16.4195 26.7965 15.5753 26.7965 15.0546 26.2758C14.5339 25.7551 14.5339 24.9109 15.0546 24.3902L23.4451 15.9997L15.0546 7.60915C14.5339 7.08845 14.5339 6.24423 15.0546 5.72353Z" fill="white"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
-            
-            {/* Consult Image */}
-            <div className="flex-1 w-full lg:max-w-[1105px] relative">
-              <div className="relative w-full h-[400px] sm:h-[500px] lg:h-[600px] xl:h-[700px] overflow-hidden">
-                <img 
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/486bb2362c2909336ef78223a641ba0a32c19985?width=2218" 
-                  alt="Consult Background" 
-                  className="absolute inset-0 w-full h-full object-cover mix-blend-multiply"
-                />
+
+            {/* Slide 2 - Build & Automate */}
+            <div
+              className="flex w-[1320px] h-[800px] p-10 items-start gap-10 relative"
+              style={{
+                backgroundImage: "url('https://api.builder.io/api/v1/image/assets/TEMP/c28acb39b23d6abc1cfed086919757ce5f796656?width=2640')",
+                backgroundSize: "cover",
+                backgroundPosition: "center"
+              }}
+            >
+              <div className="flex flex-col justify-between items-end flex-1 h-full">
+                {/* Text Block */}
+                <div className="flex flex-col items-start gap-10 w-full">
+                  <h2 className="w-full max-w-[794px] text-white font-kenyan text-6xl lg:text-[120px] font-normal leading-[100%] tracking-[-2.4px] uppercase">
+                    Build & Automate
+                  </h2>
+                  <p className="w-full max-w-[402px] text-white text-justify font-archivo text-lg lg:text-[32px] font-semibold leading-[100%] tracking-[-0.64px] uppercase">
+                    We install workflows or deploy your sales pod.
+                  </p>
+                </div>
+
+                {/* CTA Block */}
+                <div className="flex items-center gap-5">
+                  <div className="text-white font-archivo text-base font-semibold leading-[110%] uppercase">
+                    Get Started Today
+                  </div>
+                  <button className="flex w-[100px] h-[100px] justify-center items-center rounded-full border-2 border-white hover:bg-white/10 transition-colors">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fillRule="evenodd" clipRule="evenodd" d="M5.33594 16.0003C5.33594 15.2639 5.93289 14.667 6.66927 14.667H25.3359C26.0723 14.667 26.6693 15.2639 26.6693 16.0003C26.6693 16.7367 26.0723 17.3337 25.3359 17.3337H6.66927C5.93289 17.3337 5.33594 16.7367 5.33594 16.0003Z" fill="white"/>
+                      <path fillRule="evenodd" clipRule="evenodd" d="M15.0546 5.72353C15.5753 5.20283 16.4195 5.20283 16.9402 5.72353L26.2735 15.0569C26.7942 15.5776 26.7942 16.4218 26.2735 16.9425L16.9402 26.2758C16.4195 26.7965 15.5753 26.7965 15.0546 26.2758C14.5339 25.7551 14.5339 24.9109 15.0546 24.3902L23.4451 15.9997L15.0546 7.60915C14.5339 7.08845 14.5339 6.24423 15.0546 5.72353Z" fill="white"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Slide 3 - Operate & Optimise */}
+            <div
+              className="flex w-[1320px] h-[800px] p-10 items-start gap-10 relative"
+              style={{
+                backgroundImage: "url('https://api.builder.io/api/v1/image/assets/TEMP/5b3ad80e4ef6a40ec5d1046cccfc92e750358cfa?width=2640')",
+                backgroundSize: "cover",
+                backgroundPosition: "center"
+              }}
+            >
+              <div className="flex flex-col justify-between items-end flex-1 h-full">
+                {/* Text Block */}
+                <div className="flex flex-col items-start gap-10 w-full">
+                  <h2 className="w-full max-w-[794px] text-white font-kenyan text-6xl lg:text-[120px] font-normal leading-[100%] tracking-[-2.4px] uppercase">
+                    Operate & Optimise
+                  </h2>
+                  <p className="w-full max-w-[402px] text-white text-justify font-archivo text-lg lg:text-[32px] font-semibold leading-[100%] tracking-[-0.64px] uppercase">
+                    We run the engine or pod, learn, and improve.
+                  </p>
+                </div>
+
+                {/* CTA Block */}
+                <div className="flex items-center gap-5">
+                  <div className="text-white font-archivo text-base font-semibold leading-[110%] uppercase">
+                    next step
+                  </div>
+                  <button className="flex w-[100px] h-[100px] justify-center items-center rounded-full border-2 border-white hover:bg-white/10 transition-colors">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fillRule="evenodd" clipRule="evenodd" d="M5.33594 16.0003C5.33594 15.2639 5.93289 14.667 6.66927 14.667H25.3359C26.0723 14.667 26.6693 15.2639 26.6693 16.0003C26.6693 16.7367 26.0723 17.3337 25.3359 17.3337H6.66927C5.93289 17.3337 5.33594 16.7367 5.33594 16.0003Z" fill="white"/>
+                      <path fillRule="evenodd" clipRule="evenodd" d="M15.0546 5.72353C15.5753 5.20283 16.4195 5.20283 16.9402 5.72353L26.2735 15.0569C26.7942 15.5776 26.7942 16.4218 26.2735 16.9425L16.9402 26.2758C16.4195 26.7965 15.5753 26.7965 15.0546 26.2758C14.5339 25.7551 14.5339 24.9109 15.0546 24.3902L23.4451 15.9997L15.0546 7.60915C14.5339 7.08845 14.5339 6.24423 15.0546 5.72353Z" fill="white"/>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
