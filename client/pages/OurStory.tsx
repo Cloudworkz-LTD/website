@@ -63,6 +63,48 @@ export default function OurStory() {
           </h2>
         </div>
       </section>
+
+      {/* Vision Section */}
+      <section className="py-16 lg:py-24">
+        {/* Marquee Text */}
+        <div className="overflow-hidden py-8 px-8 lg:px-16 xl:px-20">
+          <div className="flex items-center gap-5 whitespace-nowrap">
+            <div className="animate-marquee flex items-center gap-5">
+              {[...Array(8)].map((_, i) => (
+                <div key={i} className="font-kenyan text-7xl sm:text-8xl md:text-9xl lg:text-[140px] xl:text-[180px] leading-[100%] tracking-[-0.02em] uppercase">
+                  <span className="text-cloudworkz-black">Our</span>
+                  <span className="text-cloudworkz-primary"> Vision</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Content Section with Background */}
+        <div
+          className="h-[600px] px-8 lg:px-16 xl:px-20 py-16 flex justify-between items-center"
+          style={{
+            backgroundImage: "url('https://api.builder.io/api/v1/image/assets/TEMP/dffafe7fbcce3e41695aae8b8e98be45a8e61ec0?width=2880')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        >
+          {/* Left Text */}
+          <div className="w-80 flex-shrink-0">
+            <p className="text-cloudworkz-black font-archivo text-base leading-[100%] text-justify">
+              The biggest growth bottleneck isn't ideas — it's follow-through.
+            </p>
+          </div>
+
+          {/* Right Text */}
+          <div className="w-80 flex-shrink-0 flex flex-col justify-end">
+            <p className="text-cloudworkz-black font-archivo text-2xl lg:text-[32px] font-semibold leading-[100%] uppercase text-justify">
+              That's why Cloudworkz blends human execution with a system that doesn't forget, wait, or drop the ball.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
