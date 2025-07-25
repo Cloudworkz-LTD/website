@@ -52,21 +52,12 @@ export default function HowItWorks() {
               }}
             >
               <div className="flex flex-col justify-between items-end flex-1 h-full">
-                {/* CTA Block */}
-                <div className="flex items-center gap-5">
-                  <div className="text-white font-archivo text-base font-semibold leading-[110%] uppercase">
-                    next step
-                  </div>
-                  <button
-                    onClick={nextSlide}
-                    className="flex w-[100px] h-[100px] justify-center items-center rounded-full border-2 border-white hover:bg-white/10 transition-colors"
-                  >
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fillRule="evenodd" clipRule="evenodd" d="M5.33594 16.0003C5.33594 15.2639 5.93289 14.667 6.66927 14.667H25.3359C26.0723 14.667 26.6693 15.2639 26.6693 16.0003C26.6693 16.7367 26.0723 17.3337 25.3359 17.3337H6.66927C5.93289 17.3337 5.33594 16.7367 5.33594 16.0003Z" fill="white"/>
-                      <path fillRule="evenodd" clipRule="evenodd" d="M15.0546 5.72353C15.5753 5.20283 16.4195 5.20283 16.9402 5.72353L26.2735 15.0569C26.7942 15.5776 26.7942 16.4218 26.2735 16.9425L16.9402 26.2758C16.4195 26.7965 15.5753 26.7965 15.0546 26.2758C14.5339 25.7551 14.5339 24.9109 15.0546 24.3902L23.4451 15.9997L15.0546 7.60915C14.5339 7.08845 14.5339 6.24423 15.0546 5.72353Z" fill="white"/>
-                    </svg>
-                  </button>
-                </div>
+                {/* First slide content is entirely in background image */}
+                <div
+                  className="absolute inset-0 cursor-pointer"
+                  onClick={nextSlide}
+                  style={{ zIndex: 1 }}
+                />
               </div>
             </div>
 
