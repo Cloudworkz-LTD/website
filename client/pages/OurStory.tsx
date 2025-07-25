@@ -1,6 +1,80 @@
+import { useLayoutEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Header from "@/components/Header";
 
+gsap.registerPlugin(ScrollTrigger);
+
 export default function OurStory() {
+  const teamSectionRef = useRef<HTMLDivElement>(null);
+  const member1Ref = useRef<HTMLDivElement>(null);
+  const member2Ref = useRef<HTMLDivElement>(null);
+  const member3Ref = useRef<HTMLDivElement>(null);
+  const member4Ref = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      // Set initial positions for each team member
+      gsap.set([member1Ref.current, member2Ref.current, member3Ref.current, member4Ref.current], {
+        opacity: 0,
+        transform: "translateY(150px)",
+      });
+
+      // Animate each team member individually with staggered timing
+      gsap.to(member1Ref.current, {
+        opacity: 1,
+        transform: "translateY(0px)",
+        duration: 0.6,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: teamSectionRef.current,
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+      });
+
+      gsap.to(member2Ref.current, {
+        opacity: 1,
+        transform: "translateY(0px)",
+        duration: 0.6,
+        ease: "power2.out",
+        delay: 0.2,
+        scrollTrigger: {
+          trigger: teamSectionRef.current,
+          start: "top 70%",
+          toggleActions: "play none none reverse",
+        },
+      });
+
+      gsap.to(member3Ref.current, {
+        opacity: 1,
+        transform: "translateY(0px)",
+        duration: 0.6,
+        ease: "power2.out",
+        delay: 0.4,
+        scrollTrigger: {
+          trigger: teamSectionRef.current,
+          start: "top 60%",
+          toggleActions: "play none none reverse",
+        },
+      });
+
+      gsap.to(member4Ref.current, {
+        opacity: 1,
+        transform: "translateY(0px)",
+        duration: 0.6,
+        ease: "power2.out",
+        delay: 0.6,
+        scrollTrigger: {
+          trigger: teamSectionRef.current,
+          start: "top 50%",
+          toggleActions: "play none none reverse",
+        },
+      });
+    }, teamSectionRef);
+
+    return () => ctx.revert();
+  }, []);
   return (
     <div className="min-h-screen bg-white">
       <Header />
