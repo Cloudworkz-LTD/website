@@ -51,7 +51,8 @@ export default function HowItWorks() {
                 backgroundPosition: "center"
               }}
             >
-               {/* CTA Block */}
+              <div className="flex flex-col justify-between items-end flex-1 h-full">
+                {/* CTA Block */}
                 <div className="flex items-center gap-5">
                   <div className="text-white font-archivo text-base font-semibold leading-[110%] uppercase">
                     next step
