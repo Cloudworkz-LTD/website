@@ -20,15 +20,16 @@ export default function OurStory() {
         transform: "translateY(150px)",
       });
 
-      // Animate each team member individually with staggered timing
+      // Animate each team member with staggered start but synchronized end
       gsap.to(member1Ref.current, {
         opacity: 1,
         transform: "translateY(0px)",
-        duration: 0.6,
+        duration: 1.2,
         ease: "power2.out",
         scrollTrigger: {
           trigger: teamSectionRef.current,
           start: "top 80%",
+          end: "center center",
           toggleActions: "play none none reverse",
         },
       });
@@ -36,12 +37,12 @@ export default function OurStory() {
       gsap.to(member2Ref.current, {
         opacity: 1,
         transform: "translateY(0px)",
-        duration: 0.6,
+        duration: 1.0,
         ease: "power2.out",
-        delay: 0.2,
         scrollTrigger: {
           trigger: teamSectionRef.current,
           start: "top 70%",
+          end: "center center",
           toggleActions: "play none none reverse",
         },
       });
@@ -49,12 +50,12 @@ export default function OurStory() {
       gsap.to(member3Ref.current, {
         opacity: 1,
         transform: "translateY(0px)",
-        duration: 0.6,
+        duration: 0.8,
         ease: "power2.out",
-        delay: 0.4,
         scrollTrigger: {
           trigger: teamSectionRef.current,
           start: "top 60%",
+          end: "center center",
           toggleActions: "play none none reverse",
         },
       });
@@ -64,10 +65,10 @@ export default function OurStory() {
         transform: "translateY(0px)",
         duration: 0.6,
         ease: "power2.out",
-        delay: 0.6,
         scrollTrigger: {
           trigger: teamSectionRef.current,
           start: "top 50%",
+          end: "center center",
           toggleActions: "play none none reverse",
         },
       });
