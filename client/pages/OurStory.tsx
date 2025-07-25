@@ -15,17 +15,23 @@ export default function OurStory() {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       // Set initial positions for each team member
-      gsap.set([member1Ref.current, member2Ref.current, member3Ref.current, member4Ref.current], {
+      gsap.set([member1Ref.current, member2Ref.current], {
         opacity: 0,
-        transform: "translateY(150px)",
+        y: 150,
       });
 
-      // Animate each team member with staggered start but synchronized end
-      gsap.to(member1Ref.current, {
-        opacity: 1,
-        transform: "translateY(0px)",
-        duration: 1.2,
-        ease: "power2.out",
+      gsap.set(member3Ref.current, {
+        opacity: 0,
+        y: 350, // 150px base + 200px offset
+      });
+
+      gsap.set(member4Ref.current, {
+        opacity: 0,
+        y: 550, // 150px base + 400px offset
+      });
+
+      // Create a timeline for synchronized ending
+      const tl = gsap.timeline({
         scrollTrigger: {
           trigger: teamSectionRef.current,
           start: "top 80%",
@@ -34,44 +40,31 @@ export default function OurStory() {
         },
       });
 
-      gsap.to(member2Ref.current, {
+      // Animate all members to end at the same time
+      tl.to(member1Ref.current, {
         opacity: 1,
-        transform: "translateY(0px)",
+        y: 0,
         duration: 1.0,
         ease: "power2.out",
-        scrollTrigger: {
-          trigger: teamSectionRef.current,
-          start: "top 70%",
-          end: "center center",
-          toggleActions: "play none none reverse",
-        },
-      });
-
-      gsap.to(member3Ref.current, {
+      }, 0)
+      .to(member2Ref.current, {
         opacity: 1,
-        transform: "translateY(0px)",
-        duration: 0.8,
+        y: 0,
+        duration: 1.0,
         ease: "power2.out",
-        scrollTrigger: {
-          trigger: teamSectionRef.current,
-          start: "top 60%",
-          end: "center center",
-          toggleActions: "play none none reverse",
-        },
-      });
-
-      gsap.to(member4Ref.current, {
+      }, 0.2)
+      .to(member3Ref.current, {
         opacity: 1,
-        transform: "translateY(0px)",
-        duration: 0.6,
+        y: 0, // This removes the 200px offset
+        duration: 1.0,
         ease: "power2.out",
-        scrollTrigger: {
-          trigger: teamSectionRef.current,
-          start: "top 50%",
-          end: "center center",
-          toggleActions: "play none none reverse",
-        },
-      });
+      }, 0.4)
+      .to(member4Ref.current, {
+        opacity: 1,
+        y: 0, // This removes the 400px offset
+        duration: 1.0,
+        ease: "power2.out",
+      }, 0.6);
     }, teamSectionRef);
 
     return () => ctx.revert();
