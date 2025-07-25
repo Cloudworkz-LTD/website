@@ -39,19 +39,19 @@ export default function WhatWeDo() {
       </section>
 
       {/* Services Section */}
-      <section className="relative z-10 px-8 lg:px-12 py-24 lg:py-32">
-        <div className="max-w-7xl mx-auto">
+      <section className="relative z-10 py-24 lg:py-32" style={{ padding: "150px 40px" }}>
+        <div className="flex flex-col items-start w-full">
           {/* Service Block 1 - Sales-as-a-Service */}
-          <div className="flex flex-col lg:flex-row items-start justify-between gap-8 lg:gap-12 py-12 lg:py-16 border-b-2 border-cloudworkz-primary">
+          <div className="flex flex-col lg:flex-row items-start justify-between w-full py-12 lg:py-16 border-b-2 border-cloudworkz-primary gap-8 lg:gap-12">
             {/* Title */}
-            <div className="flex flex-col items-start gap-5 w-full lg:w-[500px] order-1">
+            <div className="flex flex-col items-start gap-5 w-full lg:w-[500px] flex-shrink-0">
               <h2 className="text-cloudworkz-primary font-archivo text-4xl md:text-5xl lg:text-6xl xl:text-[80px] font-bold leading-[80%] tracking-[-1.6px] uppercase">
                 Sales-as-a-Service
               </h2>
             </div>
 
             {/* Image */}
-            <div className="flex justify-center items-center w-full lg:w-[400px] h-[300px] lg:h-[400px] order-2 lg:order-2">
+            <div className="flex justify-center items-center w-full lg:w-[400px] lg:h-[400px] h-[300px] flex-shrink-0">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/5cc08a262d95ecd64787b15a256888f3b796930e?width=800"
                 alt="Sales-as-a-Service"
@@ -60,8 +60,8 @@ export default function WhatWeDo() {
             </div>
 
             {/* Text Block */}
-            <div className="flex flex-col justify-center items-end gap-12 lg:gap-16 w-full lg:w-[348px] order-3">
-              <p className="text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-[32px] font-bold leading-[100%] uppercase">
+            <div className="flex flex-col justify-center items-end gap-12 lg:gap-16 w-full lg:w-[348px] flex-shrink-0 self-stretch">
+              <p className="text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-[32px] font-bold leading-[100%] uppercase w-full">
                 A plug-and-play growth team embedded in your business.
                 From first outreach to booked calls, our Sales Pods keep your pipeline moving.
               </p>
@@ -72,7 +72,7 @@ export default function WhatWeDo() {
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="transform rotate-0"
+                  className="transform -rotate-90"
                 >
                   <path
                     fillRule="evenodd"
@@ -92,9 +92,9 @@ export default function WhatWeDo() {
           </div>
 
           {/* Service Block 2 - Cloudworkz App */}
-          <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-12 py-12 lg:py-16 border-b-2 border-cloudworkz-primary">
+          <div className="flex flex-col lg:flex-row items-start w-full py-12 lg:py-16 border-b-2 border-cloudworkz-primary gap-8 lg:gap-12">
             {/* Image */}
-            <div className="flex justify-center items-center w-full lg:w-[400px] h-[300px] lg:h-[400px] order-1 lg:order-1">
+            <div className="flex justify-center items-center w-full lg:w-[400px] lg:h-[400px] h-[300px] flex-shrink-0 order-1 lg:order-1">
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/96917f53b229f1ba236767005922073243f6d942?width=800"
                 alt="Cloudworkz App"
@@ -103,15 +103,15 @@ export default function WhatWeDo() {
             </div>
 
             {/* Title */}
-            <div className="flex flex-col justify-center items-start gap-5 w-full lg:w-[500px] order-2">
+            <div className="flex flex-col justify-center items-start gap-5 w-full lg:w-[500px] flex-shrink-0 order-2">
               <h2 className="text-cloudworkz-primary font-archivo text-4xl md:text-5xl lg:text-6xl xl:text-[80px] font-bold leading-[80%] tracking-[-1.6px] uppercase">
                 Cloudworkz App
               </h2>
             </div>
 
             {/* Text Block */}
-            <div className="flex flex-col justify-center items-end gap-12 lg:gap-16 w-full lg:w-[348px] order-3">
-              <p className="text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-[32px] font-bold leading-[100%] uppercase">
+            <div className="flex flex-col justify-center items-end gap-12 lg:gap-16 w-full lg:w-[348px] flex-shrink-0 order-3">
+              <p className="text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-[32px] font-bold leading-[100%] uppercase w-full">
                 A modular execution platform that automates the work behind growth.
                 Cloudworkz connects your tools, data, content, and logic into one intelligent system, helping teams move faster without adding headcount.
                 Modular by design. Powered by rules. Ready to scale.
@@ -123,7 +123,7 @@ export default function WhatWeDo() {
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="transform rotate-0"
+                  className="transform -rotate-90"
                 >
                   <path
                     fillRule="evenodd"
