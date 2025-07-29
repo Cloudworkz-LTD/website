@@ -2,6 +2,12 @@ import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
 
 export default function WhatWeDo() {
+  const navigate = useNavigate();
+
+  const handleSalesAsAServiceClick = () => {
+    navigate('/sales-as-a-service');
+  };
+
   return (
     <div className="min-h-screen bg-white overflow-x-hidden relative">
       {/* Header */}
