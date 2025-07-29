@@ -4,6 +4,11 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Header from "../components/Header";
 import CursorEffect from "../components/CursorEffect";
+import {
+  RevealText,
+  FadeInUp,
+  StaggerContainer,
+} from "../components/animations";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -101,22 +106,56 @@ export default function Index() {
           <div className="flex flex-col">
             {/* Hero Title - Left Side */}
             <h1 className="font-kenyan text-[180px] leading-[180px] uppercase flex flex-col justify-start items-start max-w-[1015px]">
-              <span className="text-cloudworkz-black">Your Portal</span>
+              <RevealText
+                className="text-cloudworkz-black"
+                splitBy="words"
+                stagger={0.15}
+                delay={0.2}
+              >
+                Your Portal
+              </RevealText>
               <div className="flex flex-row">
-                <span className="text-cloudworkz-black mr-4">To</span>
-                <span className="text-cloudworkz-primary">Practical</span>
+                <RevealText
+                  className="text-cloudworkz-black mr-4"
+                  splitBy="words"
+                  stagger={0.15}
+                  delay={0.6}
+                >
+                  To
+                </RevealText>
+                <RevealText
+                  className="text-cloudworkz-primary"
+                  splitBy="words"
+                  stagger={0.15}
+                  delay={0.8}
+                >
+                  Practical
+                </RevealText>
               </div>
-              <span className="text-cloudworkz-primary">Growth</span>
+              <RevealText
+                className="text-cloudworkz-primary"
+                splitBy="words"
+                stagger={0.15}
+                delay={1.2}
+              >
+                Growth
+              </RevealText>
             </h1>
 
             {/* Description below hero title */}
-            <div className="font-kenyan text-[64px] leading-[95%] tracking-[-1.92px] uppercase text-cloudworkz-black max-w-[1015px] mt-6">
-              Powered by Smart Systems
-            </div>
+            <FadeInUp delay={1.5} duration={0.8} y={40}>
+              <div className="font-kenyan text-[64px] leading-[95%] tracking-[-1.92px] uppercase text-cloudworkz-black max-w-[1015px] mt-6">
+                Powered by Smart Systems
+              </div>
+            </FadeInUp>
           </div>
 
           {/* CTA Section - Right Side */}
-          <div className="flex flex-col justify-end items-start gap-[14px] w-full max-w-[322px] mt-auto">
+          <StaggerContainer
+            className="flex flex-col justify-end items-start gap-[14px] w-full max-w-[322px] mt-auto"
+            delay={1.8}
+            stagger={0.3}
+          >
             {/* Description Text */}
             <p className="text-cloudworkz-black font-archivo text-2xl leading-[100%] w-full">
               Step into a workspace where structure accelerates momentum.
@@ -157,13 +196,18 @@ export default function Index() {
                 </svg>
               </button>
             </div>
-          </div>
+          </StaggerContainer>
         </div>
       </CursorEffect>
       {/* CloudWorkz Description Section */}
       <section className="relative z-10 pt-[150px] px-10">
         <div className="max-w-[1017px]">
-          <p className="text-justify text-[55px] leading-[95%] tracking-[-1.65px] uppercase">
+          <RevealText
+            className="text-justify text-[55px] leading-[95%] tracking-[-1.65px] uppercase"
+            splitBy="words"
+            stagger={0.08}
+            delay={0.2}
+          >
             <span className="font-archivo text-cloudworkz-primary">
               Cloudworkz{" "}
             </span>
@@ -174,7 +218,7 @@ export default function Index() {
               helps ambitious teams scale faster and build more intelligent
               systems with modular execution tools.
             </span>
-          </p>
+          </RevealText>
         </div>
       </section>
       {/* Feature Blocks Section */}
@@ -247,47 +291,59 @@ export default function Index() {
       </section>
       {/* Sales-as-a-Service Section */}
       <section className="relative z-10 px-8 lg:px-12">
-        <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-16 py-12 lg:py-20 border-b-2 border-cloudworkz-primary">
+        <StaggerContainer
+          className="flex flex-col lg:flex-row items-start gap-12 lg:gap-16 py-12 lg:py-20 border-b-2 border-cloudworkz-primary"
+          stagger={0.3}
+          delay={0.2}
+        >
           {/* Service Title */}
           <div className="flex flex-col items-start gap-5 flex-1 w-full">
-            <h2 className="text-cloudworkz-primary font-archivo text-4xl md:text-5xl lg:text-6xl xl:text-[80px] font-semibold leading-[80%] tracking-[-1.6px] uppercase max-w-[535px]">
+            <RevealText
+              className="text-cloudworkz-primary font-archivo text-4xl md:text-5xl lg:text-6xl xl:text-[80px] font-semibold leading-[80%] tracking-[-1.6px] uppercase max-w-[535px]"
+              splitBy="words"
+              stagger={0.1}
+            >
               Sales-as-a-Service
-            </h2>
+            </RevealText>
           </div>
 
           {/* Description Block */}
           <div className="flex flex-col items-end gap-12 lg:gap-16 w-full lg:w-[348px] lg:self-stretch">
-            <div className="text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-3xl xl:text-[32px] font-semibold leading-[100%] uppercase max-w-[340px]">
-              Plug in a trained sales pod to handle outreach, follow-ups, and
-              booking - no hiring required.
-            </div>
+            <FadeInUp delay={0.4} y={30}>
+              <div className="text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-3xl xl:text-[32px] font-semibold leading-[100%] uppercase max-w-[340px]">
+                Plug in a trained sales pod to handle outreach, follow-ups, and
+                booking - no hiring required.
+              </div>
+            </FadeInUp>
 
             {/* CTA Button */}
-            <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className=""
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071Z"
-                  fill="#126AF9"
-                />
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
-                  fill="#126AF9"
-                />
-              </svg>
-            </button>
+            <FadeInUp delay={0.6} y={20}>
+              <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className=""
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071Z"
+                    fill="#126AF9"
+                  />
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
+                    fill="#126AF9"
+                  />
+                </svg>
+              </button>
+            </FadeInUp>
           </div>
-        </div>
+        </StaggerContainer>
       </section>
       {/* The Cloudworkz App Section */}
       <section className="relative z-10 px-8 lg:px-12">

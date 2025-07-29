@@ -7,6 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useLenis } from "./hooks/use-lenis";
+import { useScrollAnimations } from "./hooks/use-scroll-animations";
 import Index from "./pages/Index";
 import OurStory from "./pages/OurStory";
 import WhatWeDo from "./pages/WhatWeDo";
@@ -21,6 +22,9 @@ const queryClient = new QueryClient();
 const App = () => {
   // Inicializar Lenis para smooth scroll
   useLenis();
+  
+  // Inicializar animaciones de scroll
+  useScrollAnimations();
 
   return (
     <QueryClientProvider client={queryClient}>
