@@ -347,50 +347,62 @@ export default function Index() {
       </section>
       {/* The Cloudworkz App Section */}
       <section className="relative z-10 px-8 lg:px-12">
-        <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-16 py-12 lg:py-20 border-b-2 border-cloudworkz-primary">
+        <StaggerContainer
+          className="flex flex-col lg:flex-row items-start gap-12 lg:gap-16 py-12 lg:py-20 border-b-2 border-cloudworkz-primary"
+          stagger={0.3}
+          delay={0.2}
+        >
           {/* Service Title */}
           <div className="flex flex-col items-start gap-5 flex-1 w-full">
-            <h2 className="text-cloudworkz-primary font-archivo text-4xl md:text-5xl lg:text-6xl xl:text-[80px] font-semibold leading-[80%] tracking-[-1.6px] uppercase max-w-[584px]">
+            <RevealText
+              className="text-cloudworkz-primary font-archivo text-4xl md:text-5xl lg:text-6xl xl:text-[80px] font-semibold leading-[80%] tracking-[-1.6px] uppercase max-w-[584px]"
+              splitBy="words"
+              stagger={0.1}
+            >
               The Cloudworkz App
-            </h2>
+            </RevealText>
           </div>
 
           {/* Description Block */}
           <div className="flex flex-col items-end gap-12 lg:gap-16 w-full lg:w-[348px] lg:self-stretch">
-            <div className="text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-3xl xl:text-[32px] font-semibold leading-[100%] uppercase max-w-[340px]">
-              Our modular platform automates internal execution: lead intake,
-              CRM sync, follow-ups, onboarding, and more.
-            </div>
+            <FadeInUp delay={0.4} y={30}>
+              <div className="text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-3xl xl:text-[32px] font-semibold leading-[100%] uppercase max-w-[340px]">
+                Our modular platform automates internal execution: lead intake,
+                CRM sync, follow-ups, onboarding, and more.
+              </div>
+            </FadeInUp>
 
             {/* CTA Button */}
-            <button
-              onClick={() => navigate("/cloudworkz-app")}
-              className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors"
-            >
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className=""
+            <FadeInUp delay={0.6} y={20}>
+              <button
+                onClick={() => navigate("/cloudworkz-app")}
+                className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors"
               >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071Z"
-                  fill="#126AF9"
-                />
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
-                  fill="#126AF9"
-                />
-              </svg>
-            </button>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className=""
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071Z"
+                    fill="#126AF9"
+                  />
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
+                    fill="#126AF9"
+                  />
+                </svg>
+              </button>
+            </FadeInUp>
           </div>
-        </div>
+        </StaggerContainer>
       </section>
       {/* Background Image Section */}
       <section className="relative w-full overflow-visible pt-[150px] pl-[40px]">
@@ -409,22 +421,32 @@ export default function Index() {
           />
 
           {/* Content above image */}
-          <div className="relative z-[60] flex flex-col lg:flex-row items-start gap-12 lg:gap-16 max-w-none w-full">
+          <StaggerContainer
+            className="relative z-[60] flex flex-col lg:flex-row items-start gap-12 lg:gap-16 max-w-none w-full"
+            stagger={0.4}
+            delay={0.2}
+          >
             {/* Left content */}
             <div className="flex flex-col items-start gap-6 flex-1">
-              <h2 className="w-full text-cloudworkz-black font-kenyan text-6xl md:text-8xl lg:text-9xl xl:text-[180px] font-normal leading-[100%] tracking-[-3.6px] uppercase">
+              <RevealText
+                className="w-full text-cloudworkz-black font-kenyan text-6xl md:text-8xl lg:text-9xl xl:text-[180px] font-normal leading-[100%] tracking-[-3.6px] uppercase"
+                splitBy="words"
+                stagger={0.12}
+              >
                 <span className="text-cloudworkz-primary">An Ecosystem</span>
                 <span className="text-cloudworkz-black"> Built by Doing</span>
-              </h2>
+              </RevealText>
 
-              <div className="w-full text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-3xl xl:text-[32px] font-normal leading-[100%] tracking-[-0.64px]">
-                Cloudworkz tools start as internal solutions to real problems -
-                battle-tested by our team, refined by client needs.
-                <br />
-                <br />
-                From investor matching to sales operations, our ecosystem
-                reflects what startups use
-              </div>
+              <FadeInUp delay={0.6} y={40}>
+                <div className="w-full text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-3xl xl:text-[32px] font-normal leading-[100%] tracking-[-0.64px]">
+                  Cloudworkz tools start as internal solutions to real problems
+                  - battle-tested by our team, refined by client needs.
+                  <br />
+                  <br />
+                  From investor matching to sales operations, our ecosystem
+                  reflects what startups use
+                </div>
+              </FadeInUp>
             </div>
 
             {/* Right visual element */}
@@ -465,7 +487,7 @@ export default function Index() {
                 </svg>
               </div>
             </div>
-          </div>
+          </StaggerContainer>
         </div>
       </section>
       {/* Video Section */}
@@ -484,15 +506,21 @@ export default function Index() {
         </video>
 
         {/* Overlay Content */}
-        <div className="relative z-20 flex flex-col items-start gap-[39px] w-full pl-[691px]">
-          <div className="text-cloudworkz-black text-justify font-archivo text-2xl font-normal leading-[100%] tracking-[-0.48px] w-full">
-            A modular platform for managing outreach, data, content, and team
-            coordination - supported by an embedded sales service when needed.
-            <br />
-            <br />
-            Each part is shaped by what we've seen teams struggle with - and
-            what we've had to solve ourselves.
-          </div>
+        <StaggerContainer
+          className="relative z-20 flex flex-col items-start gap-[39px] w-full pl-[691px]"
+          stagger={0.3}
+          delay={0.2}
+        >
+          <FadeInUp y={40}>
+            <div className="text-cloudworkz-black text-justify font-archivo text-2xl font-normal leading-[100%] tracking-[-0.48px] w-full">
+              A modular platform for managing outreach, data, content, and team
+              coordination - supported by an embedded sales service when needed.
+              <br />
+              <br />
+              Each part is shaped by what we've seen teams struggle with - and
+              what we've had to solve ourselves.
+            </div>
+          </FadeInUp>
 
           {/* CTA Block */}
           <div className="flex items-center gap-3">
@@ -527,7 +555,7 @@ export default function Index() {
               </svg>
             </button>
           </div>
-        </div>
+        </StaggerContainer>
       </section>
       <div
         className="flex flex-col relative min-h-screen"
@@ -553,22 +581,32 @@ export default function Index() {
                 style={{ gap: "31px" }}
               >
                 {/* Text Content */}
-                <div className="flex flex-col items-end gap-5 max-w-4xl lg:flex-1">
+                <StaggerContainer
+                  className="flex flex-col items-end gap-5 max-w-4xl lg:flex-1"
+                  stagger={0.3}
+                  delay={0.2}
+                >
                   {/* Title */}
-                  <h2 className="text-right font-kenyan text-3xl md:text-4xl lg:text-5xl xl:text-[60px] font-normal leading-[110%] uppercase">
+                  <RevealText
+                    className="text-right font-kenyan text-3xl md:text-4xl lg:text-5xl xl:text-[60px] font-normal leading-[110%] uppercase"
+                    splitBy="words"
+                    stagger={0.08}
+                  >
                     <span className="text-cloudworkz-black">
                       You don't need more dashboards.{" "}
                     </span>
                     <span className="text-cloudworkz-primary">
                       You need a system that gets the work done
                     </span>
-                  </h2>
+                  </RevealText>
 
                   {/* Description */}
-                  <p className="text-right text-cloudworkz-black font-archivo text-lg md:text-xl lg:text-2xl xl:text-[24px] font-normal leading-[110%] max-w-3xl">
-                    Cloudworkz gives you the tools — and the team — to move
-                    faster, close smarter, and scale without chaos.
-                  </p>
+                  <FadeInUp y={30}>
+                    <p className="text-right text-cloudworkz-black font-archivo text-lg md:text-xl lg:text-2xl xl:text-[24px] font-normal leading-[110%] max-w-3xl">
+                      Cloudworkz gives you the tools — and the team — to move
+                      faster, close smarter, and scale without chaos.
+                    </p>
+                  </FadeInUp>
 
                   {/* CTA Block */}
                   <div className="flex items-center gap-3 mt-4">
@@ -599,7 +637,7 @@ export default function Index() {
                       </svg>
                     </button>
                   </div>
-                </div>
+                </StaggerContainer>
 
                 {/* Rounded Gradient Element */}
                 <div className="flex-shrink-0">
@@ -649,28 +687,44 @@ export default function Index() {
           className="relative z-10 flex flex-col items-start gap-[61px] w-full"
           style={{ padding: "250px 40px 30px" }}
         >
-          <div className="flex items-start gap-5 w-full flex-wrap lg:flex-nowrap">
+          <StaggerContainer
+            className="flex items-start gap-5 w-full flex-wrap lg:flex-nowrap"
+            stagger={0.2}
+            delay={0.2}
+          >
             {/* Contact Us Section */}
             <div className="flex flex-col items-start gap-[109px] w-full lg:w-[321px]">
-              <h3 className="text-cloudworkz-black font-kenyan text-3xl md:text-[40px] font-normal leading-[100%] tracking-[-0.8px] uppercase">
-                Contact Us
-              </h3>
-              <div className="flex flex-col items-start gap-5 w-[207px]">
+              <FadeInUp y={30}>
+                <h3 className="text-cloudworkz-black font-kenyan text-3xl md:text-[40px] font-normal leading-[100%] tracking-[-0.8px] uppercase">
+                  Contact Us
+                </h3>
+              </FadeInUp>
+              <StaggerContainer
+                className="flex flex-col items-start gap-5 w-[207px]"
+                stagger={0.1}
+                delay={0.4}
+              >
                 <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
                   info@cloudworkz.com
                 </div>
                 <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
                   555 123 4567
                 </div>
-              </div>
+              </StaggerContainer>
             </div>
 
             {/* Follow Us Section */}
             <div className="flex flex-col items-start gap-[77px] w-full lg:w-[321px]">
-              <h3 className="text-cloudworkz-black font-kenyan text-3xl md:text-[40px] font-normal leading-[100%] tracking-[-0.8px] uppercase">
-                Follow Us
-              </h3>
-              <div className="flex flex-col items-start gap-[18px] w-[87px]">
+              <FadeInUp y={30}>
+                <h3 className="text-cloudworkz-black font-kenyan text-3xl md:text-[40px] font-normal leading-[100%] tracking-[-0.8px] uppercase">
+                  Follow Us
+                </h3>
+              </FadeInUp>
+              <StaggerContainer
+                className="flex flex-col items-start gap-[18px] w-[87px]"
+                stagger={0.1}
+                delay={0.4}
+              >
                 <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
                   LinkedIn
                 </div>
@@ -680,27 +734,33 @@ export default function Index() {
                 <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
                   Facebook
                 </div>
-              </div>
+              </StaggerContainer>
             </div>
 
             {/* Legal Links Section */}
-            <div className="flex flex-col items-start gap-[18px] w-full lg:w-[321px]">
+            <StaggerContainer
+              className="flex flex-col items-start gap-[18px] w-full lg:w-[321px]"
+              stagger={0.1}
+              delay={0.6}
+            >
               <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
                 Privacy Policy
               </div>
               <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
                 Terms of Service
               </div>
-            </div>
-          </div>
+            </StaggerContainer>
+          </StaggerContainer>
 
           {/* Logo */}
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/2ca41c4ebe4ba18e91febe21b8f069e137f71166?width=2720"
-            alt="CloudWorkz Logo"
-            className="w-full max-w-[1360px] h-auto"
-            style={{ height: "178.678px" }}
-          />
+          <FadeInUp delay={0.8} y={40}>
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/2ca41c4ebe4ba18e91febe21b8f069e137f71166?width=2720"
+              alt="CloudWorkz Logo"
+              className="w-full max-w-[1360px] h-auto"
+              style={{ height: "178.678px" }}
+            />
+          </FadeInUp>
         </footer>
       </div>
     </div>
