@@ -596,7 +596,7 @@ export default function Index() {
                       You don't need more dashboards.{" "}
                     </span>
                     <span className="text-cloudworkz-primary">
-                      You need a system that gets the work done
+                      You need a system that gets the work done 
                     </span>
                   </RevealText>
 
