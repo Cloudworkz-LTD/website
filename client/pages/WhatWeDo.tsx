@@ -76,7 +76,10 @@ export default function WhatWeDo() {
                 first outreach to booked calls, our Sales Pods keep your
                 pipeline moving.
               </p>
-              <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
+              <button
+                onClick={handleSalesAsAServiceClick}
+                className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors"
+              >
                 <svg
                   width="24"
                   height="24"
