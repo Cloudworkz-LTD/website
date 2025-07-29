@@ -6,37 +6,6 @@ export default function SalesAsAService() {
       {/* Header */}
       <Header />
 
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-8 lg:px-12 py-24">
-        {/* Background Image - positioned absolutely */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="relative w-full h-full">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/5cc08a262d95ecd64787b15a256888f3b796930e?width=800"
-              alt=""
-              className="absolute w-[120%] h-[120%] object-cover mix-blend-multiply opacity-40"
-              style={{
-                transform: "rotate(-15deg) translate(-10%, -10%)",
-                transformOrigin: "center center",
-              }}
-            />
-          </div>
-        </div>
-
-        {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto w-full">
-          <div className="flex flex-col items-center justify-center text-center">
-            <h1 className="font-kenyan text-4xl md:text-6xl lg:text-8xl xl:text-[180px] font-normal leading-[87%] uppercase tracking-tight mb-8">
-              <span className="text-cloudworkz-primary block">
-                Sales-as-a-Service
-              </span>
-            </h1>
-            <p className="text-cloudworkz-black font-archivo text-xl md:text-2xl lg:text-3xl font-bold leading-[120%] uppercase max-w-4xl">
-              A plug-and-play growth team embedded in your business. From first outreach to booked calls, our Sales Pods keep your pipeline moving.
-            </p>
-          </div>
-        </div>
-      </section>
 
 
 
