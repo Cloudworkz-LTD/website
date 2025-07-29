@@ -12,6 +12,7 @@ import WhatWeDo from "./pages/WhatWeDo";
 import Insights from "./pages/Insights";
 import HowItWorks from "./pages/HowItWorks";
 import SalesAsAService from "./pages/SalesAsAService";
+import CloudworkzApp from "./pages/CloudworkzApp";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
