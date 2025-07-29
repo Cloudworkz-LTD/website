@@ -11,6 +11,7 @@ import OurStory from "./pages/OurStory";
 import WhatWeDo from "./pages/WhatWeDo";
 import Insights from "./pages/Insights";
 import HowItWorks from "./pages/HowItWorks";
+import SalesAsAService from "./pages/SalesAsAService";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
