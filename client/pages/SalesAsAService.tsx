@@ -77,7 +77,8 @@ export default function SalesAsAService() {
               Plug in a Sales Team. Start Getting Results.
             </h2>
             <p className="text-cloudworkz-primary font-archivo text-3xl md:text-4xl lg:text-[55px] font-semibold leading-[95%] tracking-[-1.65px] uppercase">
-              There is no headcount or hiring; just an expert growth pod fully embedded into your process.
+              There is no headcount or hiring; just an expert growth pod fully
+              embedded into your process.
             </p>
           </div>
         </div>
@@ -89,13 +90,14 @@ export default function SalesAsAService() {
           {/* How It Works */}
           <div className="flex flex-col gap-12 lg:gap-16 flex-1 max-w-sm">
             <h2 className="text-cloudworkz-black font-kenyan text-6xl md:text-8xl lg:text-[120px] font-normal leading-[100%] tracking-[-2.4px] uppercase">
-              How It{" "}
-              <span className="text-cloudworkz-primary">Works</span>
+              How It <span className="text-cloudworkz-primary">Works</span>
             </h2>
             <p className="text-cloudworkz-black font-archivo text-lg md:text-xl font-normal leading-[100%]">
-              We define your message, build your playbook, and run your pipeline, end to end.
-              You get weekly updates, daily execution, and constant iteration.
-              For clients who want more visibility, automation, or internal enablement, we can use the platform to power their engagement.
+              We define your message, build your playbook, and run your
+              pipeline, end to end. You get weekly updates, daily execution, and
+              constant iteration. For clients who want more visibility,
+              automation, or internal enablement, we can use the platform to
+              power their engagement.
             </p>
           </div>
 
@@ -141,8 +143,9 @@ export default function SalesAsAService() {
               It Works
             </h2>
             <p className="text-cloudworkz-black font-archivo text-lg md:text-xl font-normal leading-[100%]">
-              We've delivered for venture-backed scaleups, founder-led startups, and internal GTM teams.
-              You get people who execute, with the option to plug into a scale-based system.
+              We've delivered for venture-backed scaleups, founder-led startups,
+              and internal GTM teams. You get people who execute, with the
+              option to plug into a scale-based system.
             </p>
           </div>
         </div>
@@ -171,7 +174,8 @@ export default function SalesAsAService() {
           {/* Center Content */}
           <div className="flex flex-col items-center gap-6 max-w-md text-center">
             <p className="text-cloudworkz-black font-archivo text-lg md:text-xl font-normal leading-[100%]">
-              Get a Growth Team Without Building One Scale your outreach. Start real conversations.
+              Get a Growth Team Without Building One Scale your outreach. Start
+              real conversations.
             </p>
             <div className="flex items-center gap-3">
               <span className="text-cloudworkz-primary font-archivo text-sm md:text-base font-semibold uppercase tracking-wide">

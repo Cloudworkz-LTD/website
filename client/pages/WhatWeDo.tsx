@@ -5,7 +5,7 @@ export default function WhatWeDo() {
   const navigate = useNavigate();
 
   const handleSalesAsAServiceClick = () => {
-    navigate('/sales-as-a-service');
+    navigate("/sales-as-a-service");
   };
 
   return (
