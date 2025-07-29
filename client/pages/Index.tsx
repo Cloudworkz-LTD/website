@@ -51,7 +51,7 @@ export default function Index() {
         ease: "power2.out",
         scrollTrigger: {
           trigger: featureBlocksRef.current,
-          start: "center center",
+          start: "top 30%",
           toggleActions: "play none none reverse",
         },
       });
@@ -63,7 +63,7 @@ export default function Index() {
         ease: "power2.out",
         scrollTrigger: {
           trigger: featureBlocksRef.current,
-          start: "bottom 80%",
+          start: "bottom 100%",
           toggleActions: "play none none reverse",
         },
       });
