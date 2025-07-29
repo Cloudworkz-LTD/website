@@ -8,6 +8,7 @@ import CursorEffect from "../components/CursorEffect";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Index() {
+  const navigate = useNavigate();
   const featureBlocksRef = useRef<HTMLDivElement>(null);
   const block1Ref = useRef<HTMLDivElement>(null);
   const block2Ref = useRef<HTMLDivElement>(null);
