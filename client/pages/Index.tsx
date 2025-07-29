@@ -93,15 +93,13 @@ export default function Index() {
           />
         </div>
       </section>
-
       {/* Header over background */}
       <Header />
-
-      {/* Hero Content */}
-      <div className="relative z-10 flex justify-between items-start pt-[150px] px-10">
-        <div className="flex flex-col">
-          {/* Hero Title - Left Side */}
-          <CursorEffect>
+      {/* Hero Content */}{" "}
+      <CursorEffect>
+        <div className="relative z-10 flex justify-between items-start pt-[150px] px-10">
+          <div className="flex flex-col">
+            {/* Hero Title - Left Side */}
             <h1 className="font-kenyan text-[180px] leading-[180px] uppercase flex flex-col justify-start items-start max-w-[1015px]">
               <span className="text-cloudworkz-black">Your Portal</span>
               <div className="flex flex-row">
@@ -110,59 +108,58 @@ export default function Index() {
               </div>
               <span className="text-cloudworkz-primary">Growth</span>
             </h1>
-          </CursorEffect>
 
-          {/* Description below hero title */}
-          <div className="font-kenyan text-[64px] leading-[95%] tracking-[-1.92px] uppercase text-cloudworkz-black max-w-[1015px] mt-6">
-            Powered by Smart Systems
-          </div>
-        </div>
-
-        {/* CTA Section - Right Side */}
-        <div className="flex flex-col justify-end items-start gap-[14px] w-full max-w-[322px] mt-auto">
-          {/* Description Text */}
-          <p className="text-cloudworkz-black font-archivo text-2xl leading-[100%] w-full">
-            Step into a workspace where structure accelerates momentum.
-          </p>
-
-          {/* CTA Block */}
-          <div className="flex items-center gap-3">
-            {/* CTA Text */}
-            <div className="text-cloudworkz-primary font-archivo text-base font-semibold leading-[110%] uppercase">
-              Start
-              <br />
-              Scaling
-              <br />
-              Today
+            {/* Description below hero title */}
+            <div className="font-kenyan text-[64px] leading-[95%] tracking-[-1.92px] uppercase text-cloudworkz-black max-w-[1015px] mt-6">
+              Powered by Smart Systems
             </div>
+          </div>
 
-            {/* CTA Button */}
-            <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071Z"
-                  fill="#126AF9"
-                />
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
-                  fill="#126AF9"
-                />
-              </svg>
-            </button>
+          {/* CTA Section - Right Side */}
+          <div className="flex flex-col justify-end items-start gap-[14px] w-full max-w-[322px] mt-auto">
+            {/* Description Text */}
+            <p className="text-cloudworkz-black font-archivo text-2xl leading-[100%] w-full">
+              Step into a workspace where structure accelerates momentum.
+            </p>
+
+            {/* CTA Block */}
+            <div className="flex items-center gap-3">
+              {/* CTA Text */}
+              <div className="text-cloudworkz-primary font-archivo text-base font-semibold leading-[110%] uppercase">
+                Start
+                <br />
+                Scaling
+                <br />
+                Today
+              </div>
+
+              {/* CTA Button */}
+              <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071Z"
+                    fill="#126AF9"
+                  />
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
+                    fill="#126AF9"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-
+      </CursorEffect>
       {/* CloudWorkz Description Section */}
       <section className="relative z-10 pt-[150px] px-10">
         <div className="max-w-[1017px]">
@@ -180,13 +177,12 @@ export default function Index() {
           </p>
         </div>
       </section>
-
       {/* Feature Blocks Section */}
       <section
         className="relative z-10 flex items-center justify-center py-[150px] px-16"
         ref={featureBlocksRef}
       >
-        <div className="flex flex-col lg:flex-row items-center gap-1 lg:gap-0 w-full overflow-hidden">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-1 lg:gap-0 w-full max-w-[1356px] overflow-hidden">
           {/* Block 1 - Growth, Engineered */}
           <div
             ref={block1Ref}
@@ -218,7 +214,6 @@ export default function Index() {
           />
         </div>
       </section>
-
       {/* Marquee Section */}
       <section className="relative z-10 w-full overflow-hidden py-8">
         <div className="flex whitespace-nowrap animate-marquee">
@@ -250,7 +245,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
       {/* Sales-as-a-Service Section */}
       <section className="relative z-10 px-8 lg:px-12">
         <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-16 py-12 lg:py-20 border-b-2 border-cloudworkz-primary">
@@ -295,7 +289,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
       {/* The Cloudworkz App Section */}
       <section className="relative z-10 px-8 lg:px-12">
         <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-16 py-12 lg:py-20 border-b-2 border-cloudworkz-primary">
@@ -315,7 +308,7 @@ export default function Index() {
 
             {/* CTA Button */}
             <button
-              onClick={() => navigate('/cloudworkz-app')}
+              onClick={() => navigate("/cloudworkz-app")}
               className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors"
             >
               <svg
@@ -343,7 +336,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
       {/* Background Image Section */}
       <section className="relative w-full overflow-visible pt-[150px] pl-[40px]">
         <div className="relative w-full min-h-[600px] lg:min-h-[800px]">
@@ -420,7 +412,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
       {/* Video Section */}
       <section className="relative z-10 flex h-[800px] px-10 py-[50px] flex-col justify-end items-end gap-[39px] w-full">
         <video
@@ -482,7 +473,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
       <div
         className="flex flex-col relative min-h-screen"
         style={{
