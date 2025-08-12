@@ -289,14 +289,14 @@ export default function Index() {
       {/* Sales-as-a-Service Section */}
       <section className="relative z-10 px-8 lg:px-12">
         <StaggerContainer
-          className="flex flex-col lg:flex-row items-start gap-12 lg:gap-16 py-12 lg:py-20 border-b-2 border-cloudworkz-primary"
+          className="flex flex-col lg:flex-row items-start gap-12 lg:gap-16 py-12 lg:py-12 border-b-2 border-cloudworkz-primary"
           stagger={0.3}
           delay={0.2}
         >
           {/* Service Title */}
           <div className="flex flex-col items-start gap-5 flex-1 w-full">
             <RevealText
-              className="text-cloudworkz-primary font-archivo text-4xl md:text-5xl lg:text-6xl xl:text-[80px] font-semibold leading-[80%] tracking-[-1.6px] uppercase max-w-[535px]"
+              className="text-cloudworkz-primary font-archivo text-4xl md:[3rem] lg:text-[3.75rem] xl:text-[80px] font-semibold leading-[80%] tracking-[-1.6px] uppercase max-w-[535px]"
               splitBy="words"
               stagger={0.1}
             >
@@ -305,7 +305,7 @@ export default function Index() {
           </div>
 
           {/* Description Block */}
-          <div className="flex flex-col items-end gap-12 lg:gap-16 w-full lg:w-[348px] lg:self-stretch">
+          <div className="flex flex-col items-end gap-12 lg:gap-12 w-full lg:w-[348px] lg:self-stretch">
             <FadeInUp delay={0.4} y={30}>
               <div className="text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-3xl xl:text-[32px] font-semibold leading-[100%] uppercase max-w-[340px]">
                 Plug in a trained sales pod to handle outreach, follow-ups, and
@@ -345,14 +345,14 @@ export default function Index() {
       {/* The Cloudworkz App Section */}
       <section className="relative z-10 px-8 lg:px-12">
         <StaggerContainer
-          className="flex flex-col lg:flex-row items-start gap-12 lg:gap-16 py-12 lg:py-20 border-b-2 border-cloudworkz-primary"
+          className="flex flex-col lg:flex-row items-start gap-12 lg:gap-16 py-12 lg:py-12 border-b-2 border-cloudworkz-primary"
           stagger={0.3}
           delay={0.2}
         >
           {/* Service Title */}
           <div className="flex flex-col items-start gap-5 flex-1 w-full">
             <RevealText
-              className="text-cloudworkz-primary font-archivo text-4xl md:text-5xl lg:text-6xl xl:text-[80px] font-semibold leading-[80%] tracking-[-1.6px] uppercase max-w-[584px]"
+              className="text-cloudworkz-primary font-archivo text-4xl md:[3rem] lg:[3.75rem] xl:text-[80px] font-semibold leading-[80%] tracking-[-1.6px] uppercase max-w-[584px]"
               splitBy="words"
               stagger={0.1}
             >
@@ -361,7 +361,7 @@ export default function Index() {
           </div>
 
           {/* Description Block */}
-          <div className="flex flex-col items-end gap-12 lg:gap-16 w-full lg:w-[348px] lg:self-stretch">
+          <div className="flex flex-col items-end gap-12 lg:gap-12 w-full lg:w-[348px] lg:self-stretch">
             <FadeInUp delay={0.4} y={30}>
               <div className="text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-3xl xl:text-[32px] font-semibold leading-[100%] uppercase max-w-[340px]">
                 Our modular platform automates internal execution: lead intake,
@@ -392,7 +392,7 @@ export default function Index() {
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
-                    d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
+                    d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
                     fill="#126AF9"
                   />
                 </svg>
@@ -425,16 +425,21 @@ export default function Index() {
           >
             {/* Left content */}
             <div className="flex flex-col items-start gap-6 flex-1">
-              <RevealText
-                className="w-full text-cloudworkz-black font-kenyan text-6xl md:text-8xl lg:text-9xl xl:text-[180px] font-normal leading-[100%] tracking-[-3.6px] uppercase"
+              <JustifiedRevealText
                 splitBy="words"
-                stagger={0.12}
+                stagger={0.08}
+                delay={0.2}
+                className="font-kenyan text-6xl md:text-8xl lg:text-9xl xl:text-[170px]"
               >
-                <span className="text-cloudworkz-primary">An Ecosystem</span>
-                <span className="text-cloudworkz-black"> Built by Doing</span>
-              </RevealText>
-
-              <FadeInUp delay={0.6} y={40}>
+                <span className="text-cloudworkz-primary uppercase">
+                  An Ecosystem
+                </span>
+                <span className="text-cloudworkz-black uppercase">
+                  {" "}
+                  Built <br /> by Doing
+                </span>
+              </JustifiedRevealText>
+              <FadeInUp>
                 <div className="w-full text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-3xl xl:text-[32px] font-normal leading-[100%] tracking-[-0.64px]">
                   Cloudworkz tools start as internal solutions to real problems
                   - battle-tested by our team, refined by client needs.
@@ -506,10 +511,10 @@ export default function Index() {
         <StaggerContainer
           className="relative z-20 flex flex-col items-start gap-[39px] w-full pl-[691px]"
           stagger={0.3}
-          delay={0.2}
+          delay={0.1}
         >
-          <FadeInUp y={40}>
-            <div className="text-cloudworkz-black text-justify font-archivo text-2xl font-normal leading-[100%] tracking-[-0.48px] w-full">
+          <FadeInUp>
+            <div className="text-cloudworkz-black text-justify font-archivo text-2xl font-semibold  leading-[100%] tracking-[-0.48px] w-full uppercase">
               A modular platform for managing outreach, data, content, and team
               coordination - supported by an embedded sales service when needed.
               <br />
@@ -584,7 +589,7 @@ export default function Index() {
                   delay={0.2}
                 >
                   {/* Title */}
-                  <RevealText
+                  <JustifiedRevealText
                     className="text-right font-kenyan text-3xl md:text-4xl lg:text-5xl xl:text-[60px] font-normal leading-[110%] uppercase"
                     splitBy="words"
                     stagger={0.08}
@@ -595,11 +600,11 @@ export default function Index() {
                     <span className="text-cloudworkz-primary">
                       You need a system that gets the work done
                     </span>
-                  </RevealText>
+                  </JustifiedRevealText>
 
                   {/* Description */}
                   <FadeInUp y={30}>
-                    <p className="text-right text-cloudworkz-black font-archivo text-lg md:text-xl lg:text-2xl xl:text-[24px] font-normal leading-[110%] max-w-3xl">
+                    <p className="text-right text-cloudworkz-black font-archivo font-semibold text-lg md:text-xl lg:text-2xl xl:text-[24px] font-normal leading-[110%] max-w-3xl uppercase">
                       Cloudworkz gives you the tools — and the team — to move
                       faster, close smarter, and scale without chaos.
                     </p>
@@ -607,7 +612,10 @@ export default function Index() {
 
                   {/* CTA Block */}
                   <div className="flex items-center gap-3 mt-4">
-                    <div className="text-cloudworkz-primary font-archivo text-base font-semibold leading-[110%] uppercase text-right">
+                    <div
+                      className="text-cloudworkz-primary font-archivo text-base font-semibold leading-[110%] uppercase text-left"
+                      style={{ width: "91px" }}
+                    >
                       Let's Build Together
                     </div>
                     <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
