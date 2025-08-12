@@ -147,4 +147,21 @@
   .animate-marquee {
     animation: marquee 20s linear infinite;
   }
+
+  /* Estilos para texto justificado con animaciones */
+  .text-justify .reveal-text-part {
+    display: inline !important;
+    white-space: nowrap;
+  }
+
+  /* Forzar justificación en contenedores con animaciones de texto */
+  .justified-reveal-container {
+    text-align: justify !important;
+    text-align-last: left;
+  }
+
+  .justified-reveal-container .reveal-text-part {
+    display: inline !important;
+    white-space: nowrap;
+  }
 }

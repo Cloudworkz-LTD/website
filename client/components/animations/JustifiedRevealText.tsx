@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 
-interface StyledRevealTextProps {
+interface JustifiedRevealTextProps {
   children: React.ReactNode;
   className?: string;
   delay?: number;
@@ -11,7 +11,7 @@ interface StyledRevealTextProps {
   splitBy?: 'words' | 'lines' | 'chars';
 }
 
-export const StyledRevealText: React.FC<StyledRevealTextProps> = ({
+export const JustifiedRevealText: React.FC<JustifiedRevealTextProps> = ({
   children,
   className = '',
   delay = 0,
@@ -66,20 +66,18 @@ export const StyledRevealText: React.FC<StyledRevealTextProps> = ({
             // Solo crear span si la parte no está vacía (para words y lines)
             if (part.trim() || splitBy === 'chars') {
               const span = document.createElement('span');
-              // Usar inline en lugar de inline-block para preservar justificación
-              span.className = 'inline reveal-text-part';
+              span.className = 'reveal-text-part';
+              // Usar estilos inline para preservar la justificación
               span.style.display = 'inline';
+              span.style.whiteSpace = 'nowrap';
               span.textContent = part;
               fragment.appendChild(span);
             }
             
             // Agregar espacio después de cada palabra (excepto la última)
             if (splitBy === 'words' && index < splitText.length - 1) {
-              const spaceSpan = document.createElement('span');
-              spaceSpan.className = 'inline reveal-text-part';
-              spaceSpan.style.display = 'inline';
-              spaceSpan.innerHTML = '&nbsp;';
-              fragment.appendChild(spaceSpan);
+              const spaceNode = document.createTextNode(' ');
+              fragment.appendChild(spaceNode);
             }
           });
 
