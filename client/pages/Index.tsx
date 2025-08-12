@@ -202,25 +202,20 @@ export default function Index() {
       </CursorEffect>
       {/* CloudWorkz Description Section */}
       <section className="relative z-10 pt-[150px] px-10">
-        <div className="max-w-[1017px]">
-          <StyledRevealText
-            className="text-justify text-[75px] leading-[95%] tracking-[-1.65px] uppercase"
-            splitBy="words"
-            stagger={0.08}
-            delay={0.2}
-          >
+        <StyledRevealText splitBy="words" stagger={0.08} delay={0.2}>
+          <div className="max-w-[1017px] text-justify text-[75px] leading-[95%] tracking-[-1.65px] uppercase">
             <span className="font-archivo text-cloudworkz-primary">
               Cloudworkz{" "}
             </span>
             <span className="font-kenyan text-cloudworkz-primary text-[60px]">
               *
             </span>{" "}
-            <span className="font-archivo text-[#323232] text-justify">
+            <span className="font-archivo text-[#323232]">
               helps ambitious teams scale faster and build more intelligent
               systems with modular execution tools.
             </span>
-          </StyledRevealText>
-        </div>
+          </div>
+        </StyledRevealText>
       </section>
       {/* Feature Blocks Section */}
       <section
