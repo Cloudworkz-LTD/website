@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import CursorEffect from "../components/CursorEffect";
 import {
   RevealText,
+  StyledRevealText,
   FadeInUp,
   StaggerContainer,
 } from "../components/animations";
@@ -202,8 +203,8 @@ export default function Index() {
       {/* CloudWorkz Description Section */}
       <section className="relative z-10 pt-[150px] px-10">
         <div className="max-w-[1017px]">
-          <RevealText
-            className="text-justify text-[55px] leading-[95%] tracking-[-1.65px] uppercase"
+          <StyledRevealText
+            className="text-justify text-[75px] leading-[95%] tracking-[-1.65px] uppercase"
             splitBy="words"
             stagger={0.08}
             delay={0.2}
@@ -211,14 +212,14 @@ export default function Index() {
             <span className="font-archivo text-cloudworkz-primary">
               Cloudworkz{" "}
             </span>
-            <span className="font-kenyan text-cloudworkz-primary text-[100px]">
+            <span className="font-kenyan text-cloudworkz-primary text-[60px]">
               *
             </span>{" "}
-            <span className="font-archivo text-[#323232]">
+            <span className="font-archivo text-[#323232] text-justify">
               helps ambitious teams scale faster and build more intelligent
               systems with modular execution tools.
             </span>
-          </RevealText>
+          </StyledRevealText>
         </div>
       </section>
       {/* Feature Blocks Section */}
@@ -596,7 +597,7 @@ export default function Index() {
                       You don't need more dashboards.{" "}
                     </span>
                     <span className="text-cloudworkz-primary">
-                      You need a system that gets the work done 
+                      You need a system that gets the work done
                     </span>
                   </RevealText>
 
