@@ -90,10 +90,10 @@ export default function CursorEffect({
           className="absolute rounded-full opacity-0"
           style={{
             background: "linear-gradient(135deg, #126AF9, #3B82F6)",
-            width: "400px",
-            height: "400px",
-            marginLeft: "-200px",
-            marginTop: "-200px",
+            width: "250px",
+            height: "250px",
+            marginLeft: "-125px",
+            marginTop: "-125px",
             willChange: "transform",
           }}
         />
@@ -104,10 +104,10 @@ export default function CursorEffect({
           className="absolute rounded-full opacity-0"
           style={{
             background: "linear-gradient(135deg, #06B6D4, #14B8A6)",
-            width: "280px",
-            height: "280px",
-            marginLeft: "-140px",
-            marginTop: "-140px",
+            width: "180px",
+            height: "180px",
+            marginLeft: "-90px",
+            marginTop: "-90px",
             willChange: "transform",
           }}
         />
@@ -118,10 +118,10 @@ export default function CursorEffect({
           className="absolute rounded-full opacity-0"
           style={{
             background: "linear-gradient(135deg, #0EA5E9, #38BDF8)",
-            width: "180px",
-            height: "180px",
-            marginLeft: "-90px",
-            marginTop: "-90px",
+            width: "120px",
+            height: "120px",
+            marginLeft: "-60px",
+            marginTop: "-60px",
             willChange: "transform",
           }}
         />
