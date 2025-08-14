@@ -431,7 +431,7 @@ export default function Index() {
                 splitBy="words"
                 stagger={0.08}
                 delay={0.2}
-                className="font-kenyan text-6xl md:text-8xl lg:text-9xl xl:text-[170px]"
+                className="font-kenyan text-6xl md:text-8xl lg:text-9xl xl:text-[120px]"
               >
                 <span className="text-cloudworkz-primary uppercase">
                   An Ecosystem
