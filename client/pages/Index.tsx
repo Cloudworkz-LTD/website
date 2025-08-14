@@ -38,7 +38,7 @@ export default function Index() {
         transform: "translateY(150px)",
       });
 
-      // Animate each block individually with widely spaced triggers
+      // Animate each block individually with better spaced triggers
       gsap.to(block1Ref.current, {
         opacity: 1,
         transform: "translateY(0px)",
@@ -56,9 +56,10 @@ export default function Index() {
         transform: "translateY(0px)",
         duration: 0.6,
         ease: "power2.out",
+        delay: 0.2,
         scrollTrigger: {
           trigger: featureBlocksRef.current,
-          start: "top 30%",
+          start: "top 60%",
           toggleActions: "play none none reverse",
         },
       });
@@ -68,9 +69,10 @@ export default function Index() {
         transform: "translateY(0px)",
         duration: 0.6,
         ease: "power2.out",
+        delay: 0.4,
         scrollTrigger: {
           trigger: featureBlocksRef.current,
-          start: "bottom 100%",
+          start: "top 40%",
           toggleActions: "play none none reverse",
         },
       });
