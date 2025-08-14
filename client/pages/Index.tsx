@@ -104,10 +104,10 @@ export default function Index() {
       <Header />
       {/* Hero Content */}{" "}
       <CursorEffect>
-        <div className="relative z-10 flex justify-between items-start pt-[140px] px-10">
+        <div className="relative z-10 flex justify-between items-start pt-[90px] px-10">
           <div className="flex flex-col">
             {/* Hero Title - Left Side */}
-            <h1 className="font-kenyan text-[180px] leading-[155px] uppercase flex flex-col justify-start items-start max-w-[1015px]">
+            <h1 className="font-kenyan text-[120px] leading-[100px] uppercase flex flex-col justify-start items-start max-w-[1015px]">
               <RevealText
                 className="text-cloudworkz-black"
                 splitBy="words"
@@ -145,7 +145,7 @@ export default function Index() {
             </h1>
 
             {/* Description below hero title */}
-            <FadeInUp delay={1.5} duration={0.8} y={40}>
+            <FadeInUp delay={1.5} duration={0.8}>
               <div className="font-kenyan text-[64px] leading-[95%] tracking-[-1.92px] uppercase text-cloudworkz-black max-w-[1015px] mt-6">
                 Powered by Smart Systems
               </div>
@@ -204,7 +204,7 @@ export default function Index() {
       {/* CloudWorkz Description Section */}
       <section className="relative z-10 pt-[150px] px-10">
         <JustifiedRevealText splitBy="words" stagger={0.08} delay={0.2}>
-          <div className="max-w-[1017px] text-justify justified-reveal-container text-[75px] leading-[95%] tracking-[-1.65px] uppercase">
+          <div className="max-w-[1017px] text-justify justified-reveal-container text-[50px] leading-[95%] tracking-[-1.65px] uppercase">
             <span className="font-archivo text-cloudworkz-primary">
               Cloudworkz{" "}
             </span>
