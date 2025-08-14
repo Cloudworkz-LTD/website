@@ -8,7 +8,7 @@ export default function Header() {
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">
           <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/7017ab23eb3bbe11cd6b41c3281f2d73a486ba72?width=754"
+            src="https://api.builder.io/api/v1/image/assets/TEMP/2ca41c4ebe4ba18e91febe21b8f069e137f71166?width=754"
             alt="CloudWorkz Logo"
             className="h-8 lg:h-12 w-auto"
           />
