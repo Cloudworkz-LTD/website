@@ -260,7 +260,7 @@ export default function Index() {
       {/* Marquee Section */}
       <section className="relative z-10 w-full overflow-hidden py-8">
         <div className="flex whitespace-nowrap animate-marquee">
-          <div className="flex items-center gap-[21px] text-[clamp(80px,12vw,180px)] font-kenyan font-normal leading-[100%] tracking-[-0.02em] uppercase">
+          <div className="flex items-center gap-[21px] text-[clamp(80px,12vw,120px)] font-kenyan font-normal leading-[100%] tracking-[-0.02em] uppercase">
             <div>
               <span className="text-cloudworkz-black">Beyond</span>
               <span className="text-cloudworkz-primary"> Now</span>
@@ -298,7 +298,7 @@ export default function Index() {
           {/* Service Title */}
           <div className="flex flex-col items-start gap-5 flex-1 w-full">
             <RevealText
-              className="text-cloudworkz-primary font-archivo text-4xl md:[3rem] lg:text-[3.75rem] xl:text-[80px] font-semibold leading-[80%] tracking-[-1.6px] uppercase max-w-[535px]"
+              className="text-cloudworkz-primary font-archivo text-4xl md:[3rem] lg:text-[3.75rem] xl:text-[55px] font-semibold leading-[80%] tracking-[-1.6px] uppercase max-w-[535px]"
               splitBy="words"
               stagger={0.1}
             >
@@ -354,7 +354,7 @@ export default function Index() {
           {/* Service Title */}
           <div className="flex flex-col items-start gap-5 flex-1 w-full">
             <RevealText
-              className="text-cloudworkz-primary font-archivo text-4xl md:[3rem] lg:[3.75rem] xl:text-[80px] font-semibold leading-[80%] tracking-[-1.6px] uppercase max-w-[584px]"
+              className="text-cloudworkz-primary font-archivo text-4xl md:[3rem] lg:[3.75rem] xl:text-[55px] font-semibold leading-[80%] tracking-[-1.6px] uppercase max-w-[584px]"
               splitBy="words"
               stagger={0.1}
             >
