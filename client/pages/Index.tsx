@@ -103,12 +103,12 @@ export default function Index() {
       </section>
       {/* Header over background */}
       <Header />
-      {/* Hero Content */}{" "}
-      <div className="relative z-10 flex justify-between items-start pt-[90px] px-10">
+      {/* Hero Content */}
+      <div className="relative z-10 flex flex-col lg:flex-row lg:justify-between lg:items-start pt-[60px] md:pt-[90px] px-4 md:px-6 lg:px-10">
         <CursorEffect>
-          <div className="flex flex-col">
+          <div className="flex flex-col w-full lg:w-auto">
             {/* Hero Title - Left Side */}
-            <h1 className="font-kenyan text-[120px] leading-[100px] uppercase flex flex-col justify-start items-start max-w-[1015px]">
+            <h1 className="font-kenyan text-[clamp(48px,8vw,120px)] leading-[0.85] uppercase flex flex-col justify-start items-start max-w-full lg:max-w-[1015px]">
               <RevealText
                 className="text-cloudworkz-black"
                 splitBy="words"
@@ -117,9 +117,9 @@ export default function Index() {
               >
                 Your Portal
               </RevealText>
-              <div className="flex flex-row">
+              <div className="flex flex-col sm:flex-row">
                 <RevealText
-                  className="text-cloudworkz-black mr-4"
+                  className="text-cloudworkz-black sm:mr-4"
                   splitBy="words"
                   stagger={0.15}
                   delay={0.6}
@@ -147,7 +147,7 @@ export default function Index() {
 
             {/* Description below hero title */}
             <FadeInUp delay={1.5} duration={0.8}>
-              <div className="font-kenyan text-[64px] leading-[95%] tracking-[-1.92px] uppercase text-cloudworkz-black max-w-[1015px] mt-6">
+              <div className="font-kenyan text-[clamp(32px,5vw,64px)] leading-[0.95] tracking-[-0.02em] uppercase text-cloudworkz-black max-w-full lg:max-w-[1015px] mt-4 md:mt-6">
                 Powered by Smart Systems
               </div>
             </FadeInUp>
@@ -156,19 +156,19 @@ export default function Index() {
 
         {/* CTA Section - Right Side */}
         <StaggerContainer
-          className="flex flex-col justify-end items-start gap-[14px] w-full max-w-[322px] mt-auto"
+          className="flex flex-col justify-start lg:justify-end items-start gap-4 w-full lg:w-auto lg:max-w-[322px] mt-8 lg:mt-auto"
           delay={1.8}
           stagger={0.3}
         >
           {/* Description Text */}
-          <p className="text-cloudworkz-black font-archivo text-2xl leading-[100%] w-full">
+          <p className="text-cloudworkz-black font-archivo text-lg md:text-xl lg:text-2xl leading-[1.1] w-full max-w-md lg:max-w-none">
             Step into a workspace where structure accelerates momentum.
           </p>
 
           {/* CTA Block */}
           <div className="flex items-center gap-3">
             {/* CTA Text */}
-            <div className="text-cloudworkz-primary font-archivo text-base font-semibold leading-[110%] uppercase">
+            <div className="text-cloudworkz-primary font-archivo text-sm md:text-base font-semibold leading-[110%] uppercase">
               Start
               <br />
               Scaling
@@ -177,13 +177,14 @@ export default function Index() {
             </div>
 
             {/* CTA Button */}
-            <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
+            <button className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
               <svg
-                width="24"
-                height="24"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="md:w-6 md:h-6"
               >
                 <path
                   fillRule="evenodd"
@@ -203,13 +204,13 @@ export default function Index() {
         </StaggerContainer>
       </div>
       {/* CloudWorkz Description Section */}
-      <section className="relative z-10 pt-[150px] px-10">
+      <section className="relative z-10 pt-[80px] md:pt-[120px] lg:pt-[150px] px-4 md:px-6 lg:px-10">
         <JustifiedRevealText splitBy="words" stagger={0.08} delay={0.2}>
-          <div className="max-w-[1017px] text-justify justified-reveal-container text-[50px] leading-[95%] tracking-[-1.65px] uppercase">
+          <div className="max-w-full lg:max-w-[1017px] text-left md:text-justify justified-reveal-container text-[clamp(24px,4.5vw,50px)] leading-[0.95] tracking-[-0.02em] uppercase">
             <span className="font-archivo text-cloudworkz-primary">
               Cloudworkz{" "}
             </span>
-            <span className="font-kenyan text-cloudworkz-primary text-[80px]">
+            <span className="font-kenyan text-cloudworkz-primary text-[clamp(36px,6vw,80px)]">
               *
             </span>{" "}
             <span className="font-archivo text-[#323232]">
@@ -221,14 +222,14 @@ export default function Index() {
       </section>
       {/* Feature Blocks Section */}
       <section
-        className="relative z-10 flex items-center justify-center py-[150px] px-16"
+        className="relative z-10 flex items-center justify-center py-[80px] md:py-[120px] lg:py-[150px] px-4 md:px-8 lg:px-16"
         ref={featureBlocksRef}
       >
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-1 lg:gap-0 w-full max-w-[1356px] overflow-hidden">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-4 md:gap-2 lg:gap-0 w-full max-w-[1356px] overflow-hidden">
           {/* Block 1 - Growth, Engineered */}
           <div
             ref={block1Ref}
-            className="flex flex-col justify-center items-start gap-10 w-full lg:w-[452px] h-[755px] p-[58px_40px] rounded-[250px] bg-cover bg-center bg-no-repeat"
+            className="flex flex-col justify-center items-start gap-6 md:gap-8 lg:gap-10 w-full max-w-[400px] lg:w-[452px] h-[400px] md:h-[600px] lg:h-[755px] p-[30px_20px] md:p-[40px_30px] lg:p-[58px_40px] rounded-[80px] md:rounded-[150px] lg:rounded-[250px] bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage:
                 "url('https://api.builder.io/api/v1/image/assets/TEMP/2ebcfd4c91e939b67637722120478b384f33fa9a?width=904')",
@@ -238,7 +239,7 @@ export default function Index() {
           {/* Block 2 - Fundamental Tools, Real Outcomes */}
           <div
             ref={block2Ref}
-            className="flex flex-col justify-center items-start gap-10 w-full lg:w-[452px] h-[755px] p-[58px_40px] rounded-[250px] bg-cover bg-center bg-no-repeat"
+            className="flex flex-col justify-center items-start gap-6 md:gap-8 lg:gap-10 w-full max-w-[400px] lg:w-[452px] h-[400px] md:h-[600px] lg:h-[755px] p-[30px_20px] md:p-[40px_30px] lg:p-[58px_40px] rounded-[80px] md:rounded-[150px] lg:rounded-[250px] bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage:
                 "url('https://api.builder.io/api/v1/image/assets/TEMP/38c2d669cbfb8d2ba2b993bb9e2d6467ee0e84b2?width=904')",
@@ -248,7 +249,7 @@ export default function Index() {
           {/* Block 3 - Cloudworkz started as a sales engine */}
           <div
             ref={block3Ref}
-            className="flex flex-col justify-center items-start gap-10 w-full lg:w-[452px] h-[755px] p-[58px_40px] rounded-[250px] bg-cover bg-center bg-no-repeat"
+            className="flex flex-col justify-center items-start gap-6 md:gap-8 lg:gap-10 w-full max-w-[400px] lg:w-[452px] h-[400px] md:h-[600px] lg:h-[755px] p-[30px_20px] md:p-[40px_30px] lg:p-[58px_40px] rounded-[80px] md:rounded-[150px] lg:rounded-[250px] bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage:
                 "url('https://api.builder.io/api/v1/image/assets/TEMP/4c8c6df29b065c1ac32ad3c770857b5a9e784de9?width=904')",
@@ -288,16 +289,16 @@ export default function Index() {
         </div>
       </section>
       {/* Sales-as-a-Service Section */}
-      <section className="relative z-10 px-8 lg:px-12">
+      <section className="relative z-10 px-4 md:px-6 lg:px-8 xl:px-12">
         <StaggerContainer
-          className="flex flex-col lg:flex-row items-start gap-12 lg:gap-16 py-12 lg:py-12 border-b-2 border-cloudworkz-primary"
+          className="flex flex-col lg:flex-row items-start gap-8 md:gap-10 lg:gap-12 xl:gap-16 py-8 md:py-10 lg:py-12 border-b-2 border-cloudworkz-primary"
           stagger={0.3}
           delay={0.2}
         >
           {/* Service Title */}
           <div className="flex flex-col items-start gap-5 flex-1 w-full">
             <RevealText
-              className="text-cloudworkz-primary font-archivo text-4xl md:[3rem] lg:text-[3.75rem] xl:text-[55px] font-semibold leading-[80%] tracking-[-1.6px] uppercase max-w-[535px]"
+              className="text-cloudworkz-primary font-archivo text-[clamp(28px,5vw,55px)] font-semibold leading-[0.8] tracking-[-0.02em] uppercase max-w-full lg:max-w-[535px]"
               splitBy="words"
               stagger={0.1}
             >
@@ -306,9 +307,9 @@ export default function Index() {
           </div>
 
           {/* Description Block */}
-          <div className="flex flex-col items-end gap-12 lg:gap-12 w-full lg:w-[348px] lg:self-stretch">
+          <div className="flex flex-col items-start lg:items-end gap-8 lg:gap-12 w-full lg:w-[348px] lg:self-stretch">
             <FadeInUp delay={0.4} y={30}>
-              <div className="text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-3xl xl:text-[32px] font-semibold leading-[100%] uppercase max-w-[340px]">
+              <div className="text-cloudworkz-black text-left lg:text-justify font-archivo text-lg md:text-xl lg:text-2xl xl:text-[32px] font-semibold leading-[1.1] uppercase max-w-full lg:max-w-[340px]">
                 Plug in a trained sales pod to handle outreach, follow-ups, and
                 booking - no hiring required.
               </div>
@@ -316,14 +317,14 @@ export default function Index() {
 
             {/* CTA Button */}
             <FadeInUp delay={0.6} y={20}>
-              <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
+              <button className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
                 <svg
-                  width="24"
-                  height="24"
+                  width="20"
+                  height="20"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className=""
+                  className="md:w-6 md:h-6"
                 >
                   <path
                     fillRule="evenodd"
@@ -344,16 +345,16 @@ export default function Index() {
         </StaggerContainer>
       </section>
       {/* The Cloudworkz App Section */}
-      <section className="relative z-10 px-8 lg:px-12">
+      <section className="relative z-10 px-4 md:px-6 lg:px-8 xl:px-12">
         <StaggerContainer
-          className="flex flex-col lg:flex-row items-start gap-12 lg:gap-16 py-12 lg:py-12 border-b-2 border-cloudworkz-primary"
+          className="flex flex-col lg:flex-row items-start gap-8 md:gap-10 lg:gap-12 xl:gap-16 py-8 md:py-10 lg:py-12 border-b-2 border-cloudworkz-primary"
           stagger={0.3}
           delay={0.2}
         >
           {/* Service Title */}
           <div className="flex flex-col items-start gap-5 flex-1 w-full">
             <RevealText
-              className="text-cloudworkz-primary font-archivo text-4xl md:[3rem] lg:[3.75rem] xl:text-[55px] font-semibold leading-[80%] tracking-[-1.6px] uppercase max-w-[584px]"
+              className="text-cloudworkz-primary font-archivo text-[clamp(28px,5vw,55px)] font-semibold leading-[0.8] tracking-[-0.02em] uppercase max-w-full lg:max-w-[584px]"
               splitBy="words"
               stagger={0.1}
             >
@@ -362,9 +363,9 @@ export default function Index() {
           </div>
 
           {/* Description Block */}
-          <div className="flex flex-col items-end gap-12 lg:gap-12 w-full lg:w-[348px] lg:self-stretch">
+          <div className="flex flex-col items-start lg:items-end gap-8 lg:gap-12 w-full lg:w-[348px] lg:self-stretch">
             <FadeInUp delay={0.4} y={30}>
-              <div className="text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-3xl xl:text-[32px] font-semibold leading-[100%] uppercase max-w-[340px]">
+              <div className="text-cloudworkz-black text-left lg:text-justify font-archivo text-lg md:text-xl lg:text-2xl xl:text-[32px] font-semibold leading-[1.1] uppercase max-w-full lg:max-w-[340px]">
                 Our modular platform automates internal execution: lead intake,
                 CRM sync, follow-ups, onboarding, and more.
               </div>
@@ -374,15 +375,15 @@ export default function Index() {
             <FadeInUp delay={0.6} y={20}>
               <button
                 onClick={() => navigate("/cloudworkz-app")}
-                className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors"
+                className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors"
               >
                 <svg
-                  width="24"
-                  height="24"
+                  width="20"
+                  height="20"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className=""
+                  className="md:w-6 md:h-6"
                 >
                   <path
                     fillRule="evenodd"
@@ -403,12 +404,12 @@ export default function Index() {
         </StaggerContainer>
       </section>
       {/* Background Image Section */}
-      <section className="relative w-full overflow-visible pt-[150px] pl-[40px]">
-        <div className="relative w-full min-h-[600px] lg:min-h-[800px]">
+      <section className="relative w-full overflow-visible pt-[80px] md:pt-[120px] lg:pt-[150px] px-4 md:px-6 lg:pl-[40px]">
+        <div className="relative w-full min-h-[400px] md:min-h-[600px] lg:min-h-[800px]">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/c7fb5a2d2c5f9899915d6e7d3b3c6161eb270691?width=3652"
             alt=""
-            className="absolute z-50 w-auto h-auto max-w-none"
+            className="absolute z-50 w-auto h-auto max-w-none hidden md:block"
             style={{
               width: "1826px",
               height: "1215px",
@@ -420,17 +421,17 @@ export default function Index() {
 
           {/* Content above image */}
           <StaggerContainer
-            className="relative z-[60] flex flex-col lg:flex-row items-start gap-12 lg:gap-16 max-w-none w-full"
+            className="relative z-[60] flex flex-col lg:flex-row items-start gap-8 md:gap-12 lg:gap-16 max-w-none w-full"
             stagger={0.4}
             delay={0.2}
           >
             {/* Left content */}
-            <div className="flex flex-col items-start gap-6 flex-1">
+            <div className="flex flex-col items-start gap-4 md:gap-6 flex-1">
               <JustifiedRevealText
                 splitBy="words"
                 stagger={0.08}
                 delay={0.2}
-                className="font-kenyan text-6xl md:text-8xl lg:text-9xl xl:text-[120px]"
+                className="font-kenyan text-[clamp(36px,8vw,120px)] leading-[0.9]"
               >
                 <span className="text-cloudworkz-primary uppercase">
                   An Ecosystem
@@ -441,7 +442,7 @@ export default function Index() {
                 </span>
               </JustifiedRevealText>
               <FadeInUp>
-                <div className="w-full text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-3xl xl:text-[32px] font-normal leading-[100%] tracking-[-0.64px]">
+                <div className="w-full text-cloudworkz-black text-left md:text-justify font-archivo text-base md:text-lg lg:text-xl xl:text-[32px] font-normal leading-[1.2] tracking-[-0.02em]">
                   Cloudworkz tools start as internal solutions to real problems
                   - battle-tested by our team, refined by client needs.
                   <br />
@@ -454,10 +455,10 @@ export default function Index() {
 
             {/* Right visual element */}
             <div className="flex-shrink-0 w-full lg:w-auto">
-              <div className="relative w-[580px] h-[348px] mx-auto lg:mx-0">
+              <div className="relative w-full max-w-[400px] md:max-w-[500px] lg:w-[580px] h-[240px] md:h-[300px] lg:h-[348px] mx-auto lg:mx-0">
                 <svg
-                  width="580"
-                  height="348"
+                  width="100%"
+                  height="100%"
                   viewBox="0 0 580 348"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -494,9 +495,9 @@ export default function Index() {
         </div>
       </section>
       {/* Video Section */}
-      <section className="relative z-10 flex h-[800px] px-10 py-[50px] flex-col justify-end items-end gap-[39px] w-full">
+      <section className="relative z-10 flex h-[500px] md:h-[600px] lg:h-[800px] px-4 md:px-6 lg:px-10 py-[30px] md:py-[40px] lg:py-[50px] flex-col justify-end items-start lg:items-end gap-6 md:gap-8 lg:gap-[39px] w-full">
         <video
-          className="absolute inset-0 w-full h-full object-cover pt-[50px]"
+          className="absolute inset-0 w-full h-full object-cover"
           autoPlay
           muted
           loop
@@ -510,12 +511,12 @@ export default function Index() {
 
         {/* Overlay Content */}
         <StaggerContainer
-          className="relative z-20 flex flex-col items-start gap-[39px] w-full pl-[691px]"
+          className="relative z-20 flex flex-col items-start gap-6 md:gap-8 lg:gap-[39px] w-full lg:pl-[691px]"
           stagger={0.3}
           delay={0.1}
         >
           <FadeInUp>
-            <div className="text-cloudworkz-black text-justify font-archivo text-2xl font-semibold  leading-[100%] tracking-[-0.48px] w-full uppercase">
+            <div className="text-cloudworkz-black text-left lg:text-justify font-archivo text-lg md:text-xl lg:text-2xl font-semibold leading-[1.1] tracking-[-0.02em] w-full max-w-full lg:max-w-none uppercase">
               A modular platform for managing outreach, data, content, and team
               coordination - supported by an embedded sales service when needed.
               <br />
@@ -527,21 +528,21 @@ export default function Index() {
 
           {/* CTA Block */}
           <div className="flex items-center gap-3">
-            <div className="text-cloudworkz-primary font-archivo text-base font-semibold leading-[110%] uppercase">
+            <div className="text-cloudworkz-primary font-archivo text-sm md:text-base font-semibold leading-[110%] uppercase">
               Explore
               <br />
               Success
               <br />
               Stories
             </div>
-            <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
+            <button className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
               <svg
-                width="24"
-                height="24"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className=""
+                className="md:w-6 md:h-6"
               >
                 <path
                   fillRule="evenodd"
@@ -574,24 +575,18 @@ export default function Index() {
         {/* Text Block Section */}
         <section className="relative w-full overflow-hidden">
           {/* Content Layer */}
-          <div
-            className="relative z-10"
-            style={{ padding: "200px 180px 250px" }}
-          >
+          <div className="relative z-10 px-4 md:px-6 lg:px-12 xl:px-[180px] py-[100px] md:py-[150px] lg:py-[200px]">
             <div className="max-w-7xl mx-auto">
-              <div
-                className="flex flex-col lg:flex-row items-center lg:items-end justify-between gap-8 pt-8 lg:pt-16"
-                style={{ gap: "31px" }}
-              >
+              <div className="flex flex-col lg:flex-row items-center lg:items-end justify-center lg:justify-between gap-8 lg:gap-[31px]">
                 {/* Text Content */}
                 <StaggerContainer
-                  className="flex flex-col items-end gap-5 max-w-4xl lg:flex-1"
+                  className="flex flex-col items-center lg:items-end gap-4 md:gap-5 max-w-full lg:max-w-4xl lg:flex-1"
                   stagger={0.3}
                   delay={0.2}
                 >
                   {/* Title */}
                   <JustifiedRevealText
-                    className="text-right font-kenyan text-3xl md:text-4xl lg:text-5xl xl:text-[60px] font-normal leading-[110%] uppercase"
+                    className="text-center lg:text-right font-kenyan text-[clamp(28px,6vw,60px)] font-normal leading-[1.1] uppercase"
                     splitBy="words"
                     stagger={0.08}
                   >
@@ -605,28 +600,25 @@ export default function Index() {
 
                   {/* Description */}
                   <FadeInUp y={30}>
-                    <p className="text-right text-cloudworkz-black font-archivo font-semibold text-lg md:text-xl lg:text-2xl xl:text-[24px] font-normal leading-[110%] max-w-3xl uppercase">
+                    <p className="text-center lg:text-right text-cloudworkz-black font-archivo font-semibold text-base md:text-lg lg:text-xl xl:text-[24px] leading-[1.1] max-w-full lg:max-w-3xl uppercase">
                       Cloudworkz gives you the tools — and the team — to move
                       faster, close smarter, and scale without chaos.
                     </p>
                   </FadeInUp>
 
                   {/* CTA Block */}
-                  <div className="flex items-center gap-3 mt-4">
-                    <div
-                      className="text-cloudworkz-primary font-archivo text-base font-semibold leading-[110%] uppercase text-left"
-                      style={{ width: "91px" }}
-                    >
+                  <div className="flex items-center justify-center lg:justify-start gap-3 mt-4 w-full lg:w-auto">
+                    <div className="text-cloudworkz-primary font-archivo text-sm md:text-base font-semibold leading-[110%] uppercase text-center lg:text-left w-[91px]">
                       Let's Build Together
                     </div>
-                    <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
+                    <button className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
                       <svg
-                        width="24"
-                        height="24"
+                        width="20"
+                        height="20"
                         viewBox="0 0 24 24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="transform rotate-0"
+                        className="md:w-6 md:h-6 transform rotate-0"
                       >
                         <path
                           fillRule="evenodd"
@@ -646,8 +638,8 @@ export default function Index() {
                 </StaggerContainer>
 
                 {/* Rounded Gradient Element */}
-                <div className="flex-shrink-0">
-                  <div className="w-32 h-52 md:w-40 md:h-64 lg:w-44 lg:h-72 xl:w-[183px] xl:h-[304px]">
+                <div className="flex-shrink-0 mt-8 lg:mt-0">
+                  <div className="w-24 h-40 md:w-32 md:h-52 lg:w-40 lg:h-64 xl:w-[183px] xl:h-[304px] mx-auto lg:mx-0">
                     <svg
                       width="100%"
                       height="100%"
@@ -689,55 +681,52 @@ export default function Index() {
         </section>
 
         {/* Footer */}
-        <footer
-          className="relative z-10 flex flex-col items-start gap-[61px] w-full"
-          style={{ padding: "250px 40px 30px" }}
-        >
+        <footer className="relative z-10 flex flex-col items-center lg:items-start gap-8 md:gap-12 lg:gap-[61px] w-full px-4 md:px-6 lg:px-10 py-[100px] md:py-[150px] lg:py-[250px] pb-[30px]">
           <StaggerContainer
-            className="flex items-start gap-5 w-full flex-wrap lg:flex-nowrap"
+            className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-5 w-full justify-center md:justify-start"
             stagger={0.2}
             delay={0.2}
           >
             {/* Contact Us Section */}
-            <div className="flex flex-col items-start gap-[109px] w-full lg:w-[321px]">
+            <div className="flex flex-col items-center md:items-start gap-8 md:gap-12 lg:gap-[109px] w-full md:w-1/3">
               <FadeInUp y={30}>
-                <h3 className="text-cloudworkz-black font-kenyan text-3xl md:text-[40px] font-normal leading-[100%] tracking-[-0.8px] uppercase">
+                <h3 className="text-cloudworkz-black font-kenyan text-2xl md:text-3xl lg:text-[40px] font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                   Contact Us
                 </h3>
               </FadeInUp>
               <StaggerContainer
-                className="flex flex-col items-start gap-5 w-[207px]"
+                className="flex flex-col items-center md:items-start gap-3 md:gap-4 lg:gap-5"
                 stagger={0.1}
                 delay={0.4}
               >
-                <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+                <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                   info@cloudworkz.com
                 </div>
-                <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+                <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                   555 123 4567
                 </div>
               </StaggerContainer>
             </div>
 
             {/* Follow Us Section */}
-            <div className="flex flex-col items-start gap-[77px] w-full lg:w-[321px]">
+            <div className="flex flex-col items-center md:items-start gap-8 md:gap-12 lg:gap-[77px] w-full md:w-1/3">
               <FadeInUp y={30}>
-                <h3 className="text-cloudworkz-black font-kenyan text-3xl md:text-[40px] font-normal leading-[100%] tracking-[-0.8px] uppercase">
+                <h3 className="text-cloudworkz-black font-kenyan text-2xl md:text-3xl lg:text-[40px] font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                   Follow Us
                 </h3>
               </FadeInUp>
               <StaggerContainer
-                className="flex flex-col items-start gap-[18px] w-[87px]"
+                className="flex flex-col items-center md:items-start gap-3 md:gap-4 lg:gap-[18px]"
                 stagger={0.1}
                 delay={0.4}
               >
-                <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+                <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                   LinkedIn
                 </div>
-                <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+                <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                   Twitter
                 </div>
-                <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+                <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                   Facebook
                 </div>
               </StaggerContainer>
@@ -745,14 +734,14 @@ export default function Index() {
 
             {/* Legal Links Section */}
             <StaggerContainer
-              className="flex flex-col items-start gap-[18px] w-full lg:w-[321px]"
+              className="flex flex-col items-center md:items-start gap-3 md:gap-4 lg:gap-[18px] w-full md:w-1/3"
               stagger={0.1}
               delay={0.6}
             >
-              <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+              <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                 Privacy Policy
               </div>
-              <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+              <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                 Terms of Service
               </div>
             </StaggerContainer>
@@ -762,8 +751,7 @@ export default function Index() {
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/2ca41c4ebe4ba18e91febe21b8f069e137f71166?width=2720"
             alt="CloudWorkz Logo"
-            className="w-full max-w-[1360px] h-auto"
-            style={{ height: "178.678px" }}
+            className="w-full max-w-[800px] md:max-w-[1000px] lg:max-w-[1360px] h-auto mx-auto lg:mx-0"
           />
         </footer>
       </div>
