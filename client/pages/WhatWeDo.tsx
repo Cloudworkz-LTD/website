@@ -14,7 +14,7 @@ export default function WhatWeDo() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-4 md:px-8 lg:px-12 py-16 md:py-20 lg:py-24">
+      <section className="relative min-h-[50vh] md:min-h-[70vh] lg:min-h-screen flex items-center justify-center px-4 md:px-8 lg:px-12 py-8 md:py-12 lg:py-24">
         {/* Background Image - positioned absolutely */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="relative w-full h-full">
