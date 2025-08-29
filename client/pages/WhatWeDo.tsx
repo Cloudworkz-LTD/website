@@ -38,8 +38,9 @@ export default function WhatWeDo() {
                 Sales That Execute.{" "}
               </span>
               <span className="text-cloudworkz-primary block">
-                Systems That Scale.
+                Systems That
               </span>
+              <span className="text-cloudworkz-primary block">Scale.</span>
             </h1>
           </div>
         </div>
@@ -119,7 +120,9 @@ export default function WhatWeDo() {
             {/* Title */}
             <div className="flex flex-col justify-center items-start gap-5 w-full lg:w-[500px] flex-shrink-0 order-2">
               <h2 className="text-cloudworkz-primary font-archivo text-4xl md:text-5xl lg:text-6xl xl:text-[80px] font-bold leading-[80%] tracking-[-1.6px] uppercase">
-                Cloudworkz App
+                <span className="block">Cloud</span>
+                <span className="block">Workz</span>
+                <span className="block">App</span>
               </h2>
             </div>
 
@@ -127,10 +130,15 @@ export default function WhatWeDo() {
             <div className="flex flex-col justify-center items-end gap-12 lg:gap-16 w-full lg:w-[348px] flex-shrink-0 order-3">
               <p className="text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-[32px] font-bold leading-[100%] uppercase w-full">
                 A modular execution platform that automates the work behind
-                growth. Cloudworkz connects your tools, data, content, and logic
-                into one intelligent system, helping teams move faster without
-                adding headcount. Modular by design. Powered by rules. Ready to
-                scale.
+                growth.
+                <br />
+                <br />
+                Cloudworkz connects your tools, data, content, and logic into
+                one intelligent system, helping teams move faster without adding
+                headcount.
+                <br />
+                <br />
+                Modular by design. Powered by rules. Ready to scale.
               </p>
               <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
                 <svg
