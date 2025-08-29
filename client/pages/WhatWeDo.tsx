@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
+import { FadeInUp, StaggerContainer } from "../components/animations";
 
 export default function WhatWeDo() {
   const navigate = useNavigate();
@@ -385,58 +386,77 @@ export default function WhatWeDo() {
       </section>
 
       {/* Footer */}
-      <footer className="relative z-10 flex flex-col items-start gap-8 md:gap-12 lg:gap-[61px] w-full py-16 md:py-24 lg:py-32 px-4 md:px-8 lg:px-10">
-        <div className="flex items-start gap-5 w-full flex-wrap lg:flex-nowrap">
+      <footer className="relative z-10 flex flex-col items-center lg:items-start gap-8 md:gap-12 lg:gap-[61px] w-full px-4 md:px-6 lg:px-10 py-[100px] md:py-[150px] lg:py-[250px] pb-[30px]">
+        <StaggerContainer
+          className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-5 w-full justify-center md:justify-start"
+          stagger={0.2}
+          delay={0.2}
+        >
           {/* Contact Us Section */}
-          <div className="flex flex-col items-start gap-[109px] w-full lg:w-[321px]">
-            <h3 className="text-cloudworkz-black font-kenyan text-3xl md:text-[40px] font-normal leading-[100%] tracking-[-0.8px] uppercase">
-              Contact Us
-            </h3>
-            <div className="flex flex-col items-start gap-5 w-[207px]">
-              <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+          <div className="flex flex-col items-center md:items-start gap-8 md:gap-12 lg:gap-[109px] w-full md:w-1/3">
+            <FadeInUp y={30}>
+              <h3 className="text-cloudworkz-black font-kenyan text-2xl md:text-3xl lg:text-[40px] font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
+                Contact Us
+              </h3>
+            </FadeInUp>
+            <StaggerContainer
+              className="flex flex-col items-center md:items-start gap-3 md:gap-4 lg:gap-5"
+              stagger={0.1}
+              delay={0.4}
+            >
+              <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                 info@cloudworkz.com
               </div>
-              <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+              <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                 555 123 4567
               </div>
-            </div>
+            </StaggerContainer>
           </div>
 
           {/* Follow Us Section */}
-          <div className="flex flex-col items-start gap-[77px] w-full lg:w-[321px]">
-            <h3 className="text-cloudworkz-black font-kenyan text-3xl md:text-[40px] font-normal leading-[100%] tracking-[-0.8px] uppercase">
-              Follow Us
-            </h3>
-            <div className="flex flex-col items-start gap-[18px] w-[87px]">
-              <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+          <div className="flex flex-col items-center md:items-start gap-8 md:gap-12 lg:gap-[77px] w-full md:w-1/3">
+            <FadeInUp y={30}>
+              <h3 className="text-cloudworkz-black font-kenyan text-2xl md:text-3xl lg:text-[40px] font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
+                Follow Us
+              </h3>
+            </FadeInUp>
+            <StaggerContainer
+              className="flex flex-col items-center md:items-start gap-3 md:gap-4 lg:gap-[18px]"
+              stagger={0.1}
+              delay={0.4}
+            >
+              <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                 LinkedIn
               </div>
-              <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+              <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                 Twitter
               </div>
-              <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+              <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                 Facebook
               </div>
-            </div>
+            </StaggerContainer>
           </div>
 
           {/* Legal Links Section */}
-          <div className="flex flex-col items-start gap-[18px] w-full lg:w-[321px]">
-            <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+          <StaggerContainer
+            className="flex flex-col items-center md:items-start gap-3 md:gap-4 lg:gap-[18px] w-full md:w-1/3"
+            stagger={0.1}
+            delay={0.6}
+          >
+            <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
               Privacy Policy
             </div>
-            <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+            <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
               Terms of Service
             </div>
-          </div>
-        </div>
+          </StaggerContainer>
+        </StaggerContainer>
 
         {/* Logo */}
         <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/2ca41c4ebe4ba18e91febe21b8f069e137f71166?width=2720"
           alt="CloudWorkz Logo"
-          className="w-full max-w-[1360px] h-auto"
-          style={{ height: "178.678px" }}
+          className="w-full max-w-[800px] md:max-w-[1000px] lg:max-w-[1360px] h-auto mx-auto lg:mx-0"
         />
       </footer>
     </div>
