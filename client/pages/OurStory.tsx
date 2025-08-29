@@ -91,7 +91,7 @@ export default function OurStory() {
       <Header />
 
       {/* Hero Section based on reference design */}
-      <section className="relative min-h-[70vh] md:min-h-[80vh] lg:min-h-screen flex items-center px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 overflow-hidden py-8 sm:py-12 md:py-16 lg:py-0">
+      <section className="relative min-h-[70vh] md:min-h-[80vh] xl:min-h-screen flex items-center overflow-hidden py-8 sm:py-12 md:py-16 xl:py-0">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
@@ -102,10 +102,10 @@ export default function OurStory() {
         </div>
 
         {/* Content Container */}
-        <div className="relative z-10 w-full max-w-8xl mx-auto">
-          <div className="flex flex-col xl:flex-row items-center xl:items-start justify-between gap-4 sm:gap-6 md:gap-8 xl:gap-16">
+        <div className="relative z-10 w-full">
+          <div className="flex flex-col xl:flex-row items-center xl:items-center justify-between">
             {/* Left Side - Main Heading */}
-            <div className="flex-1 max-w-4xl text-center xl:text-left">
+            <div className="flex-1 text-center xl:text-left px-4 sm:px-6 md:px-8 lg:px-16 xl:pl-20 xl:pr-8">
               <h1 className="font-kenyan text-[90px] xs:text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[140px] 2xl:text-[180px] leading-[87%] uppercase">
                 <span className="text-cloudworkz-primary block">WE BUILD</span>
                 <span className="text-cloudworkz-black block">
@@ -116,8 +116,8 @@ export default function OurStory() {
             </div>
 
             {/* Right Side - Oval Content */}
-            <div className="w-full xl:flex-shrink-0 mt-4 sm:mt-6 md:mt-8 xl:mt-0">
-              <div className="relative w-full h-[200px] xs:h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px] xl:w-[450px] xl:h-[300px] 2xl:w-[525px] 2xl:h-[350px] mx-auto rounded-full overflow-hidden">
+            <div className="w-full xl:w-auto xl:flex-shrink-0 mt-4 sm:mt-6 md:mt-8 xl:mt-0 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-0">
+              <div className="relative w-full h-[200px] xs:h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px] xl:w-[600px] xl:h-[400px] 2xl:w-[700px] 2xl:h-[450px] mx-auto xl:mx-0 rounded-full overflow-hidden xl:translate-x-20">
                 {/* Oval Background with Image */}
                 <div
                   className="w-full h-full flex items-center justify-center"
