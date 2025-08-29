@@ -90,7 +90,7 @@ export default function OurStory() {
       <Header />
 
       {/* Hero Section based on reference design */}
-      <section className="relative h-screen flex items-center px-8 lg:px-16 xl:px-20 overflow-hidden">
+      <section className="relative min-h-screen flex items-center px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
@@ -102,22 +102,24 @@ export default function OurStory() {
 
         {/* Content Container */}
         <div className="relative z-10 w-full max-w-8xl mx-auto">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-6 sm:gap-8 lg:gap-16">
             {/* Left Side - Main Heading */}
-            <div className="flex-1 max-w-4xl">
-              <h1 className="font-kenyan text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[180px] 2xl:text-[200px] leading-[87%] uppercase">
+            <div className="flex-1 max-w-4xl text-center lg:text-left">
+              <h1 className="font-kenyan text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[140px] 2xl:text-[180px] leading-[87%] uppercase">
                 <span className="text-cloudworkz-primary block">WE BUILD</span>
-                <span className="text-cloudworkz-black block">SYSTEMS THAT</span>
+                <span className="text-cloudworkz-black block">
+                  SYSTEMS THAT
+                </span>
                 <span className="text-cloudworkz-black block">WORK</span>
               </h1>
             </div>
 
             {/* Right Side - Circular Content */}
-            <div className="flex-shrink-0">
-              <div className="relative w-[350px] h-[350px] sm:w-[400px] sm:h-[400px] lg:w-[450px] lg:h-[450px] xl:w-[625px] xl:h-[500px] right-[-81px]">
+            <div className="flex-shrink-0 mt-8 lg:mt-0">
+              <div className="relative w-[280px] h-[280px] xs:w-[320px] xs:h-[320px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px] xl:w-[525px] xl:h-[425px] mx-auto lg:mx-0 lg:right-[-40px] xl:right-[-81px]">
                 {/* Circular Background with Image */}
                 <div
-                  className="w-full h-full flex items-end justify-center p-8 lg:p-10"
+                  className="w-full h-full flex items-end justify-center p-6 sm:p-8 lg:p-10"
                   style={{
                     backgroundImage:
                       "url('https://api.builder.io/api/v1/image/assets/TEMP/4536d6a6ca5818952a61dda081387c7f237d233b?width=1982')",
@@ -133,24 +135,24 @@ export default function OurStory() {
       </section>
 
       {/* Statement Section */}
-      <section className="py-16 lg:py-24 px-8 lg:px-16 xl:px-20">
-        <div className="mx-auto">
-          <h2 className="font-archivo font-semibold text-cloudworkz-primary text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[80px] leading-[95%] tracking-[-0.03em] uppercase text-justify">
+      <section className="py-12 sm:py-16 lg:py-24 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20">
+        <div className="mx-auto max-w-7xl">
+          <h2 className="font-archivo font-semibold text-cloudworkz-primary text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[70px] 2xl:text-[80px] leading-[95%] tracking-[-0.03em] uppercase text-center sm:text-left lg:text-justify">
             We provide structure to businesses that want execution, not excuses.
           </h2>
         </div>
       </section>
 
       {/* Vision Section */}
-      <section className="py-16 lg:py-24">
+      <section className="py-12 sm:py-16 lg:py-24">
         {/* Marquee Text */}
-        <div className="overflow-hidden py-8 px-8 lg:px-16 xl:px-20">
-          <div className="flex items-center gap-5 whitespace-nowrap">
-            <div className="animate-marquee flex items-center gap-5">
+        <div className="overflow-hidden py-6 sm:py-8 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20">
+          <div className="flex items-center gap-3 sm:gap-5 whitespace-nowrap">
+            <div className="animate-marquee flex items-center gap-3 sm:gap-5">
               {[...Array(8)].map((_, i) => (
                 <div
                   key={i}
-                  className="font-kenyan text-7xl sm:text-8xl md:text-9xl lg:text-[140px] xl:text-[180px] leading-[100%] tracking-[-0.02em] uppercase"
+                  className="font-kenyan text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[120px] 2xl:text-[140px] leading-[100%] tracking-[-0.02em] uppercase"
                 >
                   <span className="text-cloudworkz-black">Our</span>
                   <span className="text-cloudworkz-primary"> Vision</span>
@@ -162,7 +164,7 @@ export default function OurStory() {
 
         {/* Content Section with Background */}
         <div
-          className="h-[600px] px-8 lg:px-16 xl:px-20 py-16 flex justify-between items-center"
+          className="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 py-8 sm:py-12 lg:py-16 flex justify-between items-center"
           style={{
             backgroundImage:
               "url('https://api.builder.io/api/v1/image/assets/TEMP/dffafe7fbcce3e41695aae8b8e98be45a8e61ec0?width=2880')",
@@ -175,37 +177,40 @@ export default function OurStory() {
 
       {/* Team Section */}
       <section
-        className="py-16 lg:py-24 px-8 lg:px-16 xl:px-20"
+        className="py-12 sm:py-16 lg:py-24 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20"
         ref={teamSectionRef}
       >
         <div className="max-w-7xl mx-auto">
           {/* Section Title */}
-          <h2 className="font-kenyan text-7xl sm:text-8xl md:text-9xl lg:text-[140px] xl:text-[180px] leading-[100%] tracking-[-0.02em] uppercase mb-16">
+          <h2 className="font-kenyan text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[120px] 2xl:text-[140px] leading-[100%] tracking-[-0.02em] uppercase mb-8 sm:mb-12 lg:mb-16 text-center sm:text-left">
             <span className="text-cloudworkz-black">Our </span>
             <span className="text-cloudworkz-primary">Team</span>
           </h2>
 
           {/* Team Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 xl:gap-16">
             {/* Tom King */}
-            <div className="flex flex-col items-start gap-6" ref={member1Ref}>
-              <div className="w-full max-w-[284px] h-[471px] rounded-[142px] overflow-hidden bg-gray-100">
+            <div
+              className="flex flex-col items-center sm:items-start gap-4 sm:gap-6"
+              ref={member1Ref}
+            >
+              <div className="w-full max-w-[250px] sm:max-w-[284px] h-[350px] sm:h-[400px] lg:h-[471px] rounded-[100px] sm:rounded-[142px] overflow-hidden bg-gray-100 mx-auto sm:mx-0">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F753d3c374d9147d0953d516d520684fd?format=webp&width=800"
                   alt="Tom King"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="flex flex-col gap-4">
-                <div className="flex flex-col gap-2">
-                  <h3 className="font-archivo font-semibold text-cloudworkz-primary text-[30px] leading-[100%] uppercase">
+              <div className="flex flex-col gap-3 sm:gap-4 text-center sm:text-left">
+                <div className="flex flex-col gap-1 sm:gap-2">
+                  <h3 className="font-archivo font-semibold text-cloudworkz-primary text-xl sm:text-2xl lg:text-[30px] leading-[100%] uppercase">
                     Tom King
                   </h3>
-                  <p className="font-archivo text-cloudworkz-black text-2xl leading-[100%]">
+                  <p className="font-archivo text-cloudworkz-black text-lg sm:text-xl lg:text-2xl leading-[100%]">
                     CEO
                   </p>
                 </div>
-                <p className="font-archivo text-cloudworkz-black text-base leading-[100%] text-justify">
+                <p className="font-archivo text-cloudworkz-black text-sm sm:text-base leading-[120%] sm:leading-[100%] text-center sm:text-justify">
                   A certified Scaling Up coach and seasoned CEO with a
                   background in tech, marketing, and finance. Helps growth-stage
                   companies find momentum through structure
@@ -214,24 +219,27 @@ export default function OurStory() {
             </div>
 
             {/* William Corke */}
-            <div className="flex flex-col items-start gap-6" ref={member2Ref}>
-              <div className="w-full max-w-[284px] h-[471px] rounded-[142px] overflow-hidden bg-gray-100">
+            <div
+              className="flex flex-col items-center sm:items-start gap-4 sm:gap-6"
+              ref={member2Ref}
+            >
+              <div className="w-full max-w-[250px] sm:max-w-[284px] h-[350px] sm:h-[400px] lg:h-[471px] rounded-[100px] sm:rounded-[142px] overflow-hidden bg-gray-100 mx-auto sm:mx-0">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F753d3c374d9147d0953d516d520684fd?format=webp&width=800"
                   alt="William Corke"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="flex flex-col gap-4">
-                <div className="flex flex-col gap-2">
-                  <h3 className="font-archivo font-semibold text-cloudworkz-primary text-[30px] leading-[100%] uppercase">
+              <div className="flex flex-col gap-3 sm:gap-4 text-center sm:text-left">
+                <div className="flex flex-col gap-1 sm:gap-2">
+                  <h3 className="font-archivo font-semibold text-cloudworkz-primary text-xl sm:text-2xl lg:text-[30px] leading-[100%] uppercase">
                     William Corke
                   </h3>
-                  <p className="font-archivo text-cloudworkz-black text-2xl leading-[100%]">
+                  <p className="font-archivo text-cloudworkz-black text-lg sm:text-xl lg:text-2xl leading-[100%]">
                     Head of Service
                   </p>
                 </div>
-                <p className="font-archivo text-cloudworkz-black text-base leading-[100%] text-justify">
+                <p className="font-archivo text-cloudworkz-black text-sm sm:text-base leading-[120%] sm:leading-[100%] text-center sm:text-justify">
                   EIS/SEIS-accredited advisor with deep experience in
                   alternative investments and operational compliance
                 </p>
@@ -239,24 +247,27 @@ export default function OurStory() {
             </div>
 
             {/* Werner Snyman */}
-            <div className="flex flex-col items-start gap-6" ref={member3Ref}>
-              <div className="w-full max-w-[284px] h-[471px] rounded-[142px] overflow-hidden bg-gray-100">
+            <div
+              className="flex flex-col items-center sm:items-start gap-4 sm:gap-6"
+              ref={member3Ref}
+            >
+              <div className="w-full max-w-[250px] sm:max-w-[284px] h-[350px] sm:h-[400px] lg:h-[471px] rounded-[100px] sm:rounded-[142px] overflow-hidden bg-gray-100 mx-auto sm:mx-0">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F5298ccdc196642cd8aa746f54af917f9?format=webp&width=800"
                   alt="Werner Snyman"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="flex flex-col gap-4">
-                <div className="flex flex-col gap-2">
-                  <h3 className="font-archivo font-semibold text-cloudworkz-primary text-[30px] leading-[100%] uppercase">
+              <div className="flex flex-col gap-3 sm:gap-4 text-center sm:text-left">
+                <div className="flex flex-col gap-1 sm:gap-2">
+                  <h3 className="font-archivo font-semibold text-cloudworkz-primary text-xl sm:text-2xl lg:text-[30px] leading-[100%] uppercase">
                     Werner Snyman
                   </h3>
-                  <p className="font-archivo text-cloudworkz-black text-2xl leading-[100%]">
+                  <p className="font-archivo text-cloudworkz-black text-lg sm:text-xl lg:text-2xl leading-[100%]">
                     Head of Product
                   </p>
                 </div>
-                <p className="font-archivo text-cloudworkz-black text-base leading-[100%] text-justify">
+                <p className="font-archivo text-cloudworkz-black text-sm sm:text-base leading-[120%] sm:leading-[100%] text-center sm:text-justify">
                   Designs and runs the internal systems behind our services.
                   Blends product thinking with deep industry experience
                 </p>
@@ -264,24 +275,27 @@ export default function OurStory() {
             </div>
 
             {/* Claudia Chavez */}
-            <div className="flex flex-col items-start gap-6" ref={member4Ref}>
-              <div className="w-full max-w-[284px] h-[471px] rounded-[142px] overflow-hidden bg-gray-100">
+            <div
+              className="flex flex-col items-center sm:items-start gap-4 sm:gap-6"
+              ref={member4Ref}
+            >
+              <div className="w-full max-w-[250px] sm:max-w-[284px] h-[350px] sm:h-[400px] lg:h-[471px] rounded-[100px] sm:rounded-[142px] overflow-hidden bg-gray-100 mx-auto sm:mx-0">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F592342c571824d60945bef8290e17a35?format=webp&width=800"
                   alt="Claudia Chavez"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="flex flex-col gap-4">
-                <div className="flex flex-col gap-2">
-                  <h3 className="font-archivo font-semibold text-cloudworkz-primary text-[30px] leading-[100%] uppercase">
+              <div className="flex flex-col gap-3 sm:gap-4 text-center sm:text-left">
+                <div className="flex flex-col gap-1 sm:gap-2">
+                  <h3 className="font-archivo font-semibold text-cloudworkz-primary text-xl sm:text-2xl lg:text-[30px] leading-[100%] uppercase">
                     Claudia Chavez
                   </h3>
-                  <p className="font-archivo text-cloudworkz-black text-2xl leading-[100%]">
+                  <p className="font-archivo text-cloudworkz-black text-lg sm:text-xl lg:text-2xl leading-[100%]">
                     Co-Founder & Commercial Director
                   </p>
                 </div>
-                <p className="font-archivo text-cloudworkz-black text-base leading-[100%] text-justify">
+                <p className="font-archivo text-cloudworkz-black text-sm sm:text-base leading-[120%] sm:leading-[100%] text-center sm:text-justify">
                   Expert in commercial strategy and project delivery. Focused on
                   keeping our client operations smooth and outcomes sharp
                 </p>
@@ -298,7 +312,7 @@ export default function OurStory() {
           backgroundImage:
             "url('https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2Fd7789645b053464baee50f04d975ac9a?format=webp&width=800')",
           backgroundSize: "cover",
-          backgroundPosition: "calc(50% + 500px) calc(0% - 400px)",
+          backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           mixBlendMode: "multiply",
         }}
@@ -306,19 +320,13 @@ export default function OurStory() {
         {/* Text Block Section */}
         <section className="relative w-full overflow-hidden">
           {/* Content Layer */}
-          <div
-            className="relative z-10"
-            style={{ padding: "200px 180px 250px" }}
-          >
+          <div className="relative z-10 py-16 sm:py-20 md:py-24 lg:py-32 xl:py-40 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20">
             <div className="max-w-7xl mx-auto">
-              <div
-                className="flex flex-col lg:flex-row items-center lg:items-end justify-between gap-8 pt-8 lg:pt-16"
-                style={{ gap: "31px" }}
-              >
+              <div className="flex flex-col lg:flex-row items-center lg:items-end justify-between gap-8 lg:gap-12 xl:gap-16">
                 {/* Text Content */}
-                <div className="flex flex-col items-end gap-5 max-w-4xl lg:flex-1">
+                <div className="flex flex-col items-center lg:items-end gap-4 sm:gap-5 max-w-4xl lg:flex-1 text-center lg:text-right">
                   {/* Title */}
-                  <h2 className="text-right font-kenyan text-3xl md:text-4xl lg:text-5xl xl:text-[60px] font-normal leading-[110%] uppercase">
+                  <h2 className="font-kenyan text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[50px] 2xl:text-[60px] font-normal leading-[110%] uppercase">
                     <span className="text-cloudworkz-black">
                       You don't need more dashboards.{" "}
                     </span>
@@ -328,24 +336,24 @@ export default function OurStory() {
                   </h2>
 
                   {/* Description */}
-                  <p className="text-right text-cloudworkz-black font-archivo text-lg md:text-xl lg:text-2xl xl:text-[24px] font-normal leading-[110%] max-w-3xl">
+                  <p className="text-cloudworkz-black font-archivo text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[22px] 2xl:text-[24px] font-normal leading-[120%] lg:leading-[110%] max-w-3xl">
                     Cloudworkz gives you the tools — and the team — to move
                     faster, close smarter, and scale without chaos.
                   </p>
 
                   {/* CTA Block */}
                   <div className="flex items-center gap-3 mt-4">
-                    <div className="text-cloudworkz-primary font-archivo text-base font-semibold leading-[110%] uppercase text-right">
+                    <div className="text-cloudworkz-primary font-archivo text-sm sm:text-base font-semibold leading-[110%] uppercase">
                       Let's Build Together
                     </div>
-                    <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
+                    <button className="w-16 h-16 sm:w-20 sm:h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
                       <svg
-                        width="24"
-                        height="24"
+                        width="20"
+                        height="20"
                         viewBox="0 0 24 24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="transform rotate-0"
+                        className="transform rotate-0 sm:w-6 sm:h-6"
                       >
                         <path
                           fillRule="evenodd"
@@ -365,8 +373,8 @@ export default function OurStory() {
                 </div>
 
                 {/* Rounded Gradient Element */}
-                <div className="flex-shrink-0">
-                  <div className="w-32 h-52 md:w-40 md:h-64 lg:w-44 lg:h-72 xl:w-[183px] xl:h-[304px]">
+                <div className="flex-shrink-0 hidden lg:block">
+                  <div className="w-24 h-40 md:w-32 md:h-52 lg:w-36 lg:h-60 xl:w-[150px] xl:h-[250px] 2xl:w-[183px] 2xl:h-[304px]">
                     <svg
                       width="100%"
                       height="100%"
@@ -408,50 +416,47 @@ export default function OurStory() {
         </section>
 
         {/* Footer */}
-        <footer
-          className="relative z-10 flex flex-col items-start gap-[61px] w-full"
-          style={{ padding: "250px 40px 30px" }}
-        >
-          <div className="flex items-start gap-5 w-full flex-wrap lg:flex-nowrap">
+        <footer className="relative z-10 flex flex-col items-start gap-8 sm:gap-12 lg:gap-16 w-full py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20">
+          <div className="flex flex-col sm:flex-row items-start gap-8 sm:gap-12 lg:gap-16 w-full">
             {/* Contact Us Section */}
-            <div className="flex flex-col items-start gap-[109px] w-full lg:w-[321px]">
-              <h3 className="text-cloudworkz-black font-kenyan text-3xl md:text-[40px] font-normal leading-[100%] tracking-[-0.8px] uppercase">
+            <div className="flex flex-col items-start gap-6 sm:gap-8 lg:gap-12 w-full sm:w-auto">
+              <h3 className="text-cloudworkz-black font-kenyan text-2xl sm:text-3xl lg:text-[35px] xl:text-[40px] font-normal leading-[100%] tracking-[-0.8px] uppercase">
                 Contact Us
               </h3>
-              <div className="flex flex-col items-start gap-5 w-[207px]">
-                <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+              <div className="flex flex-col items-start gap-3 sm:gap-4 lg:gap-5">
+                <div className="text-cloudworkz-black font-archivo text-sm sm:text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
                   info@cloudworkz.com
                 </div>
-                <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+                <div className="text-cloudworkz-black font-archivo text-sm sm:text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
                   555 123 4567
                 </div>
               </div>
             </div>
 
             {/* Follow Us Section */}
-            <div className="flex flex-col items-start gap-[77px] w-full lg:w-[321px]">
-              <h3 className="text-cloudworkz-black font-kenyan text-3xl md:text-[40px] font-normal leading-[100%] tracking-[-0.8px] uppercase">
+            <div className="flex flex-col items-start gap-6 sm:gap-8 lg:gap-12 w-full sm:w-auto">
+              <h3 className="text-cloudworkz-black font-kenyan text-2xl sm:text-3xl lg:text-[35px] xl:text-[40px] font-normal leading-[100%] tracking-[-0.8px] uppercase">
                 Follow Us
               </h3>
-              <div className="flex flex-col items-start gap-[18px] w-[87px]">
-                <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+              <div className="flex flex-col items-start gap-3 sm:gap-4">
+                <div className="text-cloudworkz-black font-archivo text-sm sm:text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
                   LinkedIn
                 </div>
-                <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+                <div className="text-cloudworkz-black font-archivo text-sm sm:text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
                   Twitter
                 </div>
-                <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+                <div className="text-cloudworkz-black font-archivo text-sm sm:text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
                   Facebook
                 </div>
               </div>
             </div>
 
             {/* Legal Links Section */}
-            <div className="flex flex-col items-start gap-[18px] w-full lg:w-[321px]">
-              <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+            <div className="flex flex-col items-start gap-3 sm:gap-4 w-full sm:w-auto">
+              <div className="text-cloudworkz-black font-archivo text-sm sm:text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
                 Privacy Policy
               </div>
-              <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+              <div className="text-cloudworkz-black font-archivo text-sm sm:text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
                 Terms of Service
               </div>
             </div>
@@ -461,8 +466,7 @@ export default function OurStory() {
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/2ca41c4ebe4ba18e91febe21b8f069e137f71166?width=2720"
             alt="CloudWorkz Logo"
-            className="w-full max-w-[1360px] h-auto"
-            style={{ height: "178.678px" }}
+            className="w-full max-w-[800px] sm:max-w-[1000px] lg:max-w-[1200px] xl:max-w-[1360px] h-auto"
           />
         </footer>
       </div>
