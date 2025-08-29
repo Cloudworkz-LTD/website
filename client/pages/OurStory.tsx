@@ -2,6 +2,7 @@ import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Header from "@/components/Header";
+import { FadeInUp, StaggerContainer } from "../components/animations";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -194,7 +195,7 @@ export default function OurStory() {
               className="flex flex-col items-center sm:items-start gap-4 sm:gap-6"
               ref={member1Ref}
             >
-              <div className="w-full max-w-[250px] sm:max-w-[284px] h-[350px] sm:h-[400px] lg:h-[471px] rounded-[100px] sm:rounded-[142px] overflow-hidden bg-gray-100 mx-auto sm:mx-0">
+              <div className="flex flex-col justify-center items-start gap-6 md:gap-8 lg:gap-10 w-full max-w-[300px] md:max-w-[400px] lg:w-[452px] h-[500px] md:h-[600px] lg:h-[755px] p-[30px_20px] md:p-[40px_30px] lg:p-[58px_40px] rounded-[120px] md:rounded-[150px] lg:rounded-[250px] bg-cover bg-center bg-no-repeat mx-auto">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F753d3c374d9147d0953d516d520684fd?format=webp&width=800"
                   alt="Tom King"
@@ -223,7 +224,7 @@ export default function OurStory() {
               className="flex flex-col items-center sm:items-start gap-4 sm:gap-6"
               ref={member2Ref}
             >
-              <div className="w-full max-w-[250px] sm:max-w-[284px] h-[350px] sm:h-[400px] lg:h-[471px] rounded-[100px] sm:rounded-[142px] overflow-hidden bg-gray-100 mx-auto sm:mx-0">
+              <div className="flex flex-col justify-center items-start gap-6 md:gap-8 lg:gap-10 w-full max-w-[300px] md:max-w-[400px] lg:w-[452px] h-[500px] md:h-[600px] lg:h-[755px] p-[30px_20px] md:p-[40px_30px] lg:p-[58px_40px] rounded-[120px] md:rounded-[150px] lg:rounded-[250px] bg-cover bg-center bg-no-repeat mx-auto">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F753d3c374d9147d0953d516d520684fd?format=webp&width=800"
                   alt="William Corke"
@@ -251,7 +252,7 @@ export default function OurStory() {
               className="flex flex-col items-center sm:items-start gap-4 sm:gap-6"
               ref={member3Ref}
             >
-              <div className="w-full max-w-[250px] sm:max-w-[284px] h-[350px] sm:h-[400px] lg:h-[471px] rounded-[100px] sm:rounded-[142px] overflow-hidden bg-gray-100 mx-auto sm:mx-0">
+              <div className="flex flex-col justify-center items-start gap-6 md:gap-8 lg:gap-10 w-full max-w-[300px] md:max-w-[400px] lg:w-[452px] h-[500px] md:h-[600px] lg:h-[755px] p-[30px_20px] md:p-[40px_30px] lg:p-[58px_40px] rounded-[120px] md:rounded-[150px] lg:rounded-[250px] bg-cover bg-center bg-no-repeat mx-auto">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F5298ccdc196642cd8aa746f54af917f9?format=webp&width=800"
                   alt="Werner Snyman"
@@ -279,7 +280,7 @@ export default function OurStory() {
               className="flex flex-col items-center sm:items-start gap-4 sm:gap-6"
               ref={member4Ref}
             >
-              <div className="w-full max-w-[250px] sm:max-w-[284px] h-[350px] sm:h-[400px] lg:h-[471px] rounded-[100px] sm:rounded-[142px] overflow-hidden bg-gray-100 mx-auto sm:mx-0">
+              <div className="flex flex-col justify-center items-start gap-6 md:gap-8 lg:gap-10 w-full max-w-[300px] md:max-w-[400px] lg:w-[452px] h-[500px] md:h-[600px] lg:h-[755px] p-[30px_20px] md:p-[40px_30px] lg:p-[58px_40px] rounded-[120px] md:rounded-[150px] lg:rounded-[250px] bg-cover bg-center bg-no-repeat mx-auto">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F592342c571824d60945bef8290e17a35?format=webp&width=800"
                   alt="Claudia Chavez"
@@ -416,57 +417,77 @@ export default function OurStory() {
         </section>
 
         {/* Footer */}
-        <footer className="relative z-10 flex flex-col items-start gap-8 sm:gap-12 lg:gap-16 w-full py-12 sm:py-16 lg:py-20 px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20">
-          <div className="flex flex-col sm:flex-row items-start gap-8 sm:gap-12 lg:gap-16 w-full">
+        <footer className="relative z-10 flex flex-col items-center lg:items-start gap-8 md:gap-12 lg:gap-[61px] w-full px-4 md:px-6 lg:px-10 py-[100px] md:py-[150px] lg:py-[250px] pb-[30px]">
+          <StaggerContainer
+            className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-5 w-full justify-center md:justify-start"
+            stagger={0.2}
+            delay={0.2}
+          >
             {/* Contact Us Section */}
-            <div className="flex flex-col items-start gap-6 sm:gap-8 lg:gap-12 w-full sm:w-auto">
-              <h3 className="text-cloudworkz-black font-kenyan text-2xl sm:text-3xl lg:text-[35px] xl:text-[40px] font-normal leading-[100%] tracking-[-0.8px] uppercase">
-                Contact Us
-              </h3>
-              <div className="flex flex-col items-start gap-3 sm:gap-4 lg:gap-5">
-                <div className="text-cloudworkz-black font-archivo text-sm sm:text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+            <div className="flex flex-col items-center md:items-start gap-8 md:gap-12 lg:gap-[109px] w-full md:w-1/3">
+              <FadeInUp y={30}>
+                <h3 className="text-cloudworkz-black font-kenyan text-2xl md:text-3xl lg:text-[40px] font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
+                  Contact Us
+                </h3>
+              </FadeInUp>
+              <StaggerContainer
+                className="flex flex-col items-center md:items-start gap-3 md:gap-4 lg:gap-5"
+                stagger={0.1}
+                delay={0.4}
+              >
+                <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                   info@cloudworkz.com
                 </div>
-                <div className="text-cloudworkz-black font-archivo text-sm sm:text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+                <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                   555 123 4567
                 </div>
-              </div>
+              </StaggerContainer>
             </div>
 
             {/* Follow Us Section */}
-            <div className="flex flex-col items-start gap-6 sm:gap-8 lg:gap-12 w-full sm:w-auto">
-              <h3 className="text-cloudworkz-black font-kenyan text-2xl sm:text-3xl lg:text-[35px] xl:text-[40px] font-normal leading-[100%] tracking-[-0.8px] uppercase">
-                Follow Us
-              </h3>
-              <div className="flex flex-col items-start gap-3 sm:gap-4">
-                <div className="text-cloudworkz-black font-archivo text-sm sm:text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+            <div className="flex flex-col items-center md:items-start gap-8 md:gap-12 lg:gap-[77px] w-full md:w-1/3">
+              <FadeInUp y={30}>
+                <h3 className="text-cloudworkz-black font-kenyan text-2xl md:text-3xl lg:text-[40px] font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
+                  Follow Us
+                </h3>
+              </FadeInUp>
+              <StaggerContainer
+                className="flex flex-col items-center md:items-start gap-3 md:gap-4 lg:gap-[18px]"
+                stagger={0.1}
+                delay={0.4}
+              >
+                <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                   LinkedIn
                 </div>
-                <div className="text-cloudworkz-black font-archivo text-sm sm:text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+                <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                   Twitter
                 </div>
-                <div className="text-cloudworkz-black font-archivo text-sm sm:text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+                <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                   Facebook
                 </div>
-              </div>
+              </StaggerContainer>
             </div>
 
             {/* Legal Links Section */}
-            <div className="flex flex-col items-start gap-3 sm:gap-4 w-full sm:w-auto">
-              <div className="text-cloudworkz-black font-archivo text-sm sm:text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+            <StaggerContainer
+              className="flex flex-col items-center md:items-start gap-3 md:gap-4 lg:gap-[18px] w-full md:w-1/3"
+              stagger={0.1}
+              delay={0.6}
+            >
+              <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                 Privacy Policy
               </div>
-              <div className="text-cloudworkz-black font-archivo text-sm sm:text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+              <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                 Terms of Service
               </div>
-            </div>
-          </div>
+            </StaggerContainer>
+          </StaggerContainer>
 
           {/* Logo */}
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/2ca41c4ebe4ba18e91febe21b8f069e137f71166?width=2720"
             alt="CloudWorkz Logo"
-            className="w-full max-w-[800px] sm:max-w-[1000px] lg:max-w-[1200px] xl:max-w-[1360px] h-auto"
+            className="w-full max-w-[800px] md:max-w-[1000px] lg:max-w-[1360px] h-auto mx-auto lg:mx-0"
           />
         </footer>
       </div>
