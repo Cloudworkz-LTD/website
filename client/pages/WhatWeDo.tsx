@@ -14,7 +14,7 @@ export default function WhatWeDo() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-8 lg:px-12 py-24">
+      <section className="relative min-h-screen flex items-center justify-center px-4 md:px-8 lg:px-12 py-16 md:py-20 lg:py-24">
         {/* Background Image - positioned absolutely */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="relative w-full h-full">
@@ -47,122 +47,243 @@ export default function WhatWeDo() {
       </section>
 
       {/* Services Section */}
-      <section
-        className="relative z-10 py-24 lg:py-32"
-        style={{ padding: "150px 40px" }}
-      >
-        <div className="flex flex-col items-start w-full">
+      <section className="relative z-10 py-12 md:py-24 lg:py-32 px-4 md:px-8 lg:px-10">
+        <div className="flex flex-col items-start w-full max-w-7xl mx-auto">
           {/* Service Block 1 - Sales-as-a-Service */}
-          <div className="flex flex-col lg:flex-row items-start justify-between w-full py-12 lg:py-16 border-b-2 border-cloudworkz-primary gap-8 lg:gap-12">
-            {/* Title */}
-            <div className="flex flex-col items-start gap-5 w-full lg:w-[500px] flex-shrink-0">
-              <h2 className="text-cloudworkz-primary font-archivo text-4xl md:text-5xl lg:text-6xl xl:text-[80px] font-bold leading-[80%] tracking-[-1.6px] uppercase">
-                Sales-as-a-Service
-              </h2>
+          <div className="flex flex-col w-full py-8 md:py-12 lg:py-16 border-b-2 border-cloudworkz-primary gap-6 md:gap-8">
+            {/* Mobile & Tablet Layout */}
+            <div className="flex flex-col xl:hidden gap-6 md:gap-8 relative z-10">
+              {/* Title */}
+              <div className="flex flex-col items-start gap-3 md:gap-5 w-full">
+                <h2 className="text-cloudworkz-primary font-archivo text-3xl md:text-4xl lg:text-5xl font-bold leading-[80%] tracking-[-1.6px] uppercase">
+                  Sales-as-a-Service
+                </h2>
+              </div>
+
+              {/* Image */}
+              <div className="flex justify-center items-center w-full h-[250px] md:h-[350px]">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/5cc08a262d95ecd64787b15a256888f3b796930e?width=800"
+                  alt="Sales-as-a-Service"
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+
+              {/* Text Block */}
+              <div className="flex flex-col gap-6 md:gap-8 w-full relative z-10">
+                <p className="text-gray-900 text-left font-archivo text-base md:text-lg lg:text-xl font-bold leading-[120%] uppercase w-full opacity-100 bg-white/10 p-2 rounded">
+                  A plug-and-play growth team embedded in your business. From
+                  first outreach to booked calls, our Sales Pods keep your
+                  pipeline moving.
+                </p>
+                <div className="flex justify-start">
+                  <button
+                    onClick={handleSalesAsAServiceClick}
+                    className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="transform rotate-0"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071Z"
+                        fill="#126AF9"
+                      />
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
+                        fill="#126AF9"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
 
-            {/* Image */}
-            <div className="flex justify-center items-center w-full lg:w-[400px] lg:h-[400px] h-[300px] flex-shrink-0">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/5cc08a262d95ecd64787b15a256888f3b796930e?width=800"
-                alt="Sales-as-a-Service"
-                className="w-full h-full object-cover"
-              />
-            </div>
+            {/* Desktop Layout */}
+            <div className="hidden xl:flex items-start justify-between w-full gap-12">
+              {/* Title */}
+              <div className="flex flex-col items-start gap-5 w-[500px] flex-shrink-0">
+                <h2 className="text-cloudworkz-primary font-archivo text-6xl xl:text-[80px] font-bold leading-[80%] tracking-[-1.6px] uppercase">
+                  Sales-as-a-Service
+                </h2>
+              </div>
 
-            {/* Text Block */}
-            <div className="flex flex-col justify-center items-end gap-12 lg:gap-16 w-full lg:w-[348px] flex-shrink-0 self-stretch">
-              <p className="text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-[32px] font-bold leading-[100%] uppercase w-full">
-                A plug-and-play growth team embedded in your business. From
-                first outreach to booked calls, our Sales Pods keep your
-                pipeline moving.
-              </p>
-              <button
-                onClick={handleSalesAsAServiceClick}
-                className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors"
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="transform rotate-0"
+              {/* Image */}
+              <div className="flex justify-center items-center w-[400px] h-[400px] flex-shrink-0">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/5cc08a262d95ecd64787b15a256888f3b796930e?width=800"
+                  alt="Sales-as-a-Service"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Text Block */}
+              <div className="flex flex-col justify-center items-end gap-16 w-[348px] flex-shrink-0 self-stretch">
+                <p className="text-cloudworkz-black text-justify font-archivo text-2xl lg:text-[32px] font-bold leading-[100%] uppercase w-full">
+                  A plug-and-play growth team embedded in your business. From
+                  first outreach to booked calls, our Sales Pods keep your
+                  pipeline moving.
+                </p>
+                <button
+                  onClick={handleSalesAsAServiceClick}
+                  className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors"
                 >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071Z"
-                    fill="#126AF9"
-                  />
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
-                    fill="#126AF9"
-                  />
-                </svg>
-              </button>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="transform rotate-0"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071Z"
+                      fill="#126AF9"
+                    />
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
+                      fill="#126AF9"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
 
           {/* Service Block 2 - Cloudworkz App */}
-          <div className="flex flex-col lg:flex-row items-start w-full py-12 lg:py-16 border-b-2 border-cloudworkz-primary gap-8 lg:gap-12">
-            {/* Image */}
-            <div className="flex justify-center items-center w-full lg:w-[400px] lg:h-[400px] h-[300px] flex-shrink-0 order-1 lg:order-1">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/96917f53b229f1ba236767005922073243f6d942?width=800"
-                alt="Cloudworkz App"
-                className="w-full h-full object-cover"
-              />
+          <div className="flex flex-col w-full py-8 md:py-12 lg:py-16 border-b-2 border-cloudworkz-primary gap-6 md:gap-8">
+            {/* Mobile & Tablet Layout */}
+            <div className="flex flex-col xl:hidden gap-6 md:gap-8 relative z-10">
+              {/* Title */}
+              <div className="flex flex-col items-start gap-3 md:gap-5 w-full">
+                <h2 className="text-cloudworkz-primary font-archivo text-3xl md:text-4xl lg:text-5xl font-bold leading-[80%] tracking-[-1.6px] uppercase">
+                  <span className="block">Cloud</span>
+                  <span className="block">Workz</span>
+                  <span className="block">App</span>
+                </h2>
+              </div>
+
+              {/* Image */}
+              <div className="flex justify-center items-center w-full h-[250px] md:h-[350px]">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/96917f53b229f1ba236767005922073243f6d942?width=800"
+                  alt="Cloudworkz App"
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+
+              {/* Text Block */}
+              <div className="flex flex-col gap-6 md:gap-8 w-full relative z-10">
+                <p className="text-gray-900 text-left font-archivo text-base md:text-lg lg:text-xl font-bold leading-[120%] uppercase w-full opacity-100 bg-white/10 p-2 rounded">
+                  A modular execution platform that automates the work behind
+                  growth.
+                  <br />
+                  <br />
+                  Cloudworkz connects your tools, data, content, and logic into
+                  one intelligent system, helping teams move faster without
+                  adding headcount.
+                  <br />
+                  <br />
+                  Modular by design. Powered by rules. Ready to scale.
+                </p>
+                <div className="flex justify-start">
+                  <button className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="transform rotate-0"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071Z"
+                        fill="#126AF9"
+                      />
+                      <path
+                        fillRule="evenodd"
+                        clipRule="evenodd"
+                        d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
+                        fill="#126AF9"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
             </div>
 
-            {/* Title */}
-            <div className="flex flex-col justify-center items-start gap-5 w-full lg:w-[500px] flex-shrink-0 order-2">
-              <h2 className="text-cloudworkz-primary font-archivo text-4xl md:text-5xl lg:text-6xl xl:text-[80px] font-bold leading-[80%] tracking-[-1.6px] uppercase">
-                <span className="block">Cloud</span>
-                <span className="block">Workz</span>
-                <span className="block">App</span>
-              </h2>
-            </div>
+            {/* Desktop Layout */}
+            <div className="hidden xl:flex items-start w-full gap-12">
+              {/* Image */}
+              <div className="flex justify-center items-center w-[400px] h-[400px] flex-shrink-0">
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/96917f53b229f1ba236767005922073243f6d942?width=800"
+                  alt="Cloudworkz App"
+                  className="w-full h-full object-cover"
+                />
+              </div>
 
-            {/* Text Block */}
-            <div className="flex flex-col justify-center items-end gap-12 lg:gap-16 w-full lg:w-[348px] flex-shrink-0 order-3">
-              <p className="text-cloudworkz-black text-justify font-archivo text-lg md:text-2xl lg:text-[32px] font-bold leading-[100%] uppercase w-full">
-                A modular execution platform that automates the work behind
-                growth.
-                <br />
-                <br />
-                Cloudworkz connects your tools, data, content, and logic into
-                one intelligent system, helping teams move faster without adding
-                headcount.
-                <br />
-                <br />
-                Modular by design. Powered by rules. Ready to scale.
-              </p>
-              <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="transform rotate-0"
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071Z"
-                    fill="#126AF9"
-                  />
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
-                    fill="#126AF9"
-                  />
-                </svg>
-              </button>
+              {/* Title */}
+              <div className="flex flex-col justify-center items-start gap-5 w-[500px] flex-shrink-0">
+                <h2 className="text-cloudworkz-primary font-archivo text-6xl xl:text-[80px] font-bold leading-[80%] tracking-[-1.6px] uppercase">
+                  <span className="block">Cloud</span>
+                  <span className="block">Workz</span>
+                  <span className="block">App</span>
+                </h2>
+              </div>
+
+              {/* Text Block */}
+              <div className="flex flex-col justify-center items-end gap-16 w-[348px] flex-shrink-0">
+                <p className="text-cloudworkz-black text-justify font-archivo text-2xl lg:text-[32px] font-bold leading-[100%] uppercase w-full">
+                  A modular execution platform that automates the work behind
+                  growth.
+                  <br />
+                  <br />
+                  Cloudworkz connects your tools, data, content, and logic into
+                  one intelligent system, helping teams move faster without
+                  adding headcount.
+                  <br />
+                  <br />
+                  Modular by design. Powered by rules. Ready to scale.
+                </p>
+                <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="transform rotate-0"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071Z"
+                      fill="#126AF9"
+                    />
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
+                      fill="#126AF9"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -170,10 +291,7 @@ export default function WhatWeDo() {
 
       {/* CTA Section */}
       <section className="relative z-10 w-full overflow-hidden">
-        <div
-          className="relative z-10 flex flex-col lg:flex-row items-center lg:items-center justify-center gap-8 lg:gap-[31px] w-full"
-          style={{ padding: "200px 40px" }}
-        >
+        <div className="relative z-10 flex flex-col lg:flex-row items-center lg:items-center justify-center gap-8 lg:gap-[31px] w-full py-16 md:py-24 lg:py-32 px-4 md:px-8 lg:px-10">
           {/* Background Image */}
           <div className="absolute inset-0 overflow-hidden">
             <img
@@ -181,7 +299,7 @@ export default function WhatWeDo() {
               alt=""
               className="absolute w-[170%] h-[170%] object-cover mix-blend-multiply opacity-60"
               style={{
-                right: "-60%",
+                right: "-17%",
                 bottom: "-45%",
               }}
             />
@@ -267,10 +385,7 @@ export default function WhatWeDo() {
       </section>
 
       {/* Footer */}
-      <footer
-        className="relative z-10 flex flex-col items-start gap-[61px] w-full"
-        style={{ padding: "250px 40px 30px" }}
-      >
+      <footer className="relative z-10 flex flex-col items-start gap-8 md:gap-12 lg:gap-[61px] w-full py-16 md:py-24 lg:py-32 px-4 md:px-8 lg:px-10">
         <div className="flex items-start gap-5 w-full flex-wrap lg:flex-nowrap">
           {/* Contact Us Section */}
           <div className="flex flex-col items-start gap-[109px] w-full lg:w-[321px]">
