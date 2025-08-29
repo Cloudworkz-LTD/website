@@ -91,7 +91,7 @@ export default function OurStory() {
       <Header />
 
       {/* Hero Section based on reference design */}
-      <section className="relative min-h-screen flex items-center px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 overflow-hidden">
+      <section className="relative min-h-[70vh] md:min-h-[80vh] lg:min-h-screen flex items-center px-4 sm:px-6 md:px-8 lg:px-16 xl:px-20 overflow-hidden py-8 sm:py-12 md:py-16 lg:py-0">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
@@ -103,10 +103,10 @@ export default function OurStory() {
 
         {/* Content Container */}
         <div className="relative z-10 w-full max-w-8xl mx-auto">
-          <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-6 sm:gap-8 lg:gap-16">
+          <div className="flex flex-col xl:flex-row items-center xl:items-start justify-between gap-4 sm:gap-6 md:gap-8 xl:gap-16">
             {/* Left Side - Main Heading */}
-            <div className="flex-1 max-w-4xl text-center lg:text-left">
-              <h1 className="font-kenyan text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[140px] 2xl:text-[180px] leading-[87%] uppercase">
+            <div className="flex-1 max-w-4xl text-center xl:text-left">
+              <h1 className="font-kenyan text-[90px] xs:text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[140px] 2xl:text-[180px] leading-[87%] uppercase">
                 <span className="text-cloudworkz-primary block">WE BUILD</span>
                 <span className="text-cloudworkz-black block">
                   SYSTEMS THAT
@@ -115,12 +115,12 @@ export default function OurStory() {
               </h1>
             </div>
 
-            {/* Right Side - Circular Content */}
-            <div className="flex-shrink-0 mt-8 lg:mt-0">
-              <div className="relative w-[280px] h-[280px] xs:w-[320px] xs:h-[320px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:w-[450px] lg:h-[450px] xl:w-[525px] xl:h-[425px] mx-auto lg:mx-0 lg:right-[-40px] xl:right-[-81px]">
-                {/* Circular Background with Image */}
+            {/* Right Side - Oval Content */}
+            <div className="w-full xl:flex-shrink-0 mt-4 sm:mt-6 md:mt-8 xl:mt-0">
+              <div className="relative w-full h-[200px] xs:h-[250px] sm:h-[300px] md:h-[400px] lg:h-[450px] xl:w-[450px] xl:h-[300px] 2xl:w-[525px] 2xl:h-[350px] mx-auto rounded-full overflow-hidden">
+                {/* Oval Background with Image */}
                 <div
-                  className="w-full h-full flex items-end justify-center p-6 sm:p-8 lg:p-10"
+                  className="w-full h-full flex items-center justify-center"
                   style={{
                     backgroundImage:
                       "url('https://api.builder.io/api/v1/image/assets/TEMP/4536d6a6ca5818952a61dda081387c7f237d233b?width=1982')",
@@ -189,7 +189,7 @@ export default function OurStory() {
           </h2>
 
           {/* Team Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 xl:gap-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 xl:gap-16">
             {/* Tom King */}
             <div
               className="flex flex-col items-center sm:items-start gap-4 sm:gap-6"
