@@ -33,7 +33,7 @@ export default function WhatWeDo() {
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto w-full">
           <div className="flex flex-col items-start justify-center">
-            <h1 className="font-kenyan text-4xl md:text-6xl lg:text-8xl xl:text-[180px] font-normal leading-[87%] uppercase tracking-tight">
+            <h1 className="font-kenyan text-5xl md:text-7xl lg:text-9xl xl:text-[180px] font-normal leading-[87%] uppercase tracking-tight">
               <span className="text-cloudworkz-black block">
                 Sales That Execute.{" "}
               </span>
