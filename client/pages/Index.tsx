@@ -108,7 +108,7 @@ export default function Index() {
         <CursorEffect>
           <div className="flex flex-col w-full lg:w-auto">
             {/* Hero Title - Left Side */}
-            <h1 className="font-kenyan text-[clamp(48px,8vw,120px)] leading-[0.85] uppercase flex flex-col justify-start items-start max-w-full lg:max-w-[1015px]">
+            <h1 className="font-kenyan text-[clamp(60px,10vw,120px)] leading-[0.85] uppercase flex flex-col justify-start items-start max-w-full lg:max-w-[1015px]">
               <RevealText
                 className="text-cloudworkz-black"
                 splitBy="words"
@@ -147,7 +147,7 @@ export default function Index() {
 
             {/* Description below hero title */}
             <FadeInUp delay={1.5} duration={0.8}>
-              <div className="font-kenyan text-[clamp(32px,5vw,64px)] leading-[0.95] tracking-[-0.02em] uppercase text-cloudworkz-black max-w-full lg:max-w-[1015px] mt-4 md:mt-6">
+              <div className="font-kenyan text-[clamp(40px,6vw,64px)] leading-[0.95] tracking-[-0.02em] uppercase text-cloudworkz-black max-w-full lg:max-w-[1015px] mt-4 md:mt-6">
                 Powered by Smart Systems
               </div>
             </FadeInUp>
@@ -161,14 +161,14 @@ export default function Index() {
           stagger={0.3}
         >
           {/* Description Text */}
-          <p className="text-cloudworkz-black font-archivo text-lg md:text-xl lg:text-2xl leading-[1.1] w-full max-w-md lg:max-w-none">
+          <p className="text-cloudworkz-black font-archivo text-xl md:text-2xl lg:text-2xl leading-[1.1] w-full max-w-md lg:max-w-none">
             Step into a workspace where structure accelerates momentum.
           </p>
 
           {/* CTA Block */}
           <div className="flex items-center gap-3">
             {/* CTA Text */}
-            <div className="text-cloudworkz-primary font-archivo text-sm md:text-base font-semibold leading-[110%] uppercase">
+            <div className="text-cloudworkz-primary font-archivo text-base md:text-lg font-semibold leading-[110%] uppercase">
               Start
               <br />
               Scaling
@@ -229,7 +229,7 @@ export default function Index() {
           {/* Block 1 - Growth, Engineered */}
           <div
             ref={block1Ref}
-            className="flex flex-col justify-center items-start gap-6 md:gap-8 lg:gap-10 w-full max-w-[400px] lg:w-[452px] h-[400px] md:h-[600px] lg:h-[755px] p-[30px_20px] md:p-[40px_30px] lg:p-[58px_40px] rounded-[80px] md:rounded-[150px] lg:rounded-[250px] bg-cover bg-center bg-no-repeat"
+            className="flex flex-col justify-center items-start gap-6 md:gap-8 lg:gap-10 w-full max-w-[300px] md:max-w-[400px] lg:w-[452px] h-[500px] md:h-[600px] lg:h-[755px] p-[30px_20px] md:p-[40px_30px] lg:p-[58px_40px] rounded-[120px] md:rounded-[150px] lg:rounded-[250px] bg-cover bg-center bg-no-repeat mx-auto"
             style={{
               backgroundImage:
                 "url('https://api.builder.io/api/v1/image/assets/TEMP/2ebcfd4c91e939b67637722120478b384f33fa9a?width=904')",
@@ -239,7 +239,7 @@ export default function Index() {
           {/* Block 2 - Fundamental Tools, Real Outcomes */}
           <div
             ref={block2Ref}
-            className="flex flex-col justify-center items-start gap-6 md:gap-8 lg:gap-10 w-full max-w-[400px] lg:w-[452px] h-[400px] md:h-[600px] lg:h-[755px] p-[30px_20px] md:p-[40px_30px] lg:p-[58px_40px] rounded-[80px] md:rounded-[150px] lg:rounded-[250px] bg-cover bg-center bg-no-repeat"
+            className="flex flex-col justify-center items-start gap-6 md:gap-8 lg:gap-10 w-full max-w-[300px] md:max-w-[400px] lg:w-[452px] h-[500px] md:h-[600px] lg:h-[755px] p-[30px_20px] md:p-[40px_30px] lg:p-[58px_40px] rounded-[120px] md:rounded-[150px] lg:rounded-[250px] bg-cover bg-center bg-no-repeat mx-auto"
             style={{
               backgroundImage:
                 "url('https://api.builder.io/api/v1/image/assets/TEMP/38c2d669cbfb8d2ba2b993bb9e2d6467ee0e84b2?width=904')",
@@ -249,7 +249,7 @@ export default function Index() {
           {/* Block 3 - Cloudworkz started as a sales engine */}
           <div
             ref={block3Ref}
-            className="flex flex-col justify-center items-start gap-6 md:gap-8 lg:gap-10 w-full max-w-[400px] lg:w-[452px] h-[400px] md:h-[600px] lg:h-[755px] p-[30px_20px] md:p-[40px_30px] lg:p-[58px_40px] rounded-[80px] md:rounded-[150px] lg:rounded-[250px] bg-cover bg-center bg-no-repeat"
+            className="flex flex-col justify-center items-start gap-6 md:gap-8 lg:gap-10 w-full max-w-[300px] md:max-w-[400px] lg:w-[452px] h-[500px] md:h-[600px] lg:h-[755px] p-[30px_20px] md:p-[40px_30px] lg:p-[58px_40px] rounded-[120px] md:rounded-[150px] lg:rounded-[250px] bg-cover bg-center bg-no-repeat mx-auto"
             style={{
               backgroundImage:
                 "url('https://api.builder.io/api/v1/image/assets/TEMP/4c8c6df29b065c1ac32ad3c770857b5a9e784de9?width=904')",
