@@ -8,6 +8,7 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    allowedHosts: ["e116eda47fc7.ngrok-free.app"],
   },
   build: {
     outDir: "dist/spa",

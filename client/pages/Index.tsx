@@ -6,7 +6,6 @@ import Header from "../components/Header";
 import CursorEffect from "../components/CursorEffect";
 import {
   RevealText,
-  StyledRevealText,
   JustifiedRevealText,
   FadeInUp,
   StaggerContainer,
@@ -105,8 +104,8 @@ export default function Index() {
       {/* Header over background */}
       <Header />
       {/* Hero Content */}{" "}
-      <CursorEffect>
-        <div className="relative z-10 flex justify-between items-start pt-[90px] px-10">
+      <div className="relative z-10 flex justify-between items-start pt-[90px] px-10">
+        <CursorEffect>
           <div className="flex flex-col">
             {/* Hero Title - Left Side */}
             <h1 className="font-kenyan text-[120px] leading-[100px] uppercase flex flex-col justify-start items-start max-w-[1015px]">
@@ -153,56 +152,56 @@ export default function Index() {
               </div>
             </FadeInUp>
           </div>
+        </CursorEffect>
 
-          {/* CTA Section - Right Side */}
-          <StaggerContainer
-            className="flex flex-col justify-end items-start gap-[14px] w-full max-w-[322px] mt-auto"
-            delay={1.8}
-            stagger={0.3}
-          >
-            {/* Description Text */}
-            <p className="text-cloudworkz-black font-archivo text-2xl leading-[100%] w-full">
-              Step into a workspace where structure accelerates momentum.
-            </p>
+        {/* CTA Section - Right Side */}
+        <StaggerContainer
+          className="flex flex-col justify-end items-start gap-[14px] w-full max-w-[322px] mt-auto"
+          delay={1.8}
+          stagger={0.3}
+        >
+          {/* Description Text */}
+          <p className="text-cloudworkz-black font-archivo text-2xl leading-[100%] w-full">
+            Step into a workspace where structure accelerates momentum.
+          </p>
 
-            {/* CTA Block */}
-            <div className="flex items-center gap-3">
-              {/* CTA Text */}
-              <div className="text-cloudworkz-primary font-archivo text-base font-semibold leading-[110%] uppercase">
-                Start
-                <br />
-                Scaling
-                <br />
-                Today
-              </div>
-
-              {/* CTA Button */}
-              <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071Z"
-                    fill="#126AF9"
-                  />
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
-                    fill="#126AF9"
-                  />
-                </svg>
-              </button>
+          {/* CTA Block */}
+          <div className="flex items-center gap-3">
+            {/* CTA Text */}
+            <div className="text-cloudworkz-primary font-archivo text-base font-semibold leading-[110%] uppercase">
+              Start
+              <br />
+              Scaling
+              <br />
+              Today
             </div>
-          </StaggerContainer>
-        </div>
-      </CursorEffect>
+
+            {/* CTA Button */}
+            <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071Z"
+                  fill="#126AF9"
+                />
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
+                  fill="#126AF9"
+                />
+              </svg>
+            </button>
+          </div>
+        </StaggerContainer>
+      </div>
       {/* CloudWorkz Description Section */}
       <section className="relative z-10 pt-[150px] px-10">
         <JustifiedRevealText splitBy="words" stagger={0.08} delay={0.2}>
@@ -760,14 +759,12 @@ export default function Index() {
           </StaggerContainer>
 
           {/* Logo */}
-          <FadeInUp delay={0.8} y={40}>
-            <img
-              src="https://api.builder.io/api/v1/image/assets/TEMP/2ca41c4ebe4ba18e91febe21b8f069e137f71166?width=2720"
-              alt="CloudWorkz Logo"
-              className="w-full max-w-[1360px] h-auto"
-              style={{ height: "178.678px" }}
-            />
-          </FadeInUp>
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/2ca41c4ebe4ba18e91febe21b8f069e137f71166?width=2720"
+            alt="CloudWorkz Logo"
+            className="w-full max-w-[1360px] h-auto"
+            style={{ height: "178.678px" }}
+          />
         </footer>
       </div>
     </div>
