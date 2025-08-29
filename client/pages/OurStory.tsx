@@ -107,17 +107,17 @@ export default function OurStory() {
             <div className="flex-1 max-w-4xl">
               <h1 className="font-kenyan text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[180px] 2xl:text-[200px] leading-[87%] uppercase">
                 <span className="text-cloudworkz-primary block">WE BUILD</span>
-                <span className="text-cloudworkz-black block">SYSTEMS</span>
-                <span className="text-cloudworkz-black block">THAT WORK</span>
+                <span className="text-cloudworkz-black block">SYSTEMS THAT</span>
+                <span className="text-cloudworkz-black block">WORK</span>
               </h1>
             </div>
 
             {/* Right Side - Circular Content */}
             <div className="flex-shrink-0">
-              <div className="relative w-[350px] h-[350px] sm:w-[400px] sm:h-[400px] lg:w-[450px] lg:h-[450px] xl:w-[500px] xl:h-[500px]">
+              <div className="relative w-[350px] h-[350px] sm:w-[400px] sm:h-[400px] lg:w-[450px] lg:h-[450px] xl:w-[625px] xl:h-[500px] right-[-81px]">
                 {/* Circular Background with Image */}
                 <div
-                  className="w-full h-full rounded-full flex items-end justify-center p-8 lg:p-10"
+                  className="w-full h-full flex items-end justify-center p-8 lg:p-10"
                   style={{
                     backgroundImage:
                       "url('https://api.builder.io/api/v1/image/assets/TEMP/4536d6a6ca5818952a61dda081387c7f237d233b?width=1982')",
