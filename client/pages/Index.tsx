@@ -326,8 +326,7 @@ export default function Index() {
           <div className="flex flex-col items-start lg:items-end gap-8 lg:gap-12 w-full lg:w-[348px] lg:self-stretch">
             <FadeInUp delay={0.4} y={30}>
               <div className="text-cloudworkz-black text-left lg:text-justify font-archivo text-lg md:text-xl lg:text-2xl xl:text-[32px] font-semibold leading-[1.1] uppercase max-w-full lg:max-w-[340px]">
-                Plug in a trained sales pod to handle outreach, follow-ups, and
-                booking - no hiring required.
+                So people handle judgement, safety and exceptions where automation shouldn’t. Lorem ipsum dolor sit amet
               </div>
             </FadeInUp>
 
