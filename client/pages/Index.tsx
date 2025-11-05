@@ -498,11 +498,11 @@ export default function Index() {
 
         {/* Overlay Content - Glassmorphic Card */}
         <FadeInUp delay={0.2} className="relative z-20 w-full flex justify-center lg:justify-start">
-          <div className="flex flex-col items-end gap-6 md:gap-8 lg:gap-[39px] w-full max-w-[847px] p-8 md:p-10 lg:p-[50px_50px_20px_50px] rounded-[30px] md:rounded-[35px] lg:rounded-[40px] border border-white bg-white/20 backdrop-blur-[7px]">
+          <div className="flex flex-col items-end gap-4 md:gap-5 lg:gap-6 w-full max-w-[700px] p-6 md:p-7 lg:p-[40px_40px_15px_40px] rounded-[25px] md:rounded-[30px] lg:rounded-[40px] border border-white bg-white/20 backdrop-blur-[7px]">
             {/* Text Content */}
-            <div className="w-full text-white text-justify font-archivo text-base md:text-xl lg:text-2xl font-semibold leading-[100%] uppercase">
-              <p className="mb-4 md:mb-5 lg:mb-6">From problem to proof - What you get:</p>
-              <ul className="space-y-2 md:space-y-3 lg:space-y-4">
+            <div className="w-full text-white text-justify font-archivo text-sm md:text-lg lg:text-xl font-semibold leading-[100%] uppercase">
+              <p className="mb-2 md:mb-3 lg:mb-4">From problem to proof - What you get:</p>
+              <ul className="space-y-1 md:space-y-2 lg:space-y-2">
                 <li>• A clear problem statement with success criteria.</li>
                 <li>• A working proof of value inside your tools.</li>
                 <li>• A one-page impact snapshot covering time, cost, quality and risk</li>
