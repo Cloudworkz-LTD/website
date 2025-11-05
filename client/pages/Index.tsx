@@ -426,12 +426,12 @@ export default function Index() {
                 delay={0.2}
                 className="font-kenyan text-[clamp(36px,8vw,120px)] leading-[0.9]"
               >
-                <span className="text-cloudworkz-primary uppercase">
-                  An Ecosystem
-                </span>
-                <span className="text-cloudworkz-black uppercase">
+              <span className="text-cloudworkz-black uppercase">
                   {" "}
                   Built <br /> by Doing
+                </span>
+                <span className="text-cloudworkz-primary uppercase">
+                  An Ecosystem
                 </span>
               </JustifiedRevealText>
               <FadeInUp>
