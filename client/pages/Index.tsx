@@ -502,11 +502,11 @@ export default function Index() {
             {/* Text Content */}
             <div className="w-full text-white text-justify font-archivo text-sm md:text-lg lg:text-xl font-semibold leading-[100%] uppercase">
               <p className="mb-2 md:mb-3 lg:mb-4">From problem to proof - What you get:</p>
-              <ul className="space-y-1 md:space-y-2 lg:space-y-2">
-                <li>• A clear problem statement with success criteria.</li>
-                <li>• A working proof of value inside your tools.</li>
-                <li>• A one-page impact snapshot covering time, cost, quality and risk</li>
-                <li>• Next-step options, only extending what works</li>
+              <ul className="space-y-0.5 md:space-y-1 lg:space-y-1">
+                <li className="leading-tight">• A clear problem statement with success criteria.</li>
+                <li className="leading-tight">• A working proof of value inside your tools.</li>
+                <li className="leading-tight">• A one-page impact snapshot covering time, cost, quality and risk</li>
+                <li className="leading-tight">• Next-step options, only extending what works</li>
               </ul>
             </div>
 
