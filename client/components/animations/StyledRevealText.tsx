@@ -1,5 +1,8 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 interface StyledRevealTextProps {
   children: React.ReactNode;
@@ -21,85 +24,83 @@ export const StyledRevealText: React.FC<StyledRevealTextProps> = ({
   splitBy = 'words'
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const animationRef = useRef<gsap.core.Tween | null>(null);
 
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
 
-    // Función para procesar nodos de texto y crear spans preservando estilos
-    const processTextNodes = (element: Element): void => {
+    const selectAllTextNodes = (element: Element): Text[] => {
+      const textNodes: Text[] = [];
       const walker = document.createTreeWalker(
         element,
         NodeFilter.SHOW_TEXT,
         null
       );
 
-      const textNodes: Text[] = [];
-      let node;
-      
-      while (node = walker.nextNode()) {
+      let node: Node | null;
+      while ((node = walker.nextNode())) {
         if (node.textContent?.trim()) {
           textNodes.push(node as Text);
         }
       }
-
-      textNodes.forEach(textNode => {
-        const text = textNode.textContent || '';
-        let splitText: string[] = [];
-
-        switch (splitBy) {
-          case 'words':
-            splitText = text.split(' ');
-            break;
-          case 'lines':
-            splitText = text.split('\n');
-            break;
-          case 'chars':
-            splitText = text.split('');
-            break;
-        }
-
-        if (splitText.length > 0) {
-          const fragment = document.createDocumentFragment();
-          
-          splitText.forEach((part, index) => {
-            // Solo crear span si la parte no está vacía (para words y lines)
-            if (part.trim() || splitBy === 'chars') {
-              const span = document.createElement('span');
-              // Usar inline en lugar de inline-block para preservar justificación
-              span.className = 'inline reveal-text-part';
-              span.style.display = 'inline';
-              span.textContent = part;
-              fragment.appendChild(span);
-            }
-            
-            // Agregar espacio después de cada palabra (excepto la última)
-            if (splitBy === 'words' && index < splitText.length - 1) {
-              const spaceSpan = document.createElement('span');
-              spaceSpan.className = 'inline reveal-text-part';
-              spaceSpan.style.display = 'inline';
-              spaceSpan.innerHTML = '&nbsp;';
-              fragment.appendChild(spaceSpan);
-            }
-          });
-
-          textNode.parentNode?.replaceChild(fragment, textNode);
-        }
-      });
+      return textNodes;
     };
 
-    // Procesar todos los elementos con texto
-    processTextNodes(container);
+    const textNodes = selectAllTextNodes(container);
+    const spans: HTMLSpanElement[] = [];
 
-    // Obtener todos los spans creados
-    const spans = container.querySelectorAll('.reveal-text-part');
+    textNodes.forEach(textNode => {
+      const text = textNode.textContent || '';
+      let splitText: string[] = [];
+
+      switch (splitBy) {
+        case 'words':
+          splitText = text.split(' ');
+          break;
+        case 'lines':
+          splitText = text.split('\n');
+          break;
+        case 'chars':
+          splitText = text.split('');
+          break;
+      }
+
+      const parentNode = textNode.parentNode;
+      if (!parentNode || splitText.length === 0) return;
+
+      const fragment = document.createDocumentFragment();
+
+      splitText.forEach((part, index) => {
+        if (part.trim() || splitBy === 'chars') {
+          const span = document.createElement('span');
+          span.className = 'inline reveal-text-part';
+          span.style.display = 'inline';
+          span.textContent = part;
+          fragment.appendChild(span);
+          spans.push(span);
+        }
+
+        if (splitBy === 'words' && index < splitText.length - 1) {
+          const spaceSpan = document.createElement('span');
+          spaceSpan.className = 'inline reveal-text-part';
+          spaceSpan.style.display = 'inline';
+          spaceSpan.innerHTML = '&nbsp;';
+          fragment.appendChild(spaceSpan);
+        }
+      });
+
+      try {
+        parentNode.replaceChild(fragment, textNode);
+      } catch (e) {
+        console.warn('Could not replace text node:', e);
+      }
+    });
 
     if (spans.length > 0) {
-      // Configurar estado inicial
       gsap.set(spans, { y, opacity: 0 });
 
-      // Crear animación con ScrollTrigger
-      const animation = gsap.to(spans, {
+      animationRef.current = gsap.to(spans, {
         y: 0,
         opacity: 1,
         duration,
@@ -113,12 +114,20 @@ export const StyledRevealText: React.FC<StyledRevealTextProps> = ({
           toggleActions: "play none none reverse",
         }
       });
-
-      return () => {
-        animation.kill();
-      };
     }
-  }, [delay, duration, y, stagger, splitBy]);
+
+    return () => {
+      if (animationRef.current) {
+        animationRef.current.kill();
+        animationRef.current = null;
+      }
+      ScrollTrigger.getAll().forEach(trigger => {
+        if (trigger.vars.trigger === container) {
+          trigger.kill();
+        }
+      });
+    };
+  }, [delay, duration, y, stagger, splitBy, children]);
 
   return (
     <div ref={containerRef} className={className}>
