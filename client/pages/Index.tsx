@@ -110,12 +110,20 @@ export default function Index() {
             {/* Hero Title - Left Side */}
             <h1 className="font-kenyan text-[clamp(60px,10vw,120px)] leading-[0.85] uppercase flex flex-col justify-start items-start max-w-full lg:max-w-[1015px]">
               <RevealText
+                className="text-cloudworkz-primary"
+                splitBy="words"
+                stagger={0.15}
+                delay={0.2}
+              >
+                Start
+              </RevealText>
+              <RevealText
                 className="text-cloudworkz-black"
                 splitBy="words"
                 stagger={0.15}
                 delay={0.2}
               >
-                Your Portal
+                with
               </RevealText>
               <div className="flex flex-col sm:flex-row">
                 <RevealText
@@ -124,25 +132,9 @@ export default function Index() {
                   stagger={0.15}
                   delay={0.6}
                 >
-                  To
-                </RevealText>
-                <RevealText
-                  className="text-cloudworkz-primary"
-                  splitBy="words"
-                  stagger={0.15}
-                  delay={0.8}
-                >
-                  Practical
+                  the problem
                 </RevealText>
               </div>
-              <RevealText
-                className="text-cloudworkz-primary"
-                splitBy="words"
-                stagger={0.15}
-                delay={1.2}
-              >
-                Growth
-              </RevealText>
             </h1>
 
             {/* Description below hero title */}
