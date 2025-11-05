@@ -163,23 +163,19 @@ export default function Index() {
           {/* CTA Block */}
           <div className="flex items-center gap-3">
             {/* CTA Text */}
-            <div className="text-cloudworkz-primary font-archivo text-base md:text-lg font-semibold leading-[110%] uppercase">
-              Start
-              <br />
-              Scaling
-              <br />
-              Today
+            <div className="w-[106px] text-cloudworkz-primary font-archivo text-base font-semibold leading-[110%] uppercase">
+              Contact us
             </div>
 
             {/* CTA Button */}
-            <button className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
+            <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors p-7">
               <svg
-                width="20"
-                height="20"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="md:w-6 md:h-6"
+                className="flex-shrink-0"
               >
                 <path
                   fillRule="evenodd"
@@ -190,7 +186,7 @@ export default function Index() {
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
-                  d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
+                  d="M6 7C6 6.44772 6.44772 6 7 6L17 6C17.5523 6 18 6.44772 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44772 8 6 7.55229 6 7Z"
                   fill="#126AF9"
                 />
               </svg>
