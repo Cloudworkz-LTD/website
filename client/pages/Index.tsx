@@ -360,6 +360,36 @@ export default function Index() {
           </div>
         </StaggerContainer>
       </section>
+
+      {/* Transparent Metrics Section */}
+      <section className="relative z-10 px-4 md:px-6 lg:px-8 xl:px-12">
+        <StaggerContainer
+          className="flex flex-col lg:flex-row items-start gap-8 md:gap-10 lg:gap-12 xl:gap-[50px] py-8 md:py-10 lg:py-12 xl:py-[50px] border-b-2 border-cloudworkz-primary"
+          stagger={0.3}
+          delay={0.2}
+        >
+          {/* Service Title */}
+          <div className="flex flex-col items-start gap-5 flex-1 w-full">
+            <RevealText
+              className="text-cloudworkz-primary font-archivo text-[clamp(40px,8vw,80px)] font-semibold leading-[80%] tracking-[-1.6px] uppercase max-w-full lg:max-w-[584px]"
+              splitBy="words"
+              stagger={0.1}
+            >
+              Transparent metrics
+            </RevealText>
+          </div>
+
+          {/* Description Block */}
+          <div className="flex flex-col items-start lg:items-end gap-8 lg:gap-12 xl:gap-[50px] w-full lg:w-[348px] lg:self-stretch">
+            <FadeInUp delay={0.4} y={30}>
+              <div className="text-cloudworkz-black text-left lg:text-justify font-archivo text-lg md:text-xl lg:text-2xl xl:text-[32px] font-semibold leading-[100%] uppercase max-w-full lg:max-w-[340px]">
+                So leaders see risk, cost and ROI in real time
+              </div>
+            </FadeInUp>
+          </div>
+        </StaggerContainer>
+      </section>
+
       {/* Background Image Section */}
       <section className="relative w-full overflow-visible pt-[80px] md:pt-[120px] lg:pt-[150px] px-4 md:px-6 lg:pl-[40px]">
         <div className="relative w-full min-h-[400px] md:min-h-[600px] lg:min-h-[800px]">
