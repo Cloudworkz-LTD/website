@@ -155,7 +155,7 @@ export default function Index() {
           stagger={0.3}
         >
           {/* Description Text */}
-          <p className="text-cloudworkz-black font-archivo text-xl md:text-2xl font-semibold leading-tight uppercase w-full max-w-md lg:max-w-none">
+          <p className="text-cloudworkz-black font-archivo text-xl md:text-2xl font-semibold leading-none uppercase w-full max-w-md lg:max-w-none">
             We help organisations diagnose what is really going on, then choose the simplest route to value.
           </p>
 
