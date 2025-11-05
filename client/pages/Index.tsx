@@ -497,7 +497,7 @@ export default function Index() {
         </video>
 
         {/* Overlay Content - Glassmorphic Card */}
-        <FadeInUp delay={0.2} className="relative z-20 w-full flex justify-center lg:justify-end">
+        <FadeInUp delay={0.2} className="relative z-20 w-full flex justify-center lg:justify-start">
           <div className="flex flex-col items-end gap-6 md:gap-8 lg:gap-[39px] w-full max-w-[847px] p-8 md:p-10 lg:p-[50px_50px_20px_50px] rounded-[30px] md:rounded-[35px] lg:rounded-[40px] border border-white bg-white/20 backdrop-blur-[7px]">
             {/* Text Content */}
             <div className="w-full text-white text-justify font-archivo text-base md:text-xl lg:text-2xl font-semibold leading-[100%] uppercase">
