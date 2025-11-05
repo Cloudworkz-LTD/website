@@ -205,8 +205,7 @@ export default function Index() {
               *
             </span>{" "}
             <span className="font-archivo text-[#323232]">
-              helps ambitious teams scale faster and build more intelligent
-              systems with modular execution tools.
+              helps teams find the simplest route to value. Modern capability that feels natural, not disruptive.
             </span>
           </div>
         </JustifiedRevealText>
