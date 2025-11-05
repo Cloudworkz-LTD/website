@@ -205,7 +205,8 @@ export default function Index() {
               *
             </span>{" "}
             <span className="font-archivo text-[#323232]">
-              helps teams find the simplest route to value. Modern capability that feels natural, not disruptive.
+              helps teams find the simplest route to value. Modern capability
+              that feels natural, not disruptive.
             </span>
           </div>
         </JustifiedRevealText>
@@ -229,7 +230,8 @@ export default function Index() {
               Start with the problem
             </h3>
             <p className="font-archivo text-base md:text-lg lg:text-xl font-normal leading-[100%] text-white">
-              We diagnose what is really going on, define success, and choose the simplest, most effective route to value
+              We diagnose what is really going on, define success, and choose
+              the simplest, most effective route to value
             </p>
           </div>
 
@@ -246,7 +248,8 @@ export default function Index() {
               Proof of value
             </h3>
             <p className="font-archivo text-base md:text-lg lg:text-xl font-normal leading-[100%] text-white">
-              Test the simplest route to value and measure impact on time, cost, quality and risk
+              Test the simplest route to value and measure impact on time, cost,
+              quality and risk
             </p>
           </div>
 
@@ -263,7 +266,9 @@ export default function Index() {
               Built to fit your tools
             </h3>
             <p className="font-archivo text-base md:text-lg lg:text-xl font-normal leading-[100%] text-white">
-              Vendor agnostic and outcome driven. We weave modern capability into the systems you already use, with security, governance, documentation and training as standard
+              Vendor agnostic and outcome driven. We weave modern capability
+              into the systems you already use, with security, governance,
+              documentation and training as standard
             </p>
           </div>
         </div>
