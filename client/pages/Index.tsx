@@ -216,35 +216,56 @@ export default function Index() {
         ref={featureBlocksRef}
       >
         <div className="flex flex-col lg:flex-row items-center justify-center gap-4 md:gap-2 lg:gap-0 w-full max-w-[1356px] overflow-hidden">
-          {/* Block 1 - Growth, Engineered */}
+          {/* Block 1 - Start with the problem */}
           <div
             ref={block1Ref}
             className="flex flex-col justify-center items-start gap-6 md:gap-8 lg:gap-10 w-full max-w-[300px] md:max-w-[400px] lg:w-[452px] h-[500px] md:h-[600px] lg:h-[755px] p-[30px_20px] md:p-[40px_30px] lg:p-[58px_40px] rounded-[120px] md:rounded-[150px] lg:rounded-[250px] bg-cover bg-center bg-no-repeat mx-auto"
             style={{
               backgroundImage:
-                "url('https://api.builder.io/api/v1/image/assets/TEMP/2ebcfd4c91e939b67637722120478b384f33fa9a?width=904')",
+                "url('https://api.builder.io/api/v1/image/assets/TEMP/54732e33e20b033ec1680dcc927c035d64c7cdeb?width=904')",
             }}
-          />
+          >
+            <h3 className="font-kenyan text-[50px] md:text-[70px] lg:text-[90px] font-normal leading-[100%] tracking-[-1.8px] uppercase text-white">
+              Start with the problem
+            </h3>
+            <p className="font-archivo text-base md:text-lg lg:text-xl font-normal leading-[100%] text-white">
+              We diagnose what is really going on, define success, and choose the simplest, most effective route to value
+            </p>
+          </div>
 
-          {/* Block 2 - Fundamental Tools, Real Outcomes */}
+          {/* Block 2 - Proof of value */}
           <div
             ref={block2Ref}
             className="flex flex-col justify-center items-start gap-6 md:gap-8 lg:gap-10 w-full max-w-[300px] md:max-w-[400px] lg:w-[452px] h-[500px] md:h-[600px] lg:h-[755px] p-[30px_20px] md:p-[40px_30px] lg:p-[58px_40px] rounded-[120px] md:rounded-[150px] lg:rounded-[250px] bg-cover bg-center bg-no-repeat mx-auto"
             style={{
               backgroundImage:
-                "url('https://api.builder.io/api/v1/image/assets/TEMP/38c2d669cbfb8d2ba2b993bb9e2d6467ee0e84b2?width=904')",
+                "url('https://api.builder.io/api/v1/image/assets/TEMP/8f38ceb85e3c5210d538fadb19bdfa3bf7998d2e?width=904')",
             }}
-          />
+          >
+            <h3 className="font-kenyan text-[50px] md:text-[70px] lg:text-[90px] font-normal leading-[100%] tracking-[-1.8px] uppercase text-white">
+              Proof of value
+            </h3>
+            <p className="font-archivo text-base md:text-lg lg:text-xl font-normal leading-[100%] text-white">
+              Test the simplest route to value and measure impact on time, cost, quality and risk
+            </p>
+          </div>
 
-          {/* Block 3 - Cloudworkz started as a sales engine */}
+          {/* Block 3 - Built to fit your tools */}
           <div
             ref={block3Ref}
             className="flex flex-col justify-center items-start gap-6 md:gap-8 lg:gap-10 w-full max-w-[300px] md:max-w-[400px] lg:w-[452px] h-[500px] md:h-[600px] lg:h-[755px] p-[30px_20px] md:p-[40px_30px] lg:p-[58px_40px] rounded-[120px] md:rounded-[150px] lg:rounded-[250px] bg-cover bg-center bg-no-repeat mx-auto"
             style={{
               backgroundImage:
-                "url('https://api.builder.io/api/v1/image/assets/TEMP/4c8c6df29b065c1ac32ad3c770857b5a9e784de9?width=904')",
+                "url('https://api.builder.io/api/v1/image/assets/TEMP/3f84742298d5dd514aff702c52bdf4ed396d4e33?width=904')",
             }}
-          />
+          >
+            <h3 className="font-kenyan text-[50px] md:text-[70px] lg:text-[90px] font-normal leading-[100%] tracking-[-1.8px] uppercase text-white">
+              Built to fit your tools
+            </h3>
+            <p className="font-archivo text-base md:text-lg lg:text-xl font-normal leading-[100%] text-white">
+              Vendor agnostic and outcome driven. We weave modern capability into the systems you already use, with security, governance, documentation and training as standard
+            </p>
+          </div>
         </div>
       </section>
       {/* Marquee Section */}
