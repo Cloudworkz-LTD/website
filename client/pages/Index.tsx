@@ -496,57 +496,51 @@ export default function Index() {
           />
         </video>
 
-        {/* Overlay Content */}
-        <StaggerContainer
-          className="relative z-20 flex flex-col items-start gap-6 md:gap-8 lg:gap-[39px] w-full lg:pl-[691px]"
-          stagger={0.3}
-          delay={0.1}
-        >
-          <FadeInUp>
-            <div className="text-cloudworkz-black text-left lg:text-justify font-archivo text-lg md:text-xl lg:text-2xl font-semibold leading-[1.1] tracking-[-0.02em] w-full max-w-full lg:max-w-none uppercase">
-              A modular platform for managing outreach, data, content, and team
-              coordination - supported by an embedded sales service when needed.
-              <br />
-              <br />
-              Each part is shaped by what we've seen teams struggle with - and
-              what we've had to solve ourselves.
+        {/* Overlay Content - Glassmorphic Card */}
+        <FadeInUp delay={0.2} className="relative z-20 w-full flex justify-center lg:justify-end">
+          <div className="flex flex-col items-end gap-6 md:gap-8 lg:gap-[39px] w-full max-w-[847px] p-8 md:p-10 lg:p-[50px_50px_20px_50px] rounded-[30px] md:rounded-[35px] lg:rounded-[40px] border border-white bg-white/20 backdrop-blur-[7px]">
+            {/* Text Content */}
+            <div className="w-full text-white text-justify font-archivo text-base md:text-xl lg:text-2xl font-semibold leading-[100%] uppercase">
+              <p className="mb-4 md:mb-5 lg:mb-6">From problem to proof - What you get:</p>
+              <ul className="space-y-2 md:space-y-3 lg:space-y-4">
+                <li>• A clear problem statement with success criteria.</li>
+                <li>• A working proof of value inside your tools.</li>
+                <li>• A one-page impact snapshot covering time, cost, quality and risk</li>
+                <li>• Next-step options, only extending what works</li>
+              </ul>
             </div>
-          </FadeInUp>
 
-          {/* CTA Block */}
-          <div className="flex items-center gap-3">
-            <div className="text-cloudworkz-primary font-archivo text-sm md:text-base font-semibold leading-[110%] uppercase">
-              Explore
-              <br />
-              Success
-              <br />
-              Stories
+            {/* CTA Block */}
+            <div className="flex items-center gap-3">
+              <div className="text-cloudworkz-primary font-archivo text-sm md:text-base font-semibold leading-[110%] uppercase">
+                Contact Us
+              </div>
+              <button className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="md:w-6 md:h-6"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071Z"
+                    fill="#126AF9"
+                  />
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
+                    fill="#126AF9"
+                  />
+                </svg>
+              </button>
             </div>
-            <button className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="md:w-6 md:h-6"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071Z"
-                  fill="#126AF9"
-                />
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
-                  fill="#126AF9"
-                />
-              </svg>
-            </button>
           </div>
-        </StaggerContainer>
+        </FadeInUp>
       </section>
       <div
         className="flex flex-col relative min-h-screen"
