@@ -313,7 +313,7 @@ export default function Index() {
               splitBy="words"
               stagger={0.1}
             >
-              Sales-as-a-Service
+              Human in the loop where it matters
             </RevealText>
           </div>
 
