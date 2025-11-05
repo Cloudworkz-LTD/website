@@ -427,21 +427,15 @@ export default function Index() {
                 className="font-kenyan text-[clamp(36px,8vw,120px)] leading-[0.9]"
               >
               <span className="text-cloudworkz-black uppercase">
-                  {" "}
-                  Built <br /> by Doing
+                  What we
                 </span>
                 <span className="text-cloudworkz-primary uppercase">
-                  An Ecosystem
+                  Deliver
                 </span>
               </JustifiedRevealText>
               <FadeInUp>
                 <div className="w-full text-cloudworkz-black text-left md:text-justify font-archivo text-base md:text-lg lg:text-xl xl:text-[32px] font-normal leading-[1.2] tracking-[-0.02em]">
-                  Cloudworkz tools start as internal solutions to real problems
-                  - battle-tested by our team, refined by client needs.
-                  <br />
-                  <br />
-                  From investor matching to sales operations, our ecosystem
-                  reflects what startups use
+                  The simplest effective answer: an AI agent when conversations and decisions need coverage, an automation when tasks repeat, or sometimes a clearer process with no code at all.
                 </div>
               </FadeInUp>
             </div>
