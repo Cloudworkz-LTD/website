@@ -346,7 +346,7 @@ export default function Index() {
               splitBy="words"
               stagger={0.1}
             >
-              Clear documentation and training
+              Clear documentat<br />ion and training
             </RevealText>
           </div>
 
