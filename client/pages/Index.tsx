@@ -256,7 +256,7 @@ export default function Index() {
             className="flex flex-col justify-center items-start gap-6 md:gap-8 lg:gap-10 w-full max-w-[300px] md:max-w-[400px] lg:w-[452px] h-[500px] md:h-[600px] lg:h-[755px] p-[30px_20px] md:p-[40px_30px] lg:p-[58px_40px] rounded-[120px] md:rounded-[150px] lg:rounded-[250px] bg-cover bg-center bg-no-repeat mx-auto"
             style={{
               backgroundImage:
-                "url('https://api.builder.io/api/v1/image/assets/TEMP/3f84742298d5dd514aff702c52bdf4ed396d4e33?width=904')",
+                "url('https://api.builder.io/api/v1/image/assets/TEMP/514d417fa855b888cc5675511ede7309fbc05ecc?width=904')",
             }}
           >
             <h3 className="font-kenyan text-[50px] md:text-[70px] lg:text-[90px] font-normal leading-[100%] tracking-[-1.8px] uppercase text-white">
