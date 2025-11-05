@@ -326,7 +326,8 @@ export default function Index() {
           <div className="flex flex-col items-start lg:items-end gap-8 lg:gap-12 w-full lg:w-[348px] lg:self-stretch">
             <FadeInUp delay={0.4} y={30}>
               <div className="text-cloudworkz-black text-left lg:text-justify font-archivo text-lg md:text-xl lg:text-2xl xl:text-[32px] font-semibold leading-[1.1] uppercase max-w-full lg:max-w-[340px]">
-                So people handle judgement, safety and exceptions where automation shouldn’t. Lorem ipsum dolor sit amet
+                So people handle judgement, safety and exceptions where
+                automation shouldn’t. Lorem ipsum dolor sit amet
               </div>
             </FadeInUp>
           </div>
@@ -346,7 +347,9 @@ export default function Index() {
               splitBy="words"
               stagger={0.1}
             >
-              Clear documentat<br />ion and training
+              Clear documentat
+              <br />
+              ion and training
             </RevealText>
           </div>
 
@@ -354,7 +357,8 @@ export default function Index() {
           <div className="flex flex-col items-start lg:items-end gap-8 lg:gap-12 w-full lg:w-[348px] lg:self-stretch">
             <FadeInUp delay={0.4} y={30}>
               <div className="text-cloudworkz-black text-left lg:text-justify font-archivo text-lg md:text-xl lg:text-2xl xl:text-[32px] font-semibold leading-[1.1] uppercase max-w-full lg:max-w-[340px]">
-                Guide teams to adopt, operate and improve solutions with confidence. Lorem ipsum dolor sit amet
+                Guide teams to adopt, operate and improve solutions with
+                confidence. Lorem ipsum dolor sit amet
               </div>
             </FadeInUp>
           </div>
@@ -375,7 +379,9 @@ export default function Index() {
               splitBy="words"
               stagger={0.1}
             >
-              Transpar<br />ent metrics
+              Transpar
+              <br />
+              ent metrics
             </RevealText>
           </div>
 
