@@ -572,10 +572,7 @@ export default function Index() {
                     stagger={0.08}
                   >
                     <span className="text-cloudworkz-black">
-                      You don't need more dashboards.{" "}
-                    </span>
-                    <span className="text-cloudworkz-primary">
-                      You need a system that gets the work done
+                      Want to learn more?{" "}
                     </span>
                   </JustifiedRevealText>
 
