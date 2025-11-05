@@ -375,7 +375,7 @@ export default function Index() {
               splitBy="words"
               stagger={0.1}
             >
-              Transparent metrics
+              Transpar<br />ent metrics
             </RevealText>
           </div>
 
