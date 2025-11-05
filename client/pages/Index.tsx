@@ -156,7 +156,8 @@ export default function Index() {
         >
           {/* Description Text */}
           <p className="text-cloudworkz-black font-archivo text-xl md:text-2xl font-semibold leading-none uppercase w-full max-w-md lg:max-w-none">
-            We help organisations diagnose what is really going on, then choose the simplest route to value.
+            We help organisations diagnose what is really going on, then choose
+            the simplest route to value.
           </p>
 
           {/* CTA Block */}
