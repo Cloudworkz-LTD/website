@@ -346,7 +346,7 @@ export default function Index() {
               splitBy="words"
               stagger={0.1}
             >
-              The Cloudworkz App
+              Clear documentation and training
             </RevealText>
           </div>
 
