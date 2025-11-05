@@ -354,39 +354,8 @@ export default function Index() {
           <div className="flex flex-col items-start lg:items-end gap-8 lg:gap-12 w-full lg:w-[348px] lg:self-stretch">
             <FadeInUp delay={0.4} y={30}>
               <div className="text-cloudworkz-black text-left lg:text-justify font-archivo text-lg md:text-xl lg:text-2xl xl:text-[32px] font-semibold leading-[1.1] uppercase max-w-full lg:max-w-[340px]">
-                Our modular platform automates internal execution: lead intake,
-                CRM sync, follow-ups, onboarding, and more.
+                Guide teams to adopt, operate and improve solutions with confidence. Lorem ipsum dolor sit amet
               </div>
-            </FadeInUp>
-
-            {/* CTA Button */}
-            <FadeInUp delay={0.6} y={20}>
-              <button
-                onClick={() => navigate("/cloudworkz-app")}
-                className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors"
-              >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="md:w-6 md:h-6"
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L16.2929 6.29289C16.6834 5.90237 17.3166 5.90237 17.7071 6.29289C18.0976 6.68342 18.0976 7.31658 17.7071 7.70711L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071Z"
-                    fill="#126AF9"
-                  />
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
-                    fill="#126AF9"
-                  />
-                </svg>
-              </button>
             </FadeInUp>
           </div>
         </StaggerContainer>
