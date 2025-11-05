@@ -340,9 +340,9 @@ export default function Index() {
           delay={0.2}
         >
           {/* Service Title */}
-          <div className="flex flex-col items-start gap-5 w-full lg:w-[584px] lg:flex-none">
+          <div className="flex flex-col items-start gap-5 flex-1 min-w-0">
             <RevealText
-              className="text-cloudworkz-primary font-archivo text-[clamp(40px,8vw,80px)] font-semibold leading-[80%] tracking-[-1.6px] uppercase w-full"
+              className="text-cloudworkz-primary font-archivo text-[clamp(40px,8vw,80px)] font-semibold leading-[80%] tracking-[-1.6px] uppercase max-w-[584px]"
               splitBy="words"
               stagger={0.1}
             >
