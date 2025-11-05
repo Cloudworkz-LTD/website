@@ -239,7 +239,7 @@ export default function Index() {
             className="flex flex-col justify-center items-start gap-6 md:gap-8 lg:gap-10 w-full max-w-[300px] md:max-w-[400px] lg:w-[452px] h-[500px] md:h-[600px] lg:h-[755px] p-[30px_20px] md:p-[40px_30px] lg:p-[58px_40px] rounded-[120px] md:rounded-[150px] lg:rounded-[250px] bg-cover bg-center bg-no-repeat mx-auto"
             style={{
               backgroundImage:
-                "url('https://api.builder.io/api/v1/image/assets/TEMP/8f38ceb85e3c5210d538fadb19bdfa3bf7998d2e?width=904')",
+                "url('https://api.builder.io/api/v1/image/assets/TEMP/5f7be80d4ebc755eaa61ad5e88212092a594781e?width=904')",
             }}
           >
             <h3 className="font-kenyan text-[50px] md:text-[70px] lg:text-[90px] font-normal leading-[100%] tracking-[-1.8px] uppercase text-white">
