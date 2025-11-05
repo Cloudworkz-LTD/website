@@ -14,7 +14,6 @@ import {
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Index() {
-  const navigate = useNavigate();
   const featureBlocksRef = useRef<HTMLDivElement>(null);
   const block1Ref = useRef<HTMLDivElement>(null);
   const block2Ref = useRef<HTMLDivElement>(null);
@@ -23,7 +22,8 @@ export default function Index() {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       // Set different initial positions for each block to create staggered effect
-      // Set different initial positions for each block completely hidden
+      // Set different initial positions for each block completely hidden.
+      
       gsap.set(block1Ref.current, {
         opacity: 0,
         transform: "translateY(150px)",
@@ -273,6 +273,7 @@ export default function Index() {
           </div>
         </div>
       </section>
+
       {/* Marquee Section */}
       <section className="relative z-10 w-full overflow-hidden py-8">
         <div className="flex whitespace-nowrap animate-marquee">
@@ -304,6 +305,7 @@ export default function Index() {
           </div>
         </div>
       </section>
+      
       {/* Sales-as-a-Service Section */}
       <section className="relative z-10 px-4 md:px-6 lg:px-8 xl:px-12">
         <StaggerContainer
@@ -426,8 +428,8 @@ export default function Index() {
                 delay={0.2}
                 className="font-kenyan text-[clamp(36px,8vw,120px)] leading-[0.9]"
               >
-              <span className="text-cloudworkz-black uppercase">
-                  What we {" "}
+                <span className="text-cloudworkz-black uppercase">
+                  What we{" "}
                 </span>
                 <span className="text-cloudworkz-primary uppercase">
                   Deliver
@@ -435,7 +437,9 @@ export default function Index() {
               </JustifiedRevealText>
               <FadeInUp>
                 <div className="w-full text-cloudworkz-black text-left md:text-justify font-archivo text-base md:text-lg lg:text-xl xl:text-[32px] font-normal leading-[1.2] tracking-[-0.02em]">
-                  The simplest effective answer: an AI agent when conversations and decisions need coverage, an automation when tasks repeat, or sometimes a clearer process with no code at all.
+                  The simplest effective answer: an AI agent when conversations
+                  and decisions need coverage, an automation when tasks repeat,
+                  or sometimes a clearer process with no code at all.
                 </div>
               </FadeInUp>
             </div>
@@ -497,16 +501,30 @@ export default function Index() {
         </video>
 
         {/* Overlay Content - Glassmorphic Card */}
-        <FadeInUp delay={0.2} className="relative z-20 w-full flex justify-center lg:justify-start">
+        <FadeInUp
+          delay={0.2}
+          className="relative z-20 w-full flex justify-center lg:justify-start"
+        >
           <div className="flex flex-col items-end gap-4 md:gap-5 lg:gap-6 w-full max-w-[700px] p-6 md:p-7 lg:p-[40px_40px_15px_40px] rounded-[25px] md:rounded-[30px] lg:rounded-[40px] border border-white bg-white/20 backdrop-blur-[7px]">
             {/* Text Content */}
             <div className="w-full text-white text-justify font-archivo text-sm md:text-lg lg:text-xl font-semibold leading-[100%] uppercase">
-              <p className="mb-2 md:mb-3 lg:mb-4">From problem to proof - What you get:</p>
+              <p className="mb-2 md:mb-3 lg:mb-4">
+                From problem to proof - What you get:
+              </p>
               <ul className="space-y-0.5 md:space-y-1 lg:space-y-1">
-                <li className="leading-tight">• A clear problem statement with success criteria.</li>
-                <li className="leading-tight">• A working proof of value inside your tools.</li>
-                <li className="leading-tight">• A one-page impact snapshot covering time, cost, quality and risk</li>
-                <li className="leading-tight">• Next-step options, only extending what works</li>
+                <li className="leading-tight">
+                  • A clear problem statement with success criteria.
+                </li>
+                <li className="leading-tight">
+                  • A working proof of value inside your tools.
+                </li>
+                <li className="leading-tight">
+                  • A one-page impact snapshot covering time, cost, quality and
+                  risk
+                </li>
+                <li className="leading-tight">
+                  • Next-step options, only extending what works
+                </li>
               </ul>
             </div>
 
@@ -572,34 +590,31 @@ export default function Index() {
                     stagger={0.08}
                   >
                     <span className="text-cloudworkz-black">
-                      You don't need more dashboards.{" "}
-                    </span>
-                    <span className="text-cloudworkz-primary">
-                      You need a system that gets the work done
+                      Want to learn more?
                     </span>
                   </JustifiedRevealText>
 
                   {/* Description */}
                   <FadeInUp y={30}>
                     <p className="text-center lg:text-right text-cloudworkz-black font-archivo font-semibold text-base md:text-lg lg:text-xl xl:text-[24px] leading-[1.1] max-w-full lg:max-w-3xl uppercase">
-                      Cloudworkz gives you the tools — and the team — to move
-                      faster, close smarter, and scale without chaos.
+                      To book a call, request a proposal or for <br />
+                      any other enquiry please email
                     </p>
                   </FadeInUp>
 
                   {/* CTA Block */}
-                  <div className="flex items-center justify-center lg:justify-start gap-3 mt-4 w-full lg:w-auto">
-                    <div className="text-cloudworkz-primary font-archivo text-sm md:text-base font-semibold leading-[110%] uppercase text-center lg:text-left w-[91px]">
-                      Let's Build Together
+                  <div className="flex items-center justify-center lg:justify-end gap-3 mt-4 w-full lg:w-auto">
+                    <div className="text-cloudworkz-primary font-archivo text-base font-semibold leading-[110%] uppercase">
+                      tom@cloudworkz.com
                     </div>
-                    <button className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
+                    <button className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors flex-shrink-0">
                       <svg
                         width="20"
                         height="20"
                         viewBox="0 0 24 24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="md:w-6 md:h-6 transform rotate-0"
+                        className="md:w-6 md:h-6"
                       >
                         <path
                           fillRule="evenodd"
@@ -610,7 +625,7 @@ export default function Index() {
                         <path
                           fillRule="evenodd"
                           clipRule="evenodd"
-                          d="M6 7C6 6.44771 6.44771 6 7 6L17 6C17.5523 6 18 6.44771 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44771 8 6 7.55229 6 7Z"
+                          d="M6 7C6 6.44772 6.44772 6 7 6L17 6C17.5523 6 18 6.44772 18 7L18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17L16 8L7 8C6.44772 8 6 7.55229 6 7Z"
                           fill="#126AF9"
                         />
                       </svg>
