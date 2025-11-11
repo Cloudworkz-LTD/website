@@ -427,15 +427,24 @@ export default function Index() {
           >
             {/* Left content */}
             <div className="flex flex-col items-start flex-1 gap-0">
-              <JustifiedRevealText
-                splitBy="words"
-                stagger={0.08}
-                delay={0.2}
-                className="font-kenyan text-[clamp(60px,10vw,120px)] leading-[100%] tracking-[-0.02em] uppercase"
-              >
-                <span className="text-cloudworkz-black">WHAT WE </span>
-                <span className="text-cloudworkz-primary"> DELIVER</span>
-              </JustifiedRevealText>
+              <div className="font-kenyan text-[clamp(60px,10vw,120px)] leading-[100%] tracking-[-0.02em] uppercase">
+                <JustifiedRevealText
+                  splitBy="words"
+                  stagger={0.08}
+                  delay={0.2}
+                  className="inline"
+                >
+                  WHAT WE
+                </JustifiedRevealText>
+                <JustifiedRevealText
+                  splitBy="words"
+                  stagger={0.08}
+                  delay={0.2}
+                  className="inline text-cloudworkz-primary"
+                >
+                  {' DELIVER'}
+                </JustifiedRevealText>
+              </div>
               <FadeInUp delay={0.4} className="-mt-3 md:-mt-2 lg:-mt-1">
                 <div className="w-full text-cloudworkz-black text-left md:text-justify font-archivo text-lg md:text-2xl lg:text-[32px] font-normal leading-[100%] tracking-[-0.02em]">
                   The simplest effective answer: an AI agent when conversations
