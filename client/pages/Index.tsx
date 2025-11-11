@@ -168,7 +168,9 @@ export default function Index() {
             {/* CTA Button */}
             <button
               onClick={() => {
-                document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' });
+                document
+                  .getElementById("contact-section")
+                  ?.scrollIntoView({ behavior: "smooth" });
               }}
               className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors p-7 cursor-pointer"
             >
@@ -538,7 +540,9 @@ export default function Index() {
               </div>
               <button
                 onClick={() => {
-                  document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' });
+                  document
+                    .getElementById("contact-section")
+                    ?.scrollIntoView({ behavior: "smooth" });
                 }}
                 className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors cursor-pointer"
               >
@@ -580,7 +584,10 @@ export default function Index() {
         }}
       >
         {/* Text Block Section */}
-        <section id="contact-section" className="relative w-full overflow-hidden">
+        <section
+          id="contact-section"
+          className="relative w-full overflow-hidden"
+        >
           {/* Content Layer */}
           <div className="relative z-10 px-4 md:px-6 lg:px-12 xl:px-[180px] py-[100px] md:py-[150px] lg:py-[200px]">
             <div className="max-w-7xl mx-auto">
