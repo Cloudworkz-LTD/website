@@ -166,7 +166,12 @@ export default function Index() {
             </div>
 
             {/* CTA Button */}
-            <button className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors p-7">
+            <button
+              onClick={() => {
+                document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="w-20 h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors p-7 cursor-pointer"
+            >
               <svg
                 width="24"
                 height="24"
