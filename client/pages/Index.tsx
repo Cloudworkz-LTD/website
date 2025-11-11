@@ -419,7 +419,71 @@ export default function Index() {
             }}
           />
 
-          
+          {/* Content above image */}
+          <StaggerContainer
+            className="relative z-[60] flex flex-col lg:flex-row items-start gap-8 lg:gap-12 xl:gap-[50px] max-w-none w-full mt-auto px-4 md:px-6 lg:px-10"
+            stagger={0.4}
+            delay={0.2}
+          >
+            {/* Left content */}
+            <div className="flex flex-col items-start flex-1 gap-4 md:gap-6 lg:gap-8">
+              <JustifiedRevealText
+                splitBy="words"
+                stagger={0.08}
+                delay={0.2}
+                className="font-kenyan text-[clamp(60px,10vw,120px)] leading-[100%] tracking-[-0.02em] uppercase"
+              >
+                <span className="text-cloudworkz-black">WHAT WE</span>
+                <span className="text-cloudworkz-primary"> DELIVER</span>
+              </JustifiedRevealText>
+              <FadeInUp delay={0.4}>
+                <div className="w-full text-cloudworkz-black text-left md:text-justify font-archivo text-lg md:text-2xl lg:text-[32px] font-normal leading-[100%] tracking-[-0.02em]">
+                  The simplest effective answer: an AI agent when conversations
+                  and decisions need coverage, an automation when tasks repeat,
+                  or sometimes a clearer process with no code at all.
+                </div>
+              </FadeInUp>
+            </div>
+
+            {/* Right visual element */}
+            <div className="flex-shrink-0 w-full lg:w-auto flex items-start self-start">
+              <div className="relative w-full max-w-[400px] md:max-w-[500px] lg:w-[580px] h-[240px] md:h-[300px] lg:h-[348px] mx-auto lg:mx-0">
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 580 348"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-full h-full"
+                >
+                  <defs>
+                    <pattern
+                      id="pattern0_what_deliver"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <image
+                        href="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2Fed60f4226cb44bc7a71af19d796e4a4c?format=webp&width=800"
+                        width="1"
+                        height="1"
+                        preserveAspectRatio="xMidYMid slice"
+                      />
+                    </pattern>
+                  </defs>
+                  <path
+                    d="M580 174C580 270.103 501.896 348 405.538 348L174.462 348C78.1036 348 -1.18066e-05 270.103 -7.60578e-06 174C-3.40497e-06 77.8967 78.1036 -2.19386e-05 174.462 -1.77266e-05L405.538 -7.62598e-06C501.896 -3.41402e-06 580 77.8967 580 174Z"
+                    fill="url(#pattern0_what_deliver)"
+                  />
+                  <path
+                    d="M580 174C580 270.103 501.896 348 405.538 348L174.462 348C78.1036 348 -1.18066e-05 270.103 -7.60578e-06 174C-3.40497e-06 77.8967 78.1036 -2.19386e-05 174.462 -1.77266e-05L405.538 -7.62598e-06C501.896 -3.41402e-06 580 77.8967 580 174Z"
+                    fill="black"
+                    fillOpacity="0.1"
+                  />
+                </svg>
+              </div>
+            </div>
+          </StaggerContainer>
         </div>
       </section>
       {/* Video Section */}
