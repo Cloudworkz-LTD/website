@@ -570,7 +570,7 @@ export default function Index() {
         }}
       >
         {/* Text Block Section */}
-        <section className="relative w-full overflow-hidden">
+        <section id="contact-section" className="relative w-full overflow-hidden">
           {/* Content Layer */}
           <div className="relative z-10 px-4 md:px-6 lg:px-12 xl:px-[180px] py-[100px] md:py-[150px] lg:py-[200px]">
             <div className="max-w-7xl mx-auto">
