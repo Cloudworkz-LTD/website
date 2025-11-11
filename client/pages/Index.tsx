@@ -426,7 +426,7 @@ export default function Index() {
             delay={0.2}
           >
             {/* Left content */}
-            <div className="flex flex-col items-start flex-1 gap-4 md:gap-6 lg:gap-8">
+            <div className="flex flex-col items-start flex-1 gap-2 md:gap-3 lg:gap-4">
               <JustifiedRevealText
                 splitBy="words"
                 stagger={0.08}
@@ -517,7 +517,7 @@ export default function Index() {
                   • A clear problem statement with success criteria.
                 </li>
                 <li className="leading-tight">
-                  • A working proof of value inside your tools.
+                  �� A working proof of value inside your tools.
                 </li>
                 <li className="leading-tight">
                   • A one-page impact snapshot covering time, cost, quality and
