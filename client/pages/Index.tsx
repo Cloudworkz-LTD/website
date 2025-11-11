@@ -426,7 +426,7 @@ export default function Index() {
             delay={0.2}
           >
             {/* Left content */}
-            <div className="flex flex-col items-start flex-1 -gap-1 md:-gap-0.5 lg:gap-0">
+            <div className="flex flex-col items-start flex-1 gap-0">
               <JustifiedRevealText
                 splitBy="words"
                 stagger={0.08}
