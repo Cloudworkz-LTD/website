@@ -113,7 +113,6 @@ export default function Index() {
                   Start with
               </div>
               <div className="flex flex-col sm:flex-row">
-
                   the problem
               </div>
             </h1>
