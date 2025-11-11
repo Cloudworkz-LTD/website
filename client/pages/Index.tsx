@@ -397,7 +397,7 @@ export default function Index() {
       </section>
 
       {/* Background Image Section */}
-      <section className="relative w-full overflow-visible px-4 md:px-6 lg:pl-[40px]">
+      <section className="relative w-full overflow-visible pt-[120px] md:pt-[180px] lg:pt-[220px] px-4 md:px-6 lg:pl-[40px]">
         <div className="relative w-full min-h-[400px] md:min-h-[600px] lg:min-h-[800px]">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/c7fb5a2d2c5f9899915d6e7d3b3c6161eb270691?width=3652"
@@ -414,7 +414,7 @@ export default function Index() {
 
           {/* Content above image */}
           <StaggerContainer
-            className="relative z-[60] flex flex-col lg:flex-row items-end max-w-none w-full"
+            className="relative z-[60] flex flex-col lg:flex-row items-end max-w-none w-full mt-auto"
             stagger={0.4}
             delay={0.2}
           >
