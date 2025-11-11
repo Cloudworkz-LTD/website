@@ -669,7 +669,7 @@ export default function Index() {
         </section>
 
         {/* Footer */}
-        <footer className="relative z-10 flex flex-col items-center lg:items-start gap-8 md:gap-12 lg:gap-[61px] w-full px-4 md:px-6 lg:px-10">
+        <footer className="relative z-10 flex flex-col items-center lg:items-start gap-8 md:gap-12 lg:gap-[61px] w-full px-4 md:px-6 lg:px-10 py-[20px] md:py-[40px] lg:py-[60px]">
           <StaggerContainer
             className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-5 w-full justify-center md:justify-start"
             stagger={0.2}
