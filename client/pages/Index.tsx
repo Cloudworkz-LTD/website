@@ -442,7 +442,7 @@ export default function Index() {
                   delay={0.2}
                   className="inline text-cloudworkz-primary"
                 >
-                  {' DELIVER'}
+                  {" DELIVER"}
                 </JustifiedRevealText>
               </div>
               <FadeInUp delay={0.4} className="-mt-3 md:-mt-2 lg:-mt-1">
