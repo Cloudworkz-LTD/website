@@ -473,7 +473,7 @@ export default function Index() {
                       height="1"
                     >
                       <image
-                        href="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2Fed60f4226cb44bc7a71af19d796e4a4c?format=webp&width=800"
+                        href="https://cdn.builder.io/api/v1/image/assets%2F1eaa4255fd854d84bde8758c04e23344%2F92c4c23d96414da0b3d06eebb06175e4?format=webp&width=800"
                         width="1"
                         height="1"
                         preserveAspectRatio="xMidYMid slice"
