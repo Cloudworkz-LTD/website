@@ -433,7 +433,7 @@ export default function Index() {
                 delay={0.2}
                 className="font-kenyan text-[clamp(60px,10vw,120px)] leading-[100%] tracking-[-0.02em] uppercase"
               >
-                <span className="text-cloudworkz-black">WHAT WE</span>
+                <span className="text-cloudworkz-black">WHAT WE {" "}</span>
                 <span className="text-cloudworkz-primary"> DELIVER</span>
               </JustifiedRevealText>
               <FadeInUp delay={0.4}>
