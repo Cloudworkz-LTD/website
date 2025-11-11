@@ -536,7 +536,12 @@ export default function Index() {
               <div className="text-cloudworkz-primary font-archivo text-sm md:text-base font-semibold leading-[110%] uppercase">
                 Contact Us
               </div>
-              <button className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors">
+              <button
+                onClick={() => {
+                  document.getElementById('contact-section')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="w-16 h-16 md:w-20 md:h-20 rounded-full border border-cloudworkz-primary flex items-center justify-center hover:bg-cloudworkz-primary/10 transition-colors cursor-pointer"
+              >
                 <svg
                   width="20"
                   height="20"
