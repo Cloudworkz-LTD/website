@@ -589,7 +589,7 @@ export default function Index() {
           className="relative w-full overflow-hidden"
         >
           {/* Content Layer */}
-          <div className="relative z-10 px-4 md:px-6 lg:px-12 xl:px-[180px] py-[100px] md:py-[150px] lg:py-[200px]">
+          <div className="relative z-10 px-4 md:px-6 lg:px-12 xl:px-[180px] py-[100px] md:py-[150px] lg:py-[200px] pb-[120px] md:pb-[120px] lg:pb-[120px]">
             <div className="max-w-7xl mx-auto">
               <div className="flex flex-col lg:flex-row items-center lg:items-end justify-center lg:justify-between gap-8 lg:gap-[31px]">
                 {/* Text Content */}
