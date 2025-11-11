@@ -444,7 +444,7 @@ export default function Index() {
 
             {/* Right visual element */}
             <div className="flex-shrink-0 w-full lg:w-auto flex items-start">
-              <div className="relative w-full max-w-[400px] md:max-w-[500px] lg:w-[580px] h-[240px] md:h-[300px] lg:h-[348px] mx-auto lg:mx-0 mt-16 md:mt-24 lg:mt-32">
+              <div className="relative w-full max-w-[400px] md:max-w-[500px] lg:w-[580px] h-[240px] md:h-[300px] lg:h-[348px] mx-auto lg:mx-0 mt-20 md:mt-32 lg:mt-40">
                 <svg
                   width="100%"
                   height="100%"
