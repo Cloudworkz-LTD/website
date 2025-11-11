@@ -142,7 +142,7 @@ export default function Index() {
             {/* Description below hero title */}
             <FadeInUp delay={1.5} duration={0.8}>
               <div className="font-kenyan text-[clamp(40px,6vw,64px)] leading-[0.95] tracking-[-0.02em] uppercase text-cloudworkz-black max-w-full lg:max-w-[1015px] mt-4 md:mt-6">
-                Practical solutions that fit <b />your tools and your team
+                Practical solutions that fit <b /> your tools and your team
               </div>
             </FadeInUp>
           </div>
