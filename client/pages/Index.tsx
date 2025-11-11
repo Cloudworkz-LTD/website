@@ -110,10 +110,7 @@ export default function Index() {
             {/* Hero Title - Left Side */}
             <h1 className="font-kenyan text-[clamp(60px,10vw,120px)] leading-[0.85] uppercase flex flex-col justify-start items-start max-w-full lg:max-w-[1015px]">
               <div className="flex flex-row gap-2 items-baseline">
-
-                  Start
- 
-                  with
+                  Start with
               </div>
               <div className="flex flex-col sm:flex-row">
 
