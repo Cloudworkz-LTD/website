@@ -105,7 +105,7 @@ export default function Index() {
       <Header />
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col lg:flex-row lg:justify-between lg:items-start pt-[60px] md:pt-[90px] px-4 md:px-6 lg:px-10">
-        <CursorEffect>
+   
           <div className="flex flex-col w-full lg:w-auto">
             {/* Hero Title - Left Side */}
             <h1 className="font-kenyan text-[clamp(60px,10vw,120px)] leading-[0.85] uppercase flex flex-col justify-start items-start max-w-full lg:max-w-[1015px]">
@@ -146,7 +146,6 @@ export default function Index() {
               </div>
             </FadeInUp>
           </div>
-        </CursorEffect>
 
         {/* CTA Section - Right Side */}
         <StaggerContainer
