@@ -23,7 +23,7 @@ export default function Index() {
     const ctx = gsap.context(() => {
       // Set different initial positions for each block to create staggered effect
       // Set different initial positions for each block completely hidden.
-      
+
       gsap.set(block1Ref.current, {
         opacity: 0,
         transform: "translateY(150px)",
@@ -105,47 +105,46 @@ export default function Index() {
       <Header />
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col lg:flex-row lg:justify-between lg:items-start pt-[60px] md:pt-[90px] px-4 md:px-6 lg:px-10">
-   
-          <div className="flex flex-col w-full lg:w-auto">
-            {/* Hero Title - Left Side */}
-            <h1 className="font-kenyan text-[clamp(80px,12vw,180px)] leading-[87%] uppercase flex flex-col justify-start items-start max-w-full lg:max-w-[1015px]">
-              <div className="flex flex-row gap-2 items-baseline">
-                <RevealText
-                  className="text-cloudworkz-primary"
-                  splitBy="words"
-                  stagger={0.15}
-                  delay={0.2}
-                >
-                  Start
-                </RevealText>
-                <RevealText
-                  className="text-cloudworkz-black"
-                  splitBy="words"
-                  stagger={0.15}
-                  delay={0.2}
-                >
-                  with
-                </RevealText>
-              </div>
-              <div className="flex flex-col sm:flex-row">
-                <RevealText
-                  className="text-cloudworkz-black sm:mr-4"
-                  splitBy="words"
-                  stagger={0.15}
-                  delay={0.6}
-                >
-                  the problem
-                </RevealText>
-              </div>
-            </h1>
+        <div className="flex flex-col w-full lg:w-auto">
+          {/* Hero Title - Left Side */}
+          <h1 className="font-kenyan text-[clamp(80px,12vw,180px)] leading-[87%] uppercase flex flex-col justify-start items-start max-w-full lg:max-w-[1015px]">
+            <div className="flex flex-row gap-2 items-baseline">
+              <RevealText
+                className="text-cloudworkz-primary"
+                splitBy="words"
+                stagger={0.15}
+                delay={0.2}
+              >
+                Start
+              </RevealText>
+              <RevealText
+                className="text-cloudworkz-black"
+                splitBy="words"
+                stagger={0.15}
+                delay={0.2}
+              >
+                with
+              </RevealText>
+            </div>
+            <div className="flex flex-col sm:flex-row">
+              <RevealText
+                className="text-cloudworkz-black sm:mr-4"
+                splitBy="words"
+                stagger={0.15}
+                delay={0.6}
+              >
+                the problem
+              </RevealText>
+            </div>
+          </h1>
 
-            {/* Description below hero title */}
-            <FadeInUp delay={1.5} duration={0.8}>
-              <div className="font-kenyan text-[clamp(40px,6vw,64px)] leading-[0.95] tracking-[-0.02em] uppercase text-cloudworkz-black max-w-full lg:max-w-[1015px] mt-4 md:mt-6">
-                Practical solutions that fit <br /> your tools and your team
-              </div>
-            </FadeInUp>
-          </div>
+          {/* Description below hero title */}
+          <FadeInUp delay={1.5} duration={0.8}>
+            <div className="font-kenyan text-[clamp(40px,6vw,64px)] leading-[0.95] tracking-[-0.02em] uppercase text-cloudworkz-black max-w-full lg:max-w-[1015px] mt-4 md:mt-6">
+              Practical solutions that fit <br /> your tools and your team
+            </div>
+          </FadeInUp>
+        </div>
 
         {/* CTA Section - Right Side */}
         <StaggerContainer
@@ -304,7 +303,7 @@ export default function Index() {
           </div>
         </div>
       </section>
-      
+
       {/* Sales-as-a-Service Section */}
       <section className="relative z-10 px-4 md:px-6 lg:px-8 xl:px-12">
         <StaggerContainer
