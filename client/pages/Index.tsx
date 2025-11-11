@@ -414,7 +414,7 @@ export default function Index() {
 
           {/* Content above image */}
           <StaggerContainer
-            className="relative z-[60] flex flex-col lg:flex-row items-start gap-8 md:gap-12 lg:gap-16 max-w-none w-full"
+            className="relative z-[60] flex flex-col lg:flex-row items-center gap-8 md:gap-12 lg:gap-16 max-w-none w-full"
             stagger={0.4}
             delay={0.2}
           >
