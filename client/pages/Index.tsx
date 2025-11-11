@@ -397,7 +397,7 @@ export default function Index() {
       </section>
 
       {/* Background Image Section */}
-      <section className="relative w-full overflow-visible pt-[80px] md:pt-[120px] lg:pt-[150px] px-4 md:px-6 lg:pl-[40px]">
+      <section className="relative w-full overflow-visible pt-[120px] md:pt-[180px] lg:pt-[220px] px-4 md:px-6 lg:pl-[40px]">
         <div className="relative w-full min-h-[400px] md:min-h-[600px] lg:min-h-[800px]">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/c7fb5a2d2c5f9899915d6e7d3b3c6161eb270691?width=3652"
@@ -419,7 +419,7 @@ export default function Index() {
             delay={0.2}
           >
             {/* Left content */}
-            <div className="flex flex-col items-start gap-4 md:gap-6 flex-1">
+            <div className="flex flex-col items-start gap-2 md:gap-3 flex-1">
               <JustifiedRevealText
                 splitBy="words"
                 stagger={0.08}
@@ -443,7 +443,7 @@ export default function Index() {
             </div>
 
             {/* Right visual element */}
-            <div className="flex-shrink-0 w-full lg:w-auto">
+            <div className="flex-shrink-0 w-full lg:w-auto flex items-end">
               <div className="relative w-full max-w-[400px] md:max-w-[500px] lg:w-[580px] h-[240px] md:h-[300px] lg:h-[348px] mx-auto lg:mx-0">
                 <svg
                   width="100%"
