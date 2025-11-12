@@ -616,7 +616,7 @@ export default function Index() {
 
                   {/* Description */}
                   <FadeInUp y={30}>
-                    <p className="text-center lg:text-right text-cloudworkz-black font-archivo font-semibold text-base md:text-lg lg:text-xl xl:text-[24px] leading-[1.1] max-w-full lg:max-w-3xl uppercase">
+                    <p className="text-center lg:text-right text-cloudworkz-black font-archivo font-semibold text-lg md:text-lg lg:text-xl xl:text-[24px] leading-[1.1] max-w-full lg:max-w-3xl uppercase">
                       To book a call, request a proposal or for <br />
                       any other enquiry please email
                     </p>
