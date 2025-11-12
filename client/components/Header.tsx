@@ -58,7 +58,14 @@ export default function Header() {
               HOW IT WORKS
             </Link>
           </div>
-          <button className="text-cloudworkz-black font-kenyan text-2xl lg:text-[35px] uppercase tracking-[1.05px] leading-[87%] transition-all duration-75 hover:text-cloudworkz-primary hover:italic hover:scale-105 cursor-pointer">
+          <button
+            onClick={() => {
+              document
+                .getElementById("contact-section")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="text-cloudworkz-black font-kenyan text-2xl lg:text-[35px] uppercase tracking-[1.05px] leading-[87%] transition-all duration-75 hover:text-cloudworkz-primary hover:italic hover:scale-105 cursor-pointer"
+          >
             GET IN TOUCH
           </button>
         </nav>
