@@ -445,7 +445,7 @@ export default function Index() {
                   {" DELIVER"}
                 </JustifiedRevealText>
               </div>
-              <FadeInUp delay={0.4} className="-mt-3 md:-mt-2 lg:-mt-1">
+              <FadeInUp delay={0.4} className="mt-4 md:mt-6 lg:mt-8">
                 <div className="w-full text-cloudworkz-black text-left md:text-justify font-archivo text-lg md:text-2xl lg:text-[32px] font-normal leading-[100%] tracking-[-0.02em]">
                   The simplest effective answer: an AI agent when conversations
                   and decisions need coverage, an automation when tasks repeat,
