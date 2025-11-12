@@ -434,7 +434,7 @@ export default function Index() {
                   delay={0.2}
                   className="inline"
                 >
-                  WHAT WE
+                  WHAT WE {" "}
                 </JustifiedRevealText>
                 <JustifiedRevealText
                   splitBy="words"
