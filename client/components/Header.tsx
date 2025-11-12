@@ -69,7 +69,6 @@ export default function Header() {
             GET IN TOUCH
           </button>
         </nav>
-
       </div>
     </header>
   );
