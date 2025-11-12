@@ -231,10 +231,10 @@ export default function Index() {
                 "url('https://api.builder.io/api/v1/image/assets/TEMP/81098206588618cbe52f2de3b00ce7b9b713b154?width=904')",
             }}
           >
-            <h3 className="font-kenyan text-[50px] md:text-[70px] lg:text-[90px] font-normal leading-[100%] tracking-[-1.8px] uppercase text-white">
+            <h3 className="font-kenyan text-[60px] md:text-[70px] lg:text-[90px] font-normal leading-[100%] tracking-[-1.8px] uppercase text-white">
               Start with the problem
             </h3>
-            <p className="font-archivo text-base md:text-lg lg:text-xl font-normal leading-[100%] text-white">
+            <p className="font-archivo text-lg md:text-lg lg:text-xl font-normal leading-[100%] text-white">
               We diagnose what is really going on, define success, and choose
               the simplest, most effective route to value
             </p>
@@ -249,10 +249,10 @@ export default function Index() {
                 "url('https://api.builder.io/api/v1/image/assets/TEMP/5f7be80d4ebc755eaa61ad5e88212092a594781e?width=904')",
             }}
           >
-            <h3 className="font-kenyan text-[50px] md:text-[70px] lg:text-[90px] font-normal leading-[100%] tracking-[-1.8px] uppercase text-white">
+            <h3 className="font-kenyan text-[60px] md:text-[70px] lg:text-[90px] font-normal leading-[100%] tracking-[-1.8px] uppercase text-white">
               Proof of value
             </h3>
-            <p className="font-archivo text-base md:text-lg lg:text-xl font-normal leading-[100%] text-white">
+            <p className="font-archivo text-lg md:text-lg lg:text-xl font-normal leading-[100%] text-white">
               Test the simplest route to value and measure impact on time, cost,
               quality and risk
             </p>
@@ -267,10 +267,10 @@ export default function Index() {
                 "url('https://api.builder.io/api/v1/image/assets/TEMP/514d417fa855b888cc5675511ede7309fbc05ecc?width=904')",
             }}
           >
-            <h3 className="font-kenyan text-[50px] md:text-[70px] lg:text-[90px] font-normal leading-[100%] tracking-[-1.8px] uppercase text-white">
+            <h3 className="font-kenyan text-[60px] md:text-[70px] lg:text-[90px] font-normal leading-[100%] tracking-[-1.8px] uppercase text-white">
               Built to fit your tools
             </h3>
-            <p className="font-archivo text-base md:text-lg lg:text-xl font-normal leading-[100%] text-white">
+            <p className="font-archivo text-lg md:text-lg lg:text-xl font-normal leading-[100%] text-white">
               Vendor agnostic and outcome driven. We weave modern capability
               into the systems you already use, with security, governance,
               documentation and training as standard
