@@ -234,6 +234,11 @@ export default function SalesAsAService() {
               <div className="hidden text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
                 555 123 4567
               </div>
+              <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px]">
+                <div>86-90 Paul Street</div>
+                <div>London</div>
+                <div>EC2A 4NE</div>
+              </div>
             </div>
           </div>
 

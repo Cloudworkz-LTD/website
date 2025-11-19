@@ -342,6 +342,11 @@ const CloudworkzApp = () => {
               <p className="hidden font-archivo text-base text-cloudworkz-black">
                 555 123 4567
               </p>
+              <div className="font-archivo text-base text-cloudworkz-black leading-tight">
+                <p>86-90 Paul Street</p>
+                <p>London</p>
+                <p>EC2A 4NE</p>
+              </div>
             </div>
           </div>
           

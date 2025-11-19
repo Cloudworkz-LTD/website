@@ -259,6 +259,11 @@ export default function Insights() {
                 <div className="hidden text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                   555 123 4567
                 </div>
+                <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] text-center md:text-left">
+                  <div>86-90 Paul Street</div>
+                  <div>London</div>
+                  <div>EC2A 4NE</div>
+                </div>
               </StaggerContainer>
             </div>
 
