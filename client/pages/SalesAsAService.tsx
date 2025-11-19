@@ -231,14 +231,14 @@ export default function SalesAsAService() {
               <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
                 info@cloudworkz.com
               </div>
-              <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
+              <div className="hidden text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
                 555 123 4567
               </div>
             </div>
           </div>
 
           {/* Follow Us Section */}
-          <div className="flex flex-col items-start gap-[77px] w-full lg:w-[321px]">
+          <div className="hidden flex flex-col items-start gap-[77px] w-full lg:w-[321px]">
             <h3 className="text-cloudworkz-black font-kenyan text-3xl md:text-[40px] font-normal leading-[100%] tracking-[-0.8px] uppercase">
               Follow Us
             </h3>
@@ -256,7 +256,7 @@ export default function SalesAsAService() {
           </div>
 
           {/* Legal Links Section */}
-          <div className="flex flex-col items-start gap-[18px] w-full lg:w-[321px]">
+          <div className="hidden flex flex-col items-start gap-[18px] w-full lg:w-[321px]">
             <div className="text-cloudworkz-black font-archivo text-base font-normal leading-[100%] tracking-[-0.32px] uppercase">
               Privacy Policy
             </div>
