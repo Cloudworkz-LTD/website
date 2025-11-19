@@ -339,13 +339,13 @@ const CloudworkzApp = () => {
               <p className="font-archivo text-base text-cloudworkz-black">
                 info@cloudworkz.com
               </p>
-              <p className="font-archivo text-base text-cloudworkz-black">
+              <p className="hidden font-archivo text-base text-cloudworkz-black">
                 555 123 4567
               </p>
             </div>
           </div>
           
-          <div className="flex flex-col items-start gap-20 w-80">
+          <div className="hidden flex flex-col items-start gap-20 w-80">
             <h3 className="font-kenyan text-[2.5rem] font-normal leading-tight tracking-tight uppercase text-cloudworkz-black">
               Follow Us
             </h3>
@@ -356,7 +356,7 @@ const CloudworkzApp = () => {
             </div>
           </div>
           
-          <div className="flex flex-col items-start gap-5 w-80">
+          <div className="hidden flex flex-col items-start gap-5 w-80">
             <p className="font-archivo text-base text-cloudworkz-black w-32">
               Privacy Policy
             </p>

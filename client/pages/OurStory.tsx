@@ -438,14 +438,14 @@ export default function OurStory() {
                 <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                   info@cloudworkz.com
                 </div>
-                <div className="text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
+                <div className="hidden text-cloudworkz-black font-archivo text-sm md:text-base font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                   555 123 4567
                 </div>
               </StaggerContainer>
             </div>
 
             {/* Follow Us Section */}
-            <div className="flex flex-col items-center md:items-start gap-8 md:gap-12 lg:gap-[77px] w-full md:w-1/3">
+            <div className="hidden flex flex-col items-center md:items-start gap-8 md:gap-12 lg:gap-[77px] w-full md:w-1/3">
               <FadeInUp y={30}>
                 <h3 className="text-cloudworkz-black font-kenyan text-2xl md:text-3xl lg:text-[40px] font-normal leading-[1] tracking-[-0.02em] uppercase text-center md:text-left">
                   Follow Us
@@ -470,7 +470,7 @@ export default function OurStory() {
 
             {/* Legal Links Section */}
             <StaggerContainer
-              className="flex flex-col items-center md:items-start gap-3 md:gap-4 lg:gap-[18px] w-full md:w-1/3"
+              className="hidden flex flex-col items-center md:items-start gap-3 md:gap-4 lg:gap-[18px] w-full md:w-1/3"
               stagger={0.1}
               delay={0.6}
             >
