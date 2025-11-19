@@ -365,7 +365,7 @@ export default function Index() {
             <FadeInUp delay={0.4} y={30}>
               <div className="text-cloudworkz-black text-left lg:text-justify font-archivo text-lg md:text-xl lg:text-2xl xl:text-[32px] font-semibold leading-[1.1] uppercase max-w-full lg:max-w-[340px]">
                 Guide teams to adopt, operate and improve solutions with
-                confidence. Lorem ipsum dolor sit amet
+                confidence.
               </div>
             </FadeInUp>
           </div>
