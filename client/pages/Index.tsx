@@ -625,7 +625,7 @@ export default function Index() {
                   {/* CTA Block */}
                   <div className="flex items-center justify-center lg:justify-end gap-3 mt-4 w-full lg:w-auto">
                     <div className="text-cloudworkz-primary font-archivo text-base font-semibold leading-[110%] uppercase">
-                      tom@cloudworkz.com
+                      info@cloudworkz.com
                     </div>
                   </div>
                 </StaggerContainer>
