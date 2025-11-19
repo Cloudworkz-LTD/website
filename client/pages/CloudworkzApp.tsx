@@ -4,18 +4,18 @@ const CloudworkzApp = () => {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative flex px-10 py-32 items-start gap-20 w-full overflow-hidden">
         {/* Background Image - Rotated */}
         <div className="absolute -left-64 -bottom-80 w-[2433px] h-[2307px] rotate-75 mix-blend-multiply opacity-60">
-          <img 
+          <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/4958bff6fa36aa232c74ae5aa189627c0b65d8f4?width=4867"
             alt=""
             className="w-full h-full object-cover"
           />
         </div>
-        
+
         {/* Text Content */}
         <div className="relative z-10 w-full max-w-4xl">
           <h1 className="font-kenyan text-[12rem] xl:text-[15rem] leading-[0.87] uppercase font-normal">
@@ -24,7 +24,7 @@ const CloudworkzApp = () => {
             <span className="text-cloudworkz-black">App</span>
           </h1>
         </div>
-        
+
         {/* App Image */}
         <div className="relative z-10 flex-shrink-0">
           <div className="w-80 h-[500px] rounded-[148px] overflow-hidden bg-gradient-to-b from-blue-400 to-orange-400">
@@ -45,13 +45,16 @@ const CloudworkzApp = () => {
             Execution Infrastructure for Modern Growth Teams
           </h2>
         </div>
-        
+
         <div className="flex flex-col items-start gap-8 max-w-xs">
           <p className="font-archivo text-xl text-cloudworkz-black text-justify leading-tight">
-            The Cloudworkz App is a modular platform that automates execution across your go-to-market systems, not just sales.
+            The Cloudworkz App is a modular platform that automates execution
+            across your go-to-market systems, not just sales.
           </p>
           <p className="font-archivo text-xl text-cloudworkz-black text-justify leading-tight">
-            From lead intake to content generation, data enrichment to onboarding, it connects your stack, applies your logic, and gets work done.
+            From lead intake to content generation, data enrichment to
+            onboarding, it connects your stack, applies your logic, and gets
+            work done.
           </p>
         </div>
       </section>
@@ -63,11 +66,16 @@ const CloudworkzApp = () => {
             What It Can Automate
           </h2>
           <div className="font-archivo text-2xl font-semibold leading-tight uppercase text-cloudworkz-black text-justify">
-            Lead intake from forms, ads, or spreadsheets<br/>
-            Intelligent routing to sales, CS, or execs<br/>
-            Personalised content generation and multichannel formatting<br/>
-            CRM sync, deal tracking, and investor data management<br/>
-            Onboarding workflows and payment handling<br/>
+            Lead intake from forms, ads, or spreadsheets
+            <br />
+            Intelligent routing to sales, CS, or execs
+            <br />
+            Personalised content generation and multichannel formatting
+            <br />
+            CRM sync, deal tracking, and investor data management
+            <br />
+            Onboarding workflows and payment handling
+            <br />
             Segmentation, enrichment, and campaign planning
           </div>
         </div>
@@ -81,7 +89,7 @@ const CloudworkzApp = () => {
             <span className="text-cloudworkz-black">Engines</span>
           </h2>
         </div>
-        
+
         <div className="flex flex-col items-start w-full">
           {/* Sales Engine */}
           <div className="flex py-12 justify-between items-end w-full border-b-2 border-cloudworkz-primary">
@@ -90,23 +98,27 @@ const CloudworkzApp = () => {
                 Sales Engine
               </h3>
               <p className="font-archivo text-2xl font-semibold leading-tight tracking-tight uppercase text-cloudworkz-black text-justify max-w-md">
-                Automates the workflows behind prospecting, routing, and conversion.
+                Automates the workflows behind prospecting, routing, and
+                conversion.
               </p>
             </div>
-            
+
             <div className="flex flex-col justify-end items-start gap-2 max-w-lg">
               <h4 className="font-archivo text-2xl font-semibold leading-tight uppercase text-cloudworkz-black">
                 Key Modules
               </h4>
               <div className="font-archivo text-base text-cloudworkz-black text-justify leading-tight max-w-lg">
-                Lead intake & qualification<br/>
-                Intelligent routing based on persona, value, or timing<br/>
-                Follow-ups and reactivation<br/>
+                Lead intake & qualification
+                <br />
+                Intelligent routing based on persona, value, or timing
+                <br />
+                Follow-ups and reactivation
+                <br />
                 Handoffs to CS or execs
               </div>
             </div>
           </div>
-          
+
           {/* Content Engine */}
           <div className="flex py-12 justify-between items-end w-full border-b-2 border-cloudworkz-primary">
             <div className="flex flex-col items-start gap-5 max-w-2xl">
@@ -114,24 +126,29 @@ const CloudworkzApp = () => {
                 Content Engine
               </h3>
               <p className="font-archivo text-2xl font-semibold leading-tight tracking-tight uppercase text-cloudworkz-black text-justify max-w-md">
-                Generates and manages personalised messaging and content across every channel.
+                Generates and manages personalised messaging and content across
+                every channel.
               </p>
             </div>
-            
+
             <div className="flex flex-col justify-end items-start gap-2 max-w-lg">
               <h4 className="font-archivo text-2xl font-semibold leading-tight uppercase text-cloudworkz-black">
                 Key Modules
               </h4>
               <div className="font-archivo text-base text-cloudworkz-black text-justify leading-tight max-w-lg">
-                Persona-based message generation<br/>
-                Multichannel formatting (email, LinkedIn, WhatsApp)<br/>
-                Deck and doc automation<br/>
-                A/B testing and copy optimisation<br/>
+                Persona-based message generation
+                <br />
+                Multichannel formatting (email, LinkedIn, WhatsApp)
+                <br />
+                Deck and doc automation
+                <br />
+                A/B testing and copy optimisation
+                <br />
                 Compliant content tagging
               </div>
             </div>
           </div>
-          
+
           {/* Data Engine */}
           <div className="flex py-12 justify-between items-start w-full border-b-2 border-cloudworkz-primary">
             <div className="flex flex-col items-start gap-5 max-w-2xl">
@@ -139,10 +156,11 @@ const CloudworkzApp = () => {
                 Data Engine
               </h3>
               <p className="font-archivo text-2xl font-semibold leading-tight tracking-tight uppercase text-cloudworkz-black text-justify max-w-md">
-                Powers the intelligence layer behind your growth execution, from campaign planning to outcome feedback.
+                Powers the intelligence layer behind your growth execution, from
+                campaign planning to outcome feedback.
               </p>
             </div>
-            
+
             <div className="flex items-start gap-6 max-w-lg">
               <div className="flex flex-col items-start gap-6 flex-1">
                 <div className="flex flex-col items-start gap-2">
@@ -150,63 +168,70 @@ const CloudworkzApp = () => {
                     DataPrep
                   </h4>
                   <p className="font-archivo text-base text-cloudworkz-black text-justify leading-tight">
-                    Clean, deduplicate, and normalise leads from multiple sources
+                    Clean, deduplicate, and normalise leads from multiple
+                    sources
                   </p>
                 </div>
-                
+
                 <div className="flex flex-col items-start gap-2">
                   <h4 className="font-archivo text-2xl font-semibold leading-tight uppercase text-cloudworkz-black">
                     DataLynx
                   </h4>
                   <p className="font-archivo text-base text-cloudworkz-black text-justify leading-tight">
-                    Add firmographic, location, and investor-specific traits to your data
+                    Add firmographic, location, and investor-specific traits to
+                    your data
                   </p>
                 </div>
-                
+
                 <div className="flex flex-col items-start gap-2">
                   <h4 className="font-archivo text-2xl font-semibold leading-tight uppercase text-cloudworkz-black">
                     FilterCraft
                   </h4>
                   <p className="font-archivo text-base text-cloudworkz-black text-justify leading-tight">
-                    Apply campaign-specific filters (e.g. by region, investor type, persona)
+                    Apply campaign-specific filters (e.g. by region, investor
+                    type, persona)
                   </p>
                 </div>
-                
+
                 <div className="flex flex-col items-start gap-2">
                   <h4 className="font-archivo text-2xl font-semibold leading-tight uppercase text-cloudworkz-black">
                     DialPlan Designer
                   </h4>
                   <p className="font-archivo text-base text-cloudworkz-black text-justify leading-tight">
-                    Auto-generate daily calling or outreach plans by priority and timing
+                    Auto-generate daily calling or outreach plans by priority
+                    and timing
                   </p>
                 </div>
               </div>
-              
+
               <div className="flex flex-col items-start gap-6 flex-1">
                 <div className="flex flex-col items-start gap-2">
                   <h4 className="font-archivo text-2xl font-semibold leading-tight uppercase text-cloudworkz-black">
                     SignalRank
                   </h4>
                   <p className="font-archivo text-base text-cloudworkz-black text-justify leading-tight">
-                    Score leads using configurable logic based on enrichment, behaviour, or past outcomes
+                    Score leads using configurable logic based on enrichment,
+                    behaviour, or past outcomes
                   </p>
                 </div>
-                
+
                 <div className="flex flex-col items-start gap-2">
                   <h4 className="font-archivo text-2xl font-semibold leading-tight uppercase text-cloudworkz-black">
                     Feedback Loop
                   </h4>
                   <p className="font-archivo text-base text-cloudworkz-black text-justify leading-tight">
-                    Capture outreach results and reintegrate insights into lead targeting
+                    Capture outreach results and reintegrate insights into lead
+                    targeting
                   </p>
                 </div>
-                
+
                 <div className="flex flex-col items-start gap-2">
                   <h4 className="font-archivo text-2xl font-semibold leading-tight uppercase text-cloudworkz-black">
                     DataPath AI
                   </h4>
                   <p className="font-archivo text-base text-cloudworkz-black text-justify leading-tight">
-                    Analyse past performance to recommend better targeting or sequencing for future campaigns
+                    Analyse past performance to recommend better targeting or
+                    sequencing for future campaigns
                   </p>
                 </div>
               </div>
@@ -219,24 +244,27 @@ const CloudworkzApp = () => {
       <section className="flex w-full px-10 py-32 justify-between items-start relative overflow-hidden">
         {/* Background Image */}
         <div className="absolute -left-96 -top-48 w-[1826px] h-[1215px]">
-          <img 
+          <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/b75f450e2b9f1f0b8e904dd490b35eca12d87b91?width=3652"
             alt=""
             className="w-full h-full object-cover opacity-40"
           />
         </div>
-        
+
         <div className="relative z-10 flex flex-col items-start max-w-2xl">
           <h2 className="font-kenyan text-[7.5rem] font-normal leading-tight tracking-tight uppercase mb-8">
-            <span className="text-cloudworkz-primary">Modular<br/></span>
+            <span className="text-cloudworkz-primary">
+              Modular
+              <br />
+            </span>
             <span className="text-cloudworkz-black">by Design</span>
           </h2>
           <p className="font-archivo text-2xl text-cloudworkz-black text-justify leading-tight tracking-tight max-w-lg">
-            Turn on only what you need. Add logic, AI agents, or new engines as you grow.
-            Built to flex with your stack or run independently.
+            Turn on only what you need. Add logic, AI agents, or new engines as
+            you grow. Built to flex with your stack or run independently.
           </p>
         </div>
-        
+
         <div className="relative z-10 flex-shrink-0">
           <div className="w-[560px] h-[336px] rounded-[180px] overflow-hidden bg-gradient-to-r from-blue-400 via-purple-400 to-green-400 opacity-80">
             <div className="w-full h-full bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 relative">
@@ -276,7 +304,7 @@ const CloudworkzApp = () => {
             </svg>
           </button>
         </div>
-        
+
         <div className="flex items-center gap-6">
           {/* Stat 1 */}
           <div className="flex flex-col items-start py-8 w-80">
@@ -289,10 +317,12 @@ const CloudworkzApp = () => {
               </span>
             </div>
             <h3 className="font-archivo text-[2.5rem] font-bold leading-tight text-cloudworkz-primary">
-              CONVERSION<br/>RATE
+              CONVERSION
+              <br />
+              RATE
             </h3>
           </div>
-          
+
           {/* Stat 2 */}
           <div className="flex flex-col items-start py-8 w-80">
             <div className="flex items-start">
@@ -304,10 +334,12 @@ const CloudworkzApp = () => {
               </span>
             </div>
             <h3 className="font-archivo text-[2.5rem] font-bold leading-tight text-cloudworkz-primary">
-              LEAD<br/>QUALITY
+              LEAD
+              <br />
+              QUALITY
             </h3>
           </div>
-          
+
           {/* Stat 3 */}
           <div className="flex flex-col items-start py-8 w-80">
             <div className="flex items-start">
@@ -319,11 +351,13 @@ const CloudworkzApp = () => {
               </span>
             </div>
             <h3 className="font-archivo text-[2.5rem] font-bold leading-tight text-cloudworkz-primary">
-              ACTIVE<br/>LEADS
+              ACTIVE
+              <br />
+              LEADS
             </h3>
           </div>
         </div>
-        
+
         {/* Decorative circle */}
         <div className="absolute right-0 bottom-0 w-[1744px] h-[500px] rounded-[250px] border-2 border-cloudworkz-primary transform translate-x-[584px] translate-y-[35px]"></div>
       </section>
@@ -349,18 +383,24 @@ const CloudworkzApp = () => {
               </div>
             </div>
           </div>
-          
+
           <div className="hidden flex flex-col items-start gap-20 w-80">
             <h3 className="font-kenyan text-[2.5rem] font-normal leading-tight tracking-tight uppercase text-cloudworkz-black">
               Follow Us
             </h3>
             <div className="flex flex-col items-start gap-5 w-22">
-              <p className="font-archivo text-base text-cloudworkz-black">LinkedIn</p>
-              <p className="font-archivo text-base text-cloudworkz-black">Twitter</p>
-              <p className="font-archivo text-base text-cloudworkz-black">Facebook</p>
+              <p className="font-archivo text-base text-cloudworkz-black">
+                LinkedIn
+              </p>
+              <p className="font-archivo text-base text-cloudworkz-black">
+                Twitter
+              </p>
+              <p className="font-archivo text-base text-cloudworkz-black">
+                Facebook
+              </p>
             </div>
           </div>
-          
+
           <div className="hidden flex flex-col items-start gap-5 w-80">
             <p className="font-archivo text-base text-cloudworkz-black w-32">
               Privacy Policy
@@ -370,8 +410,8 @@ const CloudworkzApp = () => {
             </p>
           </div>
         </div>
-        
-        <img 
+
+        <img
           src="https://api.builder.io/api/v1/image/assets/TEMP/2ca41c4ebe4ba18e91febe21b8f069e137f71166?width=2720"
           alt="Cloudworkz logo"
           className="w-full max-w-4xl h-auto"
